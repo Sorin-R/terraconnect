@@ -1,3 +1,15 @@
+/* ============ Main Background ============ */
+.background {
+    background: linear-gradient(180deg, #010913 0%, #020a22 50%, #010913 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #010913;
+    color: #e0e0e0;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -38,6 +50,87 @@ a {
 .btn.secondary:hover {
     background: #f2f3ff;
     color: #000;
+}
+
+/* ============ Hero Section ============ */
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, rgba(2, 10, 34, 0.95) 0%, rgba(20, 30, 70, 0.9) 100%),
+        url('/images/img-png/hero-img.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(70, 87, 237, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(100, 50, 200, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-h1 {
+    color: #f2f3ff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+    text-shadow: 0 4px 20px rgba(70, 87, 237, 0.3);
+}
+
+.hero-p-background {
+    background: rgba(70, 87, 237, 0.1);
+    border-left: 4px solid #4657ed;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.hero-p {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+    font-style: italic;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ============ Section Titles ============ */
+.section-title {
+    text-align: center;
+    color: #f2f3ff;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-shadow: 0 2px 10px rgba(70, 87, 237, 0.2);
 }
 
 /* ============ Headings ============ */
