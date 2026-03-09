@@ -8,6 +8,13 @@
     /* Header adjustments */
     header {
         padding: 12px 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        box-sizing: border-box;
     }
     main {
         padding: 88px 0px 20px 0px;
