@@ -20,12 +20,6 @@ jobs:
         key: ${{ secrets.HOSTINGER_KEY }}
         port: ${{ secrets.HOSTINGER_PORT }}
         script: |
-          mkdir -p ${{ secrets.DEPLOY_PATH }}
           cd ${{ secrets.DEPLOY_PATH }}
-          if [ -d ".git" ]; then
-            git pull origin main
-          else
-            git clone https://github.com/Sorin-R/terraconnect.git .
-            git checkout main
-          fi
+          git pull origin main
           echo "✅ Deployment completed at $(date)"
