@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Terra-Connect (Python)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "/Users/sorinrotaru/Terra-Connect"],
+      "port": 8000
+    },
+    {
+      "name": "Terra-Connect (Python - Port 8080)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8080", "--directory", "/Users/sorinrotaru/Terra-Connect"],
+      "port": 8080
+    },
+    {
+      "name": "TerraConnect (Legacy)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "/Users/sorinrotaru/Documents/TerraConnect"],
+      "port": 8000
+    }
+  ]
+}

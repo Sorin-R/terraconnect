@@ -1,0 +1,47 @@
+# robots.txt for https://www.terraconnect.co.uk/
+User-agent: *
+
+# Allow crawling of main content
+Allow: /$
+Allow: /about-us/
+Allow: /contacts/
+Allow: /frontend-development/
+Allow: /backend-development/
+Allow: /ai-automation-agency/
+Allow: /get-a-quote/
+
+# Block sensitive areas
+Disallow: /admin/
+Disallow: /wp-admin/        # If you use WordPress in future
+Disallow: /includes/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Block search and utility pages
+Disallow: /search/
+Disallow: /?s=              # Search results
+Disallow: /tag/
+Disallow: /category/
+
+# Block common URL parameters that create duplicates
+Disallow: /*?*
+Disallow: /*?replytocom
+Disallow: /*?utm_
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+
+# Allow bots to see CSS and JS (important for SEO)
+Allow: /styles/*.css
+Allow: /scripts/*.js
+Allow: /images/
+Allow: /icon/
+
+# Sitemap location (ONLY ADD THIS IF YOU ACTUALLY CREATE THE FILE)
+Sitemap: https://www.terraconnect.co.uk/sitemap_index.xml
+Sitemap: https://www.terraconnect.co.uk/sitemap.xml

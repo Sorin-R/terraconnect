@@ -1,0 +1,383 @@
+/* ======== Mobile / Tablet Styles (<= 1024px) ======== */
+@media (max-width: 1024px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 12px 5%;
+    }
+    main {
+        padding: 88px 0 20px 0    ;
+    }
+
+    #navMenu {
+        background-color: rgb(2, 10, 34);
+    }
+
+    /* Tech icons strip --- Web section on mobile --- */
+    .web-section .web-icon h2 {
+        display: none;
+    }
+
+    .web-section {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        padding: 10px 0;
+        min-height: 140px;
+        overflow-x: auto; /* allow horizontal scroll */
+        overflow-y: hidden; /* prevent vertical scroll */
+        scroll-snap-type: x mandatory; /* snap behavior for smooth swiping */
+        -webkit-overflow-scrolling: touch; /* momentum scroll on iOS */
+        box-sizing: border-box;
+        width: 100vw;
+        position: relative;
+        left: calc(-50vw + 50%);
+    }
+
+    .web-section .web-icon {
+        flex: 0 0 auto; /* prevent shrinking, keep width */
+        scroll-snap-align: start;
+        text-align: center;
+    }
+
+    .web-section img {
+        width: 80px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 12px;
+        box-shadow: rgb(70, 87, 237) 0 0 5px 2px;
+        background-color: #010913;
+    }
+
+    /* Progress section */
+    .align-blocks {
+        display: none;
+    }
+
+    .mobile-align-blocks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    /* Three columns of rotated tiles */
+    .left-block,
+    .midle-block,
+    .right-block {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left-block {
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 130px;
+        margin-right: -25px;
+    }
+    .midle-block {
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .right-block {
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 140px 0 10px 0;
+        margin-left: -25px;
+    }
+
+    .left-block-row,
+    .midle-block-row,
+    .right-block-row {
+        width: 125px;
+        height: 125px;
+        background-color: rgb(1, 10, 19);
+        border: #f5f5f5 2px solid;
+        cursor: pointer;
+        text-align: center;
+        transform: rotate(45deg);
+        border-radius: 10%;
+        position: relative;
+    }
+    .left-block-row {
+        border-radius: 10% 10% 10% 30%;
+    }
+    .midle-block-row {
+        border-radius: 10%;
+    }
+    .right-block-row {
+        border-radius: 10% 30% 10% 10%;
+    }
+
+    .midle-block-row-2 {
+        border-top-left-radius: 40px;
+        margin-bottom:5px;
+    }
+    .midle-block-row-8,
+    .midle-block-row-9 {
+        border-bottom-right-radius: 40px;
+    }
+
+    .right-block-row h3 {
+        color: #f2f3ff;
+        font-size: 36px;
+        font-weight: 700;
+        transform: rotate(-45deg);
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 5px;
+        margin: 10px 0 0 -75px;
+    }
+
+    .left-block-row h3 {
+        color: #f2f3ff;
+        font-size: 36px;
+        font-weight: 700;
+        transform: rotate(-45deg);
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 5px;
+        margin: 10px 0 0 -75px;
+    }
+
+    .midle-block-row h3 {
+        color: #f2f3ff;
+        font-size: 36px;
+        font-weight: 700;
+        transform: rotate(-45deg);
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 5px;
+        margin: 10px 0 0 -75px;
+    }
+
+    .left-block-row p,
+    .midle-block-row p,
+    .right-block-row p {
+        color: #f2f3ff;
+        font-size: 13px;
+        text-align: center;
+        transform: rotate(-45deg);
+        margin: -10px;
+    }
+    .tile-link {
+        position: absolute;
+        inset: 0;
+    }
+
+    /* Carousel */
+    .nav-arrow {
+        display: flex !important;
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+        z-index: 200;
+    }
+    .prev-arrow {
+        left: 10px;
+    }
+    .next-arrow {
+        right: 50px;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        position: relative;
+        left: 20px;
+    }
+    .caroucel-item {
+        /* width: 70vw; */
+        aspect-ratio: 2 / 3;
+        height: auto;
+        flex: 0 0 auto; /* prevent stretching */
+        margin: 0 auto; /* center horizontally */
+        width: 80vw;
+    }
+
+    .caroucel-wrap {
+        display: flex;
+        justify-content: flex-start; /* aligns items to the left */
+        gap: 10px;
+        width: 100%;
+        transition: transform 0.5s ease;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .holl {
+        position: static;
+        width: 100%;
+        padding: 24px;
+        height: auto;
+        margin-bottom: 16px;
+        background-attachment: scroll;
+    }
+    .holl h2 {
+        font-size: 2rem;
+    }
+
+    .back-holl,
+    .right-holl {
+        display: none;
+    }
+
+    #catalog {
+        padding: 30px 0;
+        flex-direction: column;
+        background-attachment: scroll;
+    }
+
+    /* Services */
+    .services-home h2 {
+        margin-top: 40px;
+    }
+    .service-block {
+        opacity: 1;
+        transform: none;
+    }
+    .btn {
+        display: block;
+        width: 50%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .service-block .btn,
+    .service-block a.btn {
+        width: 100%;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        margin: 0 20px !important;
+        /* width: 100%; */
+    }
+
+    /* Footer (mobile) */
+
+    footer {
+        display: block;
+    }
+    .footer-box-content {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        padding: 50px 0 0 0;
+    }
+    .footer-box {
+        display: none;
+    }
+    .contact-us {
+        text-align: center;
+        margin: 5% 0;
+    }
+    .contact-us h4 {
+        font-size: 32px;
+    }
+    .copyright h5 {
+        display: none;
+    }
+
+    .backend-development-content {
+        padding: 40px 20px !important;
+        border-radius: 20px;
+    }
+    .backend-development-content h2 {
+        font-size: 2.25rem !important;
+    }
+    .backend-development-content h3 {
+        font-size: 1.75rem !important;
+        margin: 2rem 0 1rem 0 !important;
+    }
+    .backend-development-content h4 {
+        font-size: 1.25rem !important;
+    }
+    .backend-development-content p {
+        font-size: 1rem !important;
+    }
+    .backend-development-content ul li,
+    .backend-development-content ol li {
+        padding: 1.25rem 1rem 1.25rem 3rem !important;
+    }
+    .backend-development-content th,
+    .backend-development-content td {
+        padding: 0.75rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .cta-section {
+        padding: 1.5rem !important;
+    }
+    .backend-development-content button,
+    .backend-development-content a.button,
+    .backend-development-content a.btn {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+/* ======== Mobile (<= 440px) ======== */
+@media (max-width: 440) {
+    .web-section .first-image {
+        margin-left: 100px;
+    }
+}
+
+/* ======== Motion / Parallax performance ======== */
+/* @media (max-width: 1024px) {
+    .background,
+    main,
+    #catalog,
+    .holl,
+    .right-holl {
+        background-attachment: scroll !important;
+    }
+} */
+
+/* ======== Subtle animation on container (non-essential) ======== */
+@media (prefers-reduced-motion: no-preference) {
+    .backend-development-content {
+        animation: containerFadeIn 1s ease-out;
+    }
+}
+@keyframes containerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keep desktop-only mobile align blocks hidden on large screens */
+@media (min-width: 1025px) {
+    .mobile-align-blocks {
+        display: none;
+    }
+}
+
+/* ============ Reduced Motion ============ */
+@media (prefers-reduced-motion: reduce) {
+    .value-card,
+    .team-member,
+    .btn {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
+}
