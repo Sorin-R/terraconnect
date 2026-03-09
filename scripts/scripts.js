@@ -574,6 +574,50 @@ document.querySelectorAll('.about-section').forEach(section => {
 //     });
 // });
 
+/* =======================
+ Benefit Counter Animation
+ ======================= */
+function animateCounters() {
+    const counters = document.querySelectorAll('.benefit-counter');
+    if (!counters.length) return;
+
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -50px 0px',
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                entry.target.classList.add('animated');
+                const target = parseInt(entry.target.dataset.target, 10);
+                const suffix = entry.target.dataset.suffix || '';
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+
+                    // Display the value with the suffix
+                    const displayValue = Math.floor(current);
+                    entry.target.textContent = displayValue + suffix;
+                }, 16);
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    counters.forEach(counter => observer.observe(counter));
+}
+
+document.addEventListener('DOMContentLoaded', animateCounters);
+
 // Form submission handling
 document
     .querySelector('.contact-form')
