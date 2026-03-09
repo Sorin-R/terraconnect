@@ -15,9 +15,14 @@
         z-index: 1000;
         width: 100%;
         box-sizing: border-box;
+        background-color: rgb(2, 10, 34);
+        min-height: 60px;
+        display: flex;
+        align-items: center;
     }
     main {
-        padding: 88px 0px 20px 0px;
+        padding: 70px 0px 20px 0px;
+        margin-top: 0;
     }
 
     #navMenu {
