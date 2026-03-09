@@ -7,7 +7,7 @@
     <!-- Homepage - Highest Priority -->
     <url>
         <loc>https://www.terraconnect.co.uk/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/" />
@@ -22,7 +22,7 @@
     <!-- Core Service Pages - High Priority -->
     <url>
         <loc>https://www.terraconnect.co.uk/ai-automation-agency/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/ai-automation-agency/" />
@@ -30,7 +30,7 @@
 
     <url>
         <loc>https://www.terraconnect.co.uk/frontend-development/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/frontend-development/" />
@@ -38,16 +38,24 @@
 
     <url>
         <loc>https://www.terraconnect.co.uk/backend-development/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/backend-development/" />
     </url>
 
+    <url>
+        <loc>https://www.terraconnect.co.uk/mobile-applications/</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/mobile-applications/" />
+    </url>
+
     <!-- Essential Pages - Medium Priority -->
     <url>
         <loc>https://www.terraconnect.co.uk/about-us/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/about-us/" />
@@ -56,7 +64,7 @@
     <!-- Contact Page - High Priority (conversion focused) -->
     <url>
         <loc>https://www.terraconnect.co.uk/contacts/</loc>
-        <lastmod>2025-09-18</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/contacts/" />
