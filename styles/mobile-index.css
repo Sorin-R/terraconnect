@@ -293,13 +293,16 @@
 
     /* New footer grid layout on mobile */
     .footer-content {
+        display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 25px !important;
         padding: 0 20px !important;
     }
 
     .footer-column {
+        display: block !important;
         text-align: center;
+        width: 100% !important;
     }
 
     .footer-column img {
@@ -307,6 +310,8 @@
     }
 
     .footer-column nav {
+        display: flex !important;
+        flex-direction: column !important;
         text-align: center;
     }
 
