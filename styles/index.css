@@ -785,9 +785,11 @@ footer {
 }
 
 .footer-column:first-child > .footer-cta {
-    grid-column: 3;
+    grid-column: 1 / -1;
     grid-row: 4;
     margin-top: 15px;
+    margin-left: auto;
+    justify-self: end;
 }
 
 .footer-column img {

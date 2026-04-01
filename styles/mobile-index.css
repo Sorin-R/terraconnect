@@ -327,6 +327,7 @@
         grid-column: auto !important;
         grid-row: auto !important;
         margin-top: 15px;
+        margin-left: 0 !important;
     }
 
     .footer-social {
