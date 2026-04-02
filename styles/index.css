@@ -477,8 +477,9 @@ h2.visible {
 
 .caroucel-item-cta {
     position: absolute;
-    left: 30px;
+    left: 50%;
     bottom: 30px;
+    transform: translateX(-50%);
     display: inline-flex;
     align-items: center;
     justify-content: center;
