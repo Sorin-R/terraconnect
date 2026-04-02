@@ -34,7 +34,7 @@
     <link rel="canonical" href="https://terraconnect.co.uk/mobile-applications/" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usznumpJZHc8y+WMpmWMvKbmksZLIylc9KIosN7aDMa2sTr7QvoQoP37FeO+KA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>

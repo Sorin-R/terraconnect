@@ -16,7 +16,7 @@
                         rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"
                             aria-hidden="true"></i></a>
                     <a href="https://x.com/sorin03032839?s=11" aria-label="X" rel="noopener noreferrer"
-                        target="_blank"><i class="fa fa-x-twitter" aria-hidden="true"></i></a>
+                        target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/terraconnect.co.uk/" aria-label="Instagram"
                         rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"
                             aria-hidden="true"></i></a>

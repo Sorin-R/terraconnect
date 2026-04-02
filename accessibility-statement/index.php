@@ -30,7 +30,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
     <link rel="manifest" href="/icon/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'" />
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />

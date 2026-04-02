@@ -45,7 +45,7 @@
 
     <link rel="preload" href="/styles/index.css" as="style" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'" />
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css" media="(max-width: 1024px)" />
