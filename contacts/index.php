@@ -22,17 +22,17 @@
         content="contact AI agency London, web development contact, app development UK, get a quote, London tech company, Basildon web development" />
 
     <!-- Canonical / Hreflang - CORRECTED -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/contacts/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/contacts/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/contacts/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/contacts/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/contacts/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/contacts/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/contacts/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/contacts/" />
     <meta property="og:title" content="Contact Terra Connect — AI Agency in London" />
     <meta property="og:description"
         content="Get in touch with Terra Connect for AI development services. Located in Basildon, serving London and the UK." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -80,13 +80,13 @@ media="print" onload="this.media='all'" />
             "@type": "ContactPage",
             "name": "Contact Terra Connect",
             "description": "Get in touch with Terra Connect, London's premier AI agency for web development, AI chatbots, and app development services.",
-            "url": "https://www.terraconnect.co.uk/contacts/",
+            "url": "https://terraconnect.co.uk/contacts/",
             "publisher": {
                 "@type": "Organization",
                 "name": " Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+                    "url": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }

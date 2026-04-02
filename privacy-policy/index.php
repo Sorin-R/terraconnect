@@ -20,13 +20,13 @@
         content="Privacy Policy for Terra Connect Ltd. Learn how we collect, use, and protect your personal data in compliance with UK GDPR, the Data Protection Act 2018, and PECR." />
 
     <!-- Canonical / Hreflang -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/privacy-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/privacy-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/privacy-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/privacy-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/privacy-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/privacy-policy/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/privacy-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/privacy-policy/" />
     <meta property="og:title" content="Privacy Policy — Terra Connect Ltd" />
     <meta property="og:description"
         content="Privacy Policy for Terra Connect Ltd. Learn how we collect, use, and protect your personal data." />
@@ -83,7 +83,7 @@ media="print" onload="this.media='all'" />
 
             <!-- 1. Data Controller -->
             <h2 class="inline-style-4">1. Data Controller</h2>
-            <p>Terra Connect Ltd (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is the data controller responsible for the personal data collected through our website <a href="https://www.terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a> and our related services.</p>
+            <p>Terra Connect Ltd (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is the data controller responsible for the personal data collected through our website <a href="https://terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a> and our related services.</p>
             <p class="inline-style-6">
                 <strong>Registered Name:</strong> Terra Connect Ltd<br />
                 <strong>Registered In:</strong> England &amp; Wales<br />

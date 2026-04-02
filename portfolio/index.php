@@ -18,16 +18,16 @@
     <meta name="keywords"
         content="Terra Connect portfolio, AI agency projects London, web development case studies, mobile app portfolio, backend development projects" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/portfolio/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/portfolio/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/portfolio/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/portfolio/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/portfolio/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/portfolio/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/portfolio/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/portfolio/" />
     <meta property="og:title" content="Portfolio — Terra Connect | AI Agency in London" />
     <meta property="og:description"
         content="Selected projects from Terra Connect covering AI solutions, modern web platforms, mobile apps, and scalable backend systems." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -64,11 +64,11 @@ media="print" onload="this.media='all'" />
             "@type": "CollectionPage",
             "name": "Terra Connect Portfolio",
             "description": "Selected Terra Connect projects in AI, web development, backend engineering, and mobile applications.",
-            "url": "https://www.terraconnect.co.uk/portfolio/",
+            "url": "https://terraconnect.co.uk/portfolio/",
             "publisher": {
                 "@type": "Organization",
                 "name": "Terra Connect Ltd",
-                "url": "https://www.terraconnect.co.uk/"
+                "url": "https://terraconnect.co.uk/"
             }
         }
     </script>

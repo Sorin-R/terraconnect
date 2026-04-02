@@ -13,19 +13,19 @@
     <title>Design User Interface — Terra Connect | UI/UX Design Services London</title>
     <meta name="description" content="Professional UI/UX design services in London. We create intuitive, responsive user interfaces that engage visitors and drive conversions for businesses across the UK." />
     <meta name="keywords" content="UI design services London, user interface design UK, UX/UI design agency, responsive web design London, mobile-first design services, user experience design, wireframing and prototyping London, web design consultation UK" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/design-user-interface/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/design-user-interface/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Design User Interface — Terra Connect | UI/UX Design Services London" />
     <meta property="og:description" content="Professional UI/UX design services in London. We create intuitive, responsive user interfaces that engage visitors and drive conversions for businesses across the UK." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/design-user-interface/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/design-user-interface/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Design User Interface — Terra Connect | UI/UX Design Services London" />
     <meta name="twitter:description" content="Professional UI/UX design services in London. We create intuitive, responsive user interfaces that engage visitors and drive conversions for businesses across the UK." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",
@@ -66,7 +66,7 @@
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/process/design-user-interface/"
+        "url": "https://terraconnect.co.uk/process/design-user-interface/"
     }
     </script>
 

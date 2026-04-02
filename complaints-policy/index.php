@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Complaints &amp; Dispute Resolution Policy — Terra Connect Ltd</title>
     <meta name="description" content="Complaints and Dispute Resolution Policy for Terra Connect Ltd. How to raise a complaint and how we will respond." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/complaints-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/complaints-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/complaints-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/complaints-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/complaints-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/complaints-policy/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/complaints-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/complaints-policy/" />
     <meta property="og:title" content="Complaints Policy — Terra Connect Ltd" />
     <meta property="og:description" content="Complaints and Dispute Resolution Policy for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

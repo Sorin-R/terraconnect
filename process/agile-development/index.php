@@ -13,19 +13,19 @@
     <title>Implement Agile Development — Terra Connect | Agile Software Development London</title>
     <meta name="description" content="Agile software development services in London. We use iterative sprints, continuous integration, and collaborative workflows to deliver high-quality software on time." />
     <meta name="keywords" content="agile software development London, agile development services UK, scrum development agency, iterative software development, agile project management London, sprint-based development, agile methodology consulting, continuous integration London" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/agile-development/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/agile-development/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Implement Agile Development — Terra Connect | Agile Software Development London" />
     <meta property="og:description" content="Agile software development services in London. We use iterative sprints, continuous integration, and collaborative workflows to deliver high-quality software on time." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/agile-development/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/agile-development/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Implement Agile Development — Terra Connect | Agile Software Development London" />
     <meta name="twitter:description" content="Agile software development services in London. We use iterative sprints, continuous integration, and collaborative workflows to deliver high-quality software on time." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",

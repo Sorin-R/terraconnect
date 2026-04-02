@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Accessibility Statement — Terra Connect Ltd</title>
     <meta name="description" content="Accessibility Statement for Terra Connect Ltd. Learn about our WCAG 2.1 AA compliance, known limitations, and how to report accessibility issues." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/accessibility-statement/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/accessibility-statement/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/accessibility-statement/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/accessibility-statement/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/accessibility-statement/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/accessibility-statement/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/accessibility-statement/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/accessibility-statement/" />
     <meta property="og:title" content="Accessibility Statement — Terra Connect Ltd" />
     <meta property="og:description" content="Accessibility Statement for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />
@@ -50,7 +50,7 @@
             <p class="inline-style-3"><strong>Last Updated:</strong> April 2026</p>
 
             <h2 class="inline-style-4">1. Our Commitment</h2>
-            <p>Terra Connect Ltd is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards to this website (<a href="https://www.terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>).</p>
+            <p>Terra Connect Ltd is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards to this website (<a href="https://terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>).</p>
             <p class="inline-style-6">This statement applies to the entire <strong>terraconnect.co.uk</strong> website and is issued in compliance with the <strong>Equality Act 2010</strong> and the <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>.</p>
 
             <h2 class="inline-style-4">2. Conformance Status</h2>

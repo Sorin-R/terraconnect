@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Service Level Agreement — Terra Connect Ltd</title>
     <meta name="description" content="Service Level Agreement (SLA) for Terra Connect Ltd. Defines response times, support hours, uptime commitments, and escalation procedures for our services." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/service-level-agreement/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/service-level-agreement/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/service-level-agreement/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/service-level-agreement/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/service-level-agreement/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/service-level-agreement/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/service-level-agreement/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/service-level-agreement/" />
     <meta property="og:title" content="Service Level Agreement — Terra Connect Ltd" />
     <meta property="og:description" content="Service Level Agreement for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

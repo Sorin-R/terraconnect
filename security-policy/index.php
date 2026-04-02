@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Security Policy — Terra Connect Ltd</title>
     <meta name="description" content="Security Policy for Terra Connect Ltd. How we protect your data, our security standards, and how we respond to data breaches under UK GDPR." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/security-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/security-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/security-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/security-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/security-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/security-policy/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/security-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/security-policy/" />
     <meta property="og:title" content="Security Policy — Terra Connect Ltd" />
     <meta property="og:description" content="Security Policy and Data Breach Response for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

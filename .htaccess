@@ -10,6 +10,10 @@ DirectoryIndex index.php index.html
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
 RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
 
+# Redirect index.php URLs to clean directory URLs
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.php[\s?] [NC]
+RewriteRule ^(.*/)?index\.php$ /$1 [L,R=301]
+
 
 # ----------------------------------------------------------------------
 # Content Security Policy (CSP)

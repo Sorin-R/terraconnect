@@ -13,19 +13,19 @@
     <title>Identify Optimal Solutions — Terra Connect | Technology Consulting London</title>
     <meta name="description" content="We evaluate and recommend the best technology solutions for your project. Expert technology stack selection and architecture planning from London's trusted IT partner." />
     <meta name="keywords" content="technology stack selection, software architecture London, optimal technology solutions UK, IT solution architecture, technology evaluation consulting, software platform selection, tech stack consulting London, digital solution strategy" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/optimal-solutions/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/optimal-solutions/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Identify Optimal Solutions — Terra Connect | Technology Consulting London" />
     <meta property="og:description" content="We evaluate and recommend the best technology solutions for your project. Expert technology stack selection and architecture planning from London's trusted IT partner." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/optimal-solutions/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/optimal-solutions/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Identify Optimal Solutions — Terra Connect | Technology Consulting London" />
     <meta name="twitter:description" content="We evaluate and recommend the best technology solutions for your project. Expert technology stack selection and architecture planning from London's trusted IT partner." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",
@@ -66,7 +66,7 @@
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/process/optimal-solutions/"
+        "url": "https://terraconnect.co.uk/process/optimal-solutions/"
     }
     </script>
 

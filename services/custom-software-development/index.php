@@ -16,15 +16,15 @@
     <meta name="description" content="Custom software development services tailored to business processes, helping teams replace manual workflows with scalable digital systems." />
     <meta name="keywords" content="custom software development, bespoke software development, software development services, custom software development companies" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/services/custom-software-development/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/services/custom-software-development/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/services/custom-software-development/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/services/custom-software-development/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/custom-software-development/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/custom-software-development/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/services/custom-software-development/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/services/custom-software-development/" />
     <meta property="og:title" content="Custom Software Development Services — Terra Connect" />
     <meta property="og:description" content="Custom software development services tailored to business processes, helping teams replace manual workflows with scalable digital systems." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 

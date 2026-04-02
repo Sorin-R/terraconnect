@@ -16,15 +16,15 @@
     <meta name="description" content="AI consulting and strategy services for organizations that need practical roadmaps, use-case validation, and implementation planning." />
     <meta name="keywords" content="ai consulting services, ai strategy consulting, ai consultant, artificial intelligence consulting services" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/services/ai-consulting-strategy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/services/ai-consulting-strategy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/services/ai-consulting-strategy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/services/ai-consulting-strategy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/ai-consulting-strategy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/ai-consulting-strategy/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/services/ai-consulting-strategy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/services/ai-consulting-strategy/" />
     <meta property="og:title" content="AI Consulting and Strategy Services — Terra Connect" />
     <meta property="og:description" content="AI consulting and strategy services for organizations that need practical roadmaps, use-case validation, and implementation planning." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 

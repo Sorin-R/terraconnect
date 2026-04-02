@@ -13,19 +13,19 @@
     <title>Launch the Product — Terra Connect | Software Deployment Services London</title>
     <meta name="description" content="Professional software deployment and product launch services in London. We ensure smooth go-live transitions with zero-downtime deployment and comprehensive launch support." />
     <meta name="keywords" content="software launch services London, website deployment UK, product launch strategy, application deployment services, go-live planning London, software release management, website launch support UK, digital product launch agency" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/launch-product/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/launch-product/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Launch the Product — Terra Connect | Software Deployment Services London" />
     <meta property="og:description" content="Professional software deployment and product launch services in London. We ensure smooth go-live transitions with zero-downtime deployment and comprehensive launch support." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/launch-product/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/launch-product/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Launch the Product — Terra Connect | Software Deployment Services London" />
     <meta name="twitter:description" content="Professional software deployment and product launch services in London. We ensure smooth go-live transitions with zero-downtime deployment and comprehensive launch support." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",

@@ -22,17 +22,17 @@
         content="AI agency London, about us, web development London, app development, our story, our team, company values" />
 
     <!-- Canonical / Hreflang - CORRECTED -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/about-us/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/about-us/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/about-us/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/about-us/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/about-us/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/about-us/" />
 
     <!-- Open Graph / Twitter - FIXED (Added proper og:title and og:description) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/about-us/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/about-us/" />
     <meta property="og:title" content="About Terra Connect — AI Agency in London" />
     <meta property="og:description"
         content="Learn about Terra Connect, London's premier AI agency. Discover our story, mission, and team." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -80,13 +80,13 @@ media="print" onload="this.media='all'" />
             "@type": "AboutPage",
             "name": "About Terra Connect",
             "description": "Learn about Terra Connect, London's premier AI agency. Discover our story, mission, and the team behind innovative web & app development solutions.",
-            "url": "https://www.terraconnect.co.uk/about-us/",
+            "url": "https://terraconnect.co.uk/about-us/",
             "publisher": {
                 "@type": "Organization",
                 "name": "Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+                    "url": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }

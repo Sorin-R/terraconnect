@@ -13,19 +13,19 @@
     <title>Support &amp; Updates — Terra Connect | Ongoing Software Maintenance London</title>
     <meta name="description" content="Reliable ongoing software maintenance and support services in London. We provide continuous updates, performance monitoring, and technical support to keep your applications running smoothly." />
     <meta name="keywords" content="software maintenance London, ongoing IT support UK, website maintenance services, application support and updates, managed IT services London, software update services, technical support agency UK, post-launch support London" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/support-updates/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/support-updates/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Support &amp; Updates — Terra Connect | Ongoing Software Maintenance London" />
     <meta property="og:description" content="Reliable ongoing software maintenance and support services in London. We provide continuous updates, performance monitoring, and technical support to keep your applications running smoothly." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/support-updates/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/support-updates/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Support &amp; Updates — Terra Connect | Ongoing Software Maintenance London" />
     <meta name="twitter:description" content="Reliable ongoing software maintenance and support services in London. We provide continuous updates, performance monitoring, and technical support to keep your applications running smoothly." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",

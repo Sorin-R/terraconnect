@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Sub-processor List — Terra Connect Ltd</title>
     <meta name="description" content="Sub-processor List for Terra Connect Ltd. A transparent list of all third-party processors we use to deliver our services, in compliance with UK GDPR Article 28." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/subprocessor-list/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/subprocessor-list/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/subprocessor-list/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/subprocessor-list/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/subprocessor-list/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/subprocessor-list/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/subprocessor-list/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/subprocessor-list/" />
     <meta property="og:title" content="Sub-processor List — Terra Connect Ltd" />
     <meta property="og:description" content="Sub-processor List for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

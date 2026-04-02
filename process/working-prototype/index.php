@@ -13,19 +13,19 @@
     <title>Create a Working Prototype — Terra Connect | MVP Development London</title>
     <meta name="description" content="Rapid software prototyping and MVP development in London. We build interactive prototypes to validate ideas, test concepts, and reduce development risk." />
     <meta name="keywords" content="software prototyping London, MVP development services UK, rapid prototyping agency, proof of concept development, prototype testing services, minimum viable product London, interactive prototype development, software prototype consulting" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/working-prototype/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/working-prototype/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Create a Working Prototype — Terra Connect | MVP Development London" />
     <meta property="og:description" content="Rapid software prototyping and MVP development in London. We build interactive prototypes to validate ideas, test concepts, and reduce development risk." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/working-prototype/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/working-prototype/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Create a Working Prototype — Terra Connect | MVP Development London" />
     <meta name="twitter:description" content="Rapid software prototyping and MVP development in London. We build interactive prototypes to validate ideas, test concepts, and reduce development risk." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",
@@ -66,7 +66,7 @@
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/process/working-prototype/"
+        "url": "https://terraconnect.co.uk/process/working-prototype/"
     }
     </script>
 

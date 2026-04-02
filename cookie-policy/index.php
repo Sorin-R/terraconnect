@@ -20,13 +20,13 @@
         content="Cookie Policy for Terra Connect Ltd. Learn about the cookies we use, their purpose, and how to manage your cookie preferences under PECR and UK GDPR." />
 
     <!-- Canonical / Hreflang -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/cookie-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/cookie-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/cookie-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/cookie-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/cookie-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/cookie-policy/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/cookie-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/cookie-policy/" />
     <meta property="og:title" content="Cookie Policy — Terra Connect Ltd" />
     <meta property="og:description" content="Cookie Policy for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />
@@ -82,7 +82,7 @@ media="print" onload="this.media='all'" />
 
             <!-- 1. About This Policy -->
             <h2 class="inline-style-4">1. About This Policy</h2>
-            <p>This Cookie Policy explains how Terra Connect Ltd (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) uses cookies and similar technologies on <a href="https://www.terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>. It should be read alongside our <a href="/privacy-policy/" class="inline-style-5">Privacy Policy</a>.</p>
+            <p>This Cookie Policy explains how Terra Connect Ltd (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) uses cookies and similar technologies on <a href="https://terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>. It should be read alongside our <a href="/privacy-policy/" class="inline-style-5">Privacy Policy</a>.</p>
             <p class="inline-style-6">This policy complies with the <strong>Privacy and Electronic Communications Regulations 2003 (PECR)</strong> and the <strong>UK General Data Protection Regulation (UK GDPR)</strong>.</p>
 
             <!-- 2. What Are Cookies -->

@@ -18,16 +18,16 @@
     <meta name="keywords"
         content="Terra Connect services, AI automation services, frontend development, backend development, mobile app development, software services" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/our-services/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/our-services/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/our-services/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/our-services/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/our-services/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/our-services/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/our-services/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/our-services/" />
     <meta property="og:title" content="Our Services — Terra Connect" />
     <meta property="og:description"
         content="Explore current and newly launched Terra Connect services across AI, web, software, and mobile development." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />

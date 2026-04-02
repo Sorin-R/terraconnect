@@ -15,19 +15,19 @@
     <meta name="description" content="AI workflow automation services in London. Terra Connect designs and implements automated workflows that connect your CRM, marketing, operations, and support systems." />
     <meta name="keywords" content="AI workflow automation, business process automation, workflow automation agency London, Make automation, n8n automation, CRM automation" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/ai-workflow-automation/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/ai-workflow-automation/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/ai-workflow-automation/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/ai-workflow-automation/" />
     <meta property="og:title" content="AI Workflow Automation Services — Terra Connect" />
     <meta property="og:description" content="Automate your workflows with AI and integrations. Reduce manual tasks, improve speed, and scale operations." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-svg/logo.svg" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-svg/logo.svg" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AI Workflow Automation Services — Terra Connect" />
     <meta name="twitter:description" content="Automate your workflows with AI and integrations. Reduce manual tasks, improve speed, and scale operations." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-svg/logo.svg" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-svg/logo.svg" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -66,14 +66,14 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk"
+            "url": "https://terraconnect.co.uk"
         },
         "description": "AI workflow automation services for sales, operations, and support teams.",
         "areaServed": {
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/ai-workflow-automation/"
+        "url": "https://terraconnect.co.uk/ai-workflow-automation/"
     }
     </script></head>
 <body>

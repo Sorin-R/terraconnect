@@ -16,15 +16,15 @@
     <meta name="description" content="Cross-platform app development for businesses that need one product experience across iOS and Android without duplicating effort." />
     <meta name="keywords" content="cross platform app development, ios and android app development, mobile application development, app development company" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/services/cross-platform-app-development/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/services/cross-platform-app-development/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/services/cross-platform-app-development/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/services/cross-platform-app-development/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/cross-platform-app-development/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/cross-platform-app-development/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/services/cross-platform-app-development/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/services/cross-platform-app-development/" />
     <meta property="og:title" content="Cross-Platform App Development Services — Terra Connect" />
     <meta property="og:description" content="Cross-platform app development for businesses that need one product experience across iOS and Android without duplicating effort." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 

@@ -22,17 +22,17 @@
         content="get a quote, AI development quote, web development pricing, app development cost, London AI agency quote, project estimation" />
 
     <!-- Canonical / Hreflang - CORRECTED -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/get-a-quote/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/get-a-quote/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/get-a-quote/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/get-a-quote/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/get-a-quote/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/get-a-quote/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/get-a-quote/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/get-a-quote/" />
     <meta property="og:title" content="Get a Quote — Terra Connect | AI Agency in London" />
     <meta property="og:description"
         content="Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, and app development in London." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -80,13 +80,13 @@ media="print" onload="this.media='all'" />
             "@type": "ContactPage",
             "name": "Get a Quote",
             "description": "Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, app development, and automation solutions.",
-            "url": "https://www.terraconnect.co.uk/get-a-quote/",
+            "url": "https://terraconnect.co.uk/get-a-quote/",
             "publisher": {
                 "@type": "Organization",
                 "name": "Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+                    "url": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }

@@ -25,17 +25,17 @@
     60%. Get expert guidance on choosing the right AI partner in the UK." />
 
     <!-- Canonical / Hreflang - CORRECTED -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/ai-automation-agency/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/ai-automation-agency/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/ai-automation-agency/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/ai-automation-agency/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/ai-automation-agency/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/ai-automation-agency/" />
 
     <!-- Open Graph / Twitter - FIXED -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/ai-automation-agency/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/ai-automation-agency/" />
     <meta property="og:title" content="AI Automation Agency Guide: How AI Chatbots Drive Marketing Success" />
     <meta property="og:description" content="Discover how AI automation agencies use chatbots and AI marketing 
         strategies to boost business efficiency by 85% and reduce costs by 60%." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -92,7 +92,7 @@ media="print" onload="this.media='all'" />
                 "name": "Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+                    "url": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }
@@ -100,7 +100,7 @@ media="print" onload="this.media='all'" />
             "datePublished": "2025-09-14",
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://www.terraconnect.co.uk/ai-automation-agency/"
+                "@id": "https://terraconnect.co.uk/ai-automation-agency/"
             }
         }
     </script>

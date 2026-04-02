@@ -6,7 +6,7 @@
 
     <button class="menu-icon focus-ring" id="menuToggle" aria-controls="navMenu" aria-expanded="false"
         aria-label="Open menu">
-        <img src="/images/img-svg/burger.svg" alt="" width="28" height="28" aria-hidden="true" />
+        <img src="/images/img-svg/burger.svg" alt="Open menu" width="28" height="28" aria-hidden="true" />
     </button>
 
     <nav id="navMenu" aria-label="Primary">

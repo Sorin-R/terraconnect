@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Data Processing Agreement — Terra Connect Ltd</title>
     <meta name="description" content="Data Processing Agreement for Terra Connect Ltd clients. UK GDPR Article 28 compliant. Governs how we process personal data on your behalf as a data processor." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/data-processing-agreement/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/data-processing-agreement/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/data-processing-agreement/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/data-processing-agreement/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/data-processing-agreement/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/data-processing-agreement/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/data-processing-agreement/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/data-processing-agreement/" />
     <meta property="og:title" content="Data Processing Agreement — Terra Connect Ltd" />
     <meta property="og:description" content="Data Processing Agreement for Terra Connect Ltd clients." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

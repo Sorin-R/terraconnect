@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Anti-Spam Policy — Terra Connect Ltd</title>
     <meta name="description" content="Anti-Spam and Email Marketing Policy for Terra Connect Ltd. Learn how we comply with PECR and UK GDPR for all marketing communications." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/anti-spam-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/anti-spam-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/anti-spam-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/anti-spam-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/anti-spam-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/anti-spam-policy/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/anti-spam-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/anti-spam-policy/" />
     <meta property="og:title" content="Anti-Spam Policy — Terra Connect Ltd" />
     <meta property="og:description" content="Anti-Spam and Email Marketing Policy for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />

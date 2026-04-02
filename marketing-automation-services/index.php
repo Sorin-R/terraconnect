@@ -18,13 +18,13 @@
     <meta name="keywords"
         content="marketing automation services, AI marketing automation, lead nurturing automation, email automation agency London, CRM marketing workflows" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/marketing-automation-services/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/marketing-automation-services/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/marketing-automation-services/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/marketing-automation-services/" />
     <meta property="og:title" content="Marketing Automation Services — Terra Connect" />
     <meta property="og:description"
         content="Scale your marketing with intelligent automation for campaigns, segmentation, and lifecycle messaging." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-svg/logo.svg" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-svg/logo.svg" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 
@@ -32,7 +32,7 @@
     <meta name="twitter:title" content="Marketing Automation Services — Terra Connect" />
     <meta name="twitter:description"
         content="Scale your marketing with intelligent automation for campaigns, segmentation, and lifecycle messaging." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-svg/logo.svg" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-svg/logo.svg" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,14 +74,14 @@ media="print" onload="this.media='all'" />
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk"
+            "url": "https://terraconnect.co.uk"
         },
         "description": "AI-powered marketing automation services for lead generation, nurturing, and conversion.",
         "areaServed": {
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/marketing-automation-services/"
+        "url": "https://terraconnect.co.uk/marketing-automation-services/"
     }
     </script></head>
 

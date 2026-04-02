@@ -16,15 +16,15 @@
     <meta name="description" content="Create performant cross-platform mobile products with our React Native app development services in London, from product architecture to release management." />
     <meta name="keywords" content="react native app development, react native development services, create react native app, mobile app development react native" />
 
-    <link rel="canonical" href="https://www.terraconnect.co.uk/services/react-native-app-development/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/services/react-native-app-development/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/services/react-native-app-development/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/services/react-native-app-development/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/react-native-app-development/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/react-native-app-development/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/services/react-native-app-development/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/services/react-native-app-development/" />
     <meta property="og:title" content="React Native App Development Services — Terra Connect" />
     <meta property="og:description" content="Create performant cross-platform mobile products with our React Native app development services in London, from product architecture to release management." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
 

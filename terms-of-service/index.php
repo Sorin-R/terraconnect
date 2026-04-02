@@ -20,13 +20,13 @@
         content="Terms of Service for Terra Connect Ltd. Read the terms and conditions governing your use of our website and services, including data protection provisions." />
 
     <!-- Canonical / Hreflang -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/terms-of-service/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/terms-of-service/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/terms-of-service/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/terms-of-service/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/terms-of-service/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/terms-of-service/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/terms-of-service/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/terms-of-service/" />
     <meta property="og:title" content="Terms of Service — Terra Connect Ltd" />
     <meta property="og:description" content="Terms of Service for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />
@@ -82,7 +82,7 @@ media="print" onload="this.media='all'" />
 
             <!-- 1. Agreement to Terms -->
             <h2 class="inline-style-4">1. Agreement to Terms</h2>
-            <p>By accessing and using the Terra Connect Ltd website (<a href="https://www.terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>), you accept and agree to be bound by these Terms of Service, our <a href="/privacy-policy/" class="inline-style-5">Privacy Policy</a>, and our <a href="/cookie-policy/" class="inline-style-5">Cookie Policy</a> (together, the &ldquo;Terms&rdquo;). If you do not agree to these Terms, please do not use our website.</p>
+            <p>By accessing and using the Terra Connect Ltd website (<a href="https://terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>), you accept and agree to be bound by these Terms of Service, our <a href="/privacy-policy/" class="inline-style-5">Privacy Policy</a>, and our <a href="/cookie-policy/" class="inline-style-5">Cookie Policy</a> (together, the &ldquo;Terms&rdquo;). If you do not agree to these Terms, please do not use our website.</p>
 
             <!-- 2. About Us -->
             <h2 class="inline-style-4">2. About Us</h2>

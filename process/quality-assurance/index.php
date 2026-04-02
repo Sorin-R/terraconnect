@@ -13,19 +13,19 @@
     <title>Quality Assurance Testing — Terra Connect | Software QA Services London</title>
     <meta name="description" content="Comprehensive quality assurance and software testing services in London. We deliver bug-free, high-performance applications through rigorous manual and automated testing." />
     <meta name="keywords" content="quality assurance testing London, software QA services UK, automated testing services, manual testing agency London, performance testing services, security testing London, software testing company UK, QA testing consultancy" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/quality-assurance/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/quality-assurance/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Quality Assurance Testing — Terra Connect | Software QA Services London" />
     <meta property="og:description" content="Comprehensive quality assurance and software testing services in London. We deliver bug-free, high-performance applications through rigorous manual and automated testing." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/quality-assurance/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/quality-assurance/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Quality Assurance Testing — Terra Connect | Software QA Services London" />
     <meta name="twitter:description" content="Comprehensive quality assurance and software testing services in London. We deliver bug-free, high-performance applications through rigorous manual and automated testing." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",

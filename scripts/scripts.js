@@ -479,12 +479,12 @@
         if (!menuToggle) return;
         if (isOpen) {
             menuToggle.innerHTML =
-                '<img src="/images/img-svg/close.svg" alt="" width="28" height="28" aria-hidden="true" />';
+                '<img src="/images/img-svg/close.svg" alt="Close menu" width="28" height="28" aria-hidden="true" />';
             return;
         }
 
         menuToggle.innerHTML =
-            '<img src="/images/img-svg/burger.svg" alt="" width="28" height="28" aria-hidden="true" />';
+            '<img src="/images/img-svg/burger.svg" alt="Open menu" width="28" height="28" aria-hidden="true" />';
     }
 
     function openMenu() {

@@ -23,17 +23,17 @@
         content="AI agency London, web development London, app development UK, AI chatbots, backend systems, London tech company, UK software development" />
 
     <!-- Canonical / Hreflang - CORRECTED -->
-    <link rel="canonical" href="https://www.terraconnect.co.uk/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/" />
     <meta property="og:title" content="AI Agency — Web & App Development in London | Terra Connect" />
     <meta property="og:description"
         content="London AI Agency: web & app development. We build fast, accessible AI chatbots, websites, apps, and backend systems for UK businesses." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -81,10 +81,10 @@ media="print" onload="this.media='all'" />
         "@type": "Organization",
         "name": "Terra Connect Ltd",
         "alternateName": "Terra Connect",
-        "url": "https://www.terraconnect.co.uk/",
+        "url": "https://terraconnect.co.uk/",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "width": 200,
             "height": 60
         },
@@ -108,7 +108,7 @@ media="print" onload="this.media='all'" />
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Terra Connect Ltd",
-        "image": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+        "image": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
         "description": "AI agency in London offering web development, mobile apps, AI chatbots, and automation solutions for startups and businesses.",
         "address": {
             "@type": "PostalAddress",
@@ -117,7 +117,7 @@ media="print" onload="this.media='all'" />
             "addressCountry": "GB"
         },
         "email": "hello@terraconnect.co.uk",
-        "url": "https://www.terraconnect.co.uk/",
+        "url": "https://terraconnect.co.uk/",
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -147,7 +147,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/frontend-development/"
+            "url": "https://terraconnect.co.uk/frontend-development/"
         },
         {
             "@context": "https://schema.org",
@@ -162,7 +162,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/backend-development/"
+            "url": "https://terraconnect.co.uk/backend-development/"
         },
         {
             "@context": "https://schema.org",
@@ -177,7 +177,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/ai-automation-agency/"
+            "url": "https://terraconnect.co.uk/ai-automation-agency/"
         },
         {
             "@context": "https://schema.org",
@@ -192,7 +192,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/mobile-applications/"
+            "url": "https://terraconnect.co.uk/mobile-applications/"
         },
         {
             "@context": "https://schema.org",
@@ -207,7 +207,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/ai-workflow-automation/"
+            "url": "https://terraconnect.co.uk/ai-workflow-automation/"
         },
         {
             "@context": "https://schema.org",
@@ -222,7 +222,7 @@ media="print" onload="this.media='all'" />
                 "@type": "Country",
                 "name": "GB"
             },
-            "url": "https://www.terraconnect.co.uk/marketing-automation-services/"
+            "url": "https://terraconnect.co.uk/marketing-automation-services/"
         }
     ]
     </script>

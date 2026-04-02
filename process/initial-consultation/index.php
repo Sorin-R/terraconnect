@@ -13,19 +13,19 @@
     <title>Initial Consultation &amp; Project Scoping — Terra Connect | London IT Agency</title>
     <meta name="description" content="Expert project consultation and scoping services in London. We analyse your business needs, define project requirements, and create a roadmap for digital success." />
     <meta name="keywords" content="project consultation London, software project scoping, IT consultation services UK, project requirements gathering, digital project planning, business needs analysis, project discovery phase, technology consultation London" />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/process/initial-consultation/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/process/initial-consultation/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Initial Consultation & Project Scoping — Terra Connect | London IT Agency" />
     <meta property="og:description" content="Expert project consultation and scoping services in London. We analyse your business needs, define project requirements, and create a roadmap for digital success." />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/process/initial-consultation/" />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:url" content="https://terraconnect.co.uk/process/initial-consultation/" />
+    <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Initial Consultation & Project Scoping — Terra Connect | London IT Agency" />
     <meta name="twitter:description" content="Expert project consultation and scoping services in London. We analyse your business needs, define project requirements, and create a roadmap for digital success." />
-    <meta name="twitter:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta name="twitter:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />
 
     <meta name="theme-color" content="#06B6D4" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,8 +54,8 @@
         "provider": {
             "@type": "Organization",
             "name": "Terra Connect Ltd",
-            "url": "https://www.terraconnect.co.uk",
-            "logo": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "url": "https://terraconnect.co.uk",
+            "logo": "https://terraconnect.co.uk/images/img-png/logo/logo.png",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "London",
@@ -66,7 +66,7 @@
             "@type": "Country",
             "name": "United Kingdom"
         },
-        "url": "https://www.terraconnect.co.uk/process/initial-consultation/"
+        "url": "https://terraconnect.co.uk/process/initial-consultation/"
     }
     </script>
 

@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <title>Cancellation &amp; Right to Withdraw Policy — Terra Connect Ltd</title>
     <meta name="description" content="Cancellation and Right to Withdraw Policy for Terra Connect Ltd. Learn about your 14-day cancellation rights under the Consumer Contracts Regulations 2013." />
-    <link rel="canonical" href="https://www.terraconnect.co.uk/cancellation-policy/" />
-    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/cancellation-policy/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/cancellation-policy/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/cancellation-policy/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/cancellation-policy/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/cancellation-policy/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.terraconnect.co.uk/cancellation-policy/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/cancellation-policy/" />
     <meta property="og:title" content="Cancellation Policy — Terra Connect Ltd" />
     <meta property="og:description" content="Cancellation and Right to Withdraw Policy for Terra Connect Ltd." />
     <meta property="og:site_name" content="Terra Connect Ltd" />
