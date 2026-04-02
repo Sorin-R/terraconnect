@@ -108,6 +108,114 @@
         }
     </script>
 
+    <!-- Structured Data for LocalBusiness -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Terra Connect Ltd",
+            "image": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "description": "AI agency in London offering web development, mobile apps, AI chatbots, and automation solutions for startups and businesses.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressRegion": "England",
+                "addressCountry": "GB"
+            },
+            "email": "hello@terraconnect.co.uk",
+            "url": "https://www.terraconnect.co.uk/",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            "sameAs": [
+                "https://www.facebook.com/TerraConnectLtd",
+                "https://www.linkedin.com/in/sorin-rotaru-terraconnect/",
+                "https://x.com/sorin03032839?s=11"
+            ]
+        }
+    </script>
+
+    <!-- Structured Data for Services -->
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Front-End Development",
+                "description": "Custom website development with React, HTML5, CSS3, and modern JavaScript frameworks for fast, responsive, and accessible websites.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/frontend-development/"
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Back-End Development",
+                "description": "Robust backend systems, APIs, databases, and server-side development with Node.js and modern technologies.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/backend-development/"
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "AI Agency & Automation",
+                "description": "AI chatbots, AI agents, and automation solutions to streamline business operations and improve customer engagement.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/ai-automation-agency/"
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Mobile Application Development",
+                "description": "Custom iOS and Android app development including native and cross-platform solutions for businesses.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/mobile-applications/"
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "AI Workflow Automation",
+                "description": "Design and implementation of end-to-end automated workflows using AI, integrations, and no-code platforms.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/ai-workflow-automation/"
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Marketing Automation Services",
+                "description": "AI-driven marketing automation for lead nurturing, campaign orchestration, segmentation, and reporting.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Terra Connect Ltd"
+                },
+                "areaServed": { "@type": "Country", "name": "GB" },
+                "url": "https://www.terraconnect.co.uk/marketing-automation-services/"
+            }
+        ]
+    </script>
+
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
@@ -206,19 +314,19 @@
         }
 
         /* ============ Menu Nav ============ */
-        nav {
+        #navMenu {
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        nav ul {
+        #navMenu ul {
             display: flex;
             list-style: none;
             gap: 10px;
         }
 
-        nav ul li a {
+        #navMenu ul li a {
             color: #fff;
             font-weight: 500;
             font-size: 16px;
@@ -228,12 +336,12 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        nav ul li a:hover {
+        #navMenu ul li a:hover {
             color: #ffffff;
         }
 
-        nav ul li a::after,
-        nav ul li a::before {
+        #navMenu ul li a::after,
+        #navMenu ul li a::before {
             content: '';
             position: absolute;
             width: 0;
@@ -243,18 +351,18 @@
             transition: width 0.3s ease-in-out;
         }
 
-        nav ul li a::after {
+        #navMenu ul li a::after {
             bottom: -6px;
         }
 
-        nav ul li a::before {
+        #navMenu ul li a::before {
             top: -6px;
         }
 
-        nav ul li a:hover::after,
-        nav ul li a:hover::before,
-        nav ul li a.active-page::after,
-        nav ul li a.active-page::before {
+        #navMenu ul li a:hover::after,
+        #navMenu ul li a:hover::before,
+        #navMenu ul li a.active-page::after,
+        #navMenu ul li a.active-page::before {
             width: 100%;
         }
 
@@ -305,9 +413,7 @@
         }
 
         .hero-p {
-            position: static;
-            max-width: 1200px;
-            color: #ffffff;
+            position: static;color: #ffffff;
             margin: 0;
             text-align: center;
             transform: translateX(100%);
@@ -356,7 +462,7 @@
                 display: flex;
             }
 
-            nav {
+            #navMenu {
                 display: none;
                 position: fixed;
                 inset: 0;
@@ -368,21 +474,21 @@
                 z-index: 1000;
             }
 
-            nav.active {
+            #navMenu.active {
                 display: block;
             }
 
-            nav ul {
+            #navMenu ul {
                 flex-direction: column;
                 gap: 10px;
                 margin-top: 0;
             }
 
-            nav ul li {
+            #navMenu ul li {
                 margin: 0;
             }
 
-            nav ul li a {
+            #navMenu ul li a {
                 font-size: 18px;
                 padding: 15px 24px;
                 display: block;
@@ -390,8 +496,8 @@
                 margin: 0 auto;
             }
 
-            nav ul li a::before,
-            nav ul li a::after {
+            #navMenu ul li a::before,
+            #navMenu ul li a::after {
                 content: none !important;
             }
 
@@ -413,7 +519,7 @@
     <div class="background">
         <header id="site-header">
             <a href="index.html" class="logo-link" aria-label="Terra Connect Home">
-                <img class="logo-header" src="/images/img-png/logo/logo.png" alt="Terra Connect logo" width="200"
+                <img class="logo-header" src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200"
                     height="60" fetchpriority="high" />
             </a>
 
@@ -427,6 +533,9 @@
                     <li><a class="active-page" aria-current="page" href="/">Home</a></li>
                     <!-- <li><a href="our-works.html">Works</a></li>
                     <li><a href="services.html">Services</a></li> -->
+                    <li><a href="/portfolio/">Portfolio</a></li>
+                    <li><a href="/our-services/">Our Services</a></li>
+                    <li><a href="/process/initial-consultation/">Our Process</a></li>
                     <li><a href="/about-us/">About</a></li>
                     <li><a href="/contacts/">Contact</a></li>
                 </ul>
@@ -440,9 +549,10 @@
                     <h1 id="hero-heading" class="hero-h1">
                         Ai Agency & Digital Solutions that <br /> Drive Growth for <br /> Startups & Businesses
                     </h1>
-                    <div class="hero-p-background">
+                    <div class="hero-p-background"> 
                         <p class="hero-p">
-                            “We design and develop AI agents, Chatbots, Websites, Mobile Apps, and Backend Systems <br>
+                            “We design and develop AI agents, chatbots, and websites<br>
+                            plus mobile apps and backend systems<br>
                             that help your business grow and scale.”
                         </p>
                     </div>
@@ -459,49 +569,49 @@
                 <h2 id="web-services-heading" class="visually-hidden">Technologies we use</h2>
                 <!-- <article class="web-icon"></article> -->
                 <article class="web-icon">
-                    <div href="code.html#html" title="Learn about HTML">
-                        <h2>{ HTML 5 }</h2>
-                        <img class="first-image" src="/images/img-png/web-section-img/html.png" alt="HTML 5" width="100"
+                    <div title="HTML5 web development">
+                        <h3>{ HTML 5 }</h3>
+                        <img class="first-image" src="/images/img-png/web-section-img/html.png" alt="HTML5 web development technology" width="100"
                             height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
-                    <div href="code.html#css" title="Learn about CSS">
-                        <h2>{ CSS 3 }</h2>
-                        <img src="/images/img-png/web-section-img/css.png" alt="CSS 3" width="100" height="100"
+                    <div title="CSS3 styling and design">
+                        <h3>{ CSS 3 }</h3>
+                        <img src="/images/img-png/web-section-img/css.png" alt="CSS3 styling and responsive design" width="100" height="100"
                             loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
-                    <div href="code.html#js" title="Learn JavaScript">
-                        <h2>{ JS }</h2>
-                        <img src="/images/img-png/web-section-img/js.png" alt="JavaScript" width="100" height="100"
+                    <div title="JavaScript programming">
+                        <h3>{ JS }</h3>
+                        <img src="/images/img-png/web-section-img/js.png" alt="JavaScript programming language" width="100" height="100"
                             loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
-                    <div href="code.html#bootstrap" title="Learn Bootstrap">
-                        <h2>{ B }</h2>
-                        <img src="/images/img-png/web-section-img/bootstrap.png" alt="Bootstrap" width="100"
+                    <div title="Bootstrap framework">
+                        <h3>{ B }</h3>
+                        <img src="/images/img-png/web-section-img/bootstrap.png" alt="Bootstrap CSS framework" width="100"
                             height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
-                    <div href="code.html#react" title="Learn React">
-                        <h2>{ React }</h2>
-                        <img src="/images/img-png/web-section-img/react.png" alt="React" width="100" height="100"
+                    <div title="React framework">
+                        <h3>{ React }</h3>
+                        <img src="/images/img-png/web-section-img/react.png" alt="React JavaScript framework" width="100" height="100"
                             loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
-                    <div href="code.html#node" title="Learn Node.js">
-                        <h2>{ Node }</h2>
-                        <img src="/images/img-png/web-section-img/node.png" alt="Node.js" width="100" height="100"
+                    <div title="Node.js runtime">
+                        <h3>{ Node }</h3>
+                        <img src="/images/img-png/web-section-img/node.png" alt="Node.js backend runtime environment" width="100" height="100"
                             loading="lazy" />
                     </div>
                 </article>
@@ -516,25 +626,25 @@
                         <div class="top-block-row a-1">
                             <h3>2</h3>
                             <p>Identify Optimal Solutions</p>
-                            <!-- <a class="tile-link" href="project.html#solution"
-                                aria-label="Identify Optimal Solutions"></a> -->
+                            <a class="tile-link" href="/process/optimal-solutions/"
+                                aria-label="Identify Optimal Solutions"></a>
                         </div>
                         <div class="top-block-row a-2">
                             <h3>4</h3>
                             <p>Create a Working Prototype</p>
-                            <!-- <a class="tile-link" href="project.html#prototype"
-                                aria-label="Create a Working Prototype"></a> -->
+                            <a class="tile-link" href="/process/working-prototype/"
+                                aria-label="Create a Working Prototype"></a>
                         </div>
                         <div class="top-block-row a-3">
                             <h3>6</h3>
                             <p>Conduct Quality Assurance Testing</p>
-                            <!-- <a class="tile-link" href="project.html#testing"
-                                aria-label="Conduct Quality Assurance Testing"></a> -->
+                            <a class="tile-link" href="/process/quality-assurance/"
+                                aria-label="Conduct Quality Assurance Testing"></a>
                         </div>
                         <div class="top-block-row radius-right a-4">
                             <h3>8</h3>
                             <p>Support and Updates</p>
-                            <!-- <a class="tile-link" href="project.html#support" aria-label="Support and Updates"></a> -->
+                            <a class="tile-link" href="/process/support-updates/" aria-label="Support and Updates"></a>
                         </div>
                     </aside>
 
@@ -542,24 +652,24 @@
                         <div class="lower-block-row radius-left a-5">
                             <h3>1</h3>
                             <p>Initial Consultation &amp; Project Scoping</p>
-                            <!-- <a class="tile-link" href="project.html#consultation"
-                                aria-label="Initial Consultation & Project Scoping"></a> -->
+                            <a class="tile-link" href="/process/initial-consultation/"
+                                aria-label="Initial Consultation & Project Scoping"></a>
                         </div>
                         <div class="lower-block-row a-6">
                             <h3>3</h3>
                             <p>Design User Interface</p>
-                            <!-- <a class="tile-link" href="project.html#design" aria-label="Design User Interface"></a> -->
+                            <a class="tile-link" href="/process/design-user-interface/" aria-label="Design User Interface"></a>
                         </div>
                         <div class="lower-block-row a-7">
                             <h3>5</h3>
                             <p>Implement Agile Development</p>
-                            <!-- <a class="tile-link" href="project.html#development"
-                                aria-label="Implement Agile Development"></a> -->
+                            <a class="tile-link" href="/process/agile-development/"
+                                aria-label="Implement Agile Development"></a>
                         </div>
                         <div class="lower-block-row a-8">
                             <h3>7</h3>
                             <p>Launch the Product</p>
-                            <!-- <a class="tile-link" href="project.html#launch" aria-label="Launch the Product"></a> -->
+                            <a class="tile-link" href="/process/launch-product/" aria-label="Launch the Product"></a>
                         </div>
                     </aside>
                 </div>
@@ -569,8 +679,8 @@
                 <div class="mobile-align-blocks" aria-label="Project process (mobile)">
                     <aside class="left-block">
                         <div class="left-block-row">
-                            <!-- <a href="project.html#consultation" class="tile-link"
-                                aria-label="Initial Consultation & Project Scoping"></a> -->
+                            <a href="/process/initial-consultation/" class="tile-link"
+                                aria-label="Initial Consultation & Project Scoping"></a>
                             <div class="content">
                                 <h3>1</h3>
                                 <p>Initial Consultation &amp; Project Scoping</p>
@@ -578,8 +688,8 @@
                         </div>
 
                         <div class="left-block-row">
-                            <!-- <a href="project.html#development" class="tile-link"
-                                aria-label="Implement Agile Development"></a> -->
+                            <a href="/process/agile-development/" class="tile-link"
+                                aria-label="Implement Agile Development"></a>
                             <div class="content">
                                 <h3>5</h3>
                                 <p>Implement Agile Development</p>
@@ -587,7 +697,7 @@
                         </div>
 
                         <div class="left-block-row midle-block-row-8">
-                            <!-- <a href="project.html#support" class="tile-link" aria-label="Support and Updates"></a> -->
+                            <a href="/process/support-updates/" class="tile-link" aria-label="Support and Updates"></a>
                             <div class="content">
                                 <h3>8</h3>
                                 <p>Support and Updates</p>
@@ -597,8 +707,8 @@
 
                     <aside class="midle-block">
                         <div class="midle-block-row midle-block-row-2">
-                            <!-- <a href="project.html#solution" class="tile-link"
-                                aria-label="Identify Optimal Solutions"></a> -->
+                            <a href="/process/optimal-solutions/" class="tile-link"
+                                aria-label="Identify Optimal Solutions"></a>
                             <div class="content">
                                 <h3>2</h3>
                                 <p>Identify Optimal Solutions</p>
@@ -606,8 +716,8 @@
                         </div>
 
                         <div class="midle-block-row">
-                            <!-- <a href="project.html#prototype" class="tile-link"
-                                aria-label="Create a Working Prototype"></a> -->
+                            <a href="/process/working-prototype/" class="tile-link"
+                                aria-label="Create a Working Prototype"></a>
                             <div class="content">
                                 <h3>4</h3>
                                 <p>Create a Working Prototype</p>
@@ -615,7 +725,7 @@
                         </div>
 
                         <div class="midle-block-row">
-                            <!-- <a href="project.html#launch" class="tile-link" aria-label="Launch the Product"></a> -->
+                            <a href="/process/launch-product/" class="tile-link" aria-label="Launch the Product"></a>
                             <div class="content">
                                 <h3>7</h3>
                                 <p>Launch the Product</p>
@@ -625,7 +735,7 @@
 
                     <aside class="right-block">
                         <div class="right-block-row">
-                            <!-- <a href="project.html#design" class="tile-link" aria-label="Design User Interface"></a> -->
+                            <a href="/process/design-user-interface/" class="tile-link" aria-label="Design User Interface"></a>
                             <div class="content">
                                 <h3>3</h3>
                                 <p>Design User <br> Interface</p>
@@ -633,8 +743,8 @@
                         </div>
 
                         <div class="right-block-row">
-                            <!-- <a href="project.html#testing" class="tile-link"
-                                aria-label="Conduct Quality Assurance Testing"></a> -->
+                            <a href="/process/quality-assurance/" class="tile-link"
+                                aria-label="Conduct Quality Assurance Testing"></a>
                             <div class="content">
                                 <h3>6</h3>
                                 <p>Conduct Quality Assurance Testing</p>
@@ -642,8 +752,8 @@
                         </div>
 
                         <div class="right-block-row midle-block-row-9">
-                            <!-- <a href="project.html#monitoring" class="tile-link"
-                                aria-label="Monitoring & Optimization"></a> -->
+                            <a href="/process/support-updates/" class="tile-link"
+                                aria-label="Monitoring & Optimization"></a>
                             <div class="content">
                                 <h3>9</h3>
                                 <p>Monitoring &amp; Optimization</p>
@@ -674,29 +784,152 @@
                     <button class="nav-arrow next-arrow focus-ring" id="nextBtn" aria-label="Next slide">›</button>
                     <div class="caroucel-wrap" id="carouselWrap" tabindex="0">
 
-                        <a href="https://www.make.com/en/register?pc=terraconnect2020" class="caroucel-link"
-                            aria-label="Visit Make.com">
-                            <div class="caroucel-item item-one"></div>
+                        <a href="/mobile-applications/" class="caroucel-link"
+                            aria-label="React Native development services">
+                            <div class="caroucel-item no-image">
+                                <h3>React Native</h3>
+                                <p>Need to create a React Native app that performs across devices? Our team delivers
+                                    react native development services for startups and growing businesses. We plan
+                                    architecture, build reusable components, and integrate APIs for stable releases.
+                                    From MVP scope to app store submission, we focus on speed, quality, and long-term
+                                    maintainability.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
                         </a>
 
-                        <a href="https://n8n.io/ai-agents/" class="caroucel-link" aria-label="Explore n8n AI Agents">
-                            <div class="caroucel-item item-two"></div>
+                        <a href="/mobile-applications/" class="caroucel-link"
+                            aria-label="Mobile app development services">
+                            <div class="caroucel-item no-image">
+                                <h3>Mobile App</h3>
+                                <p>Our mobile app development process covers product strategy, UI design, coding, and
+                                    launch support in one workflow. We deliver ios and android app development with
+                                    clear milestones, transparent communication, and production-ready builds. If you
+                                    need cross platform app development or native features, we align technology to
+                                    your business goals and timeline.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
                         </a>
 
-                        <a href="https://www.newo.ai" class="caroucel-link" aria-label="Discover Newo AI">
-                            <div class="caroucel-item item-three"></div>
+                        <a href="/ai-workflow-automation/" class="caroucel-link"
+                            aria-label="AI workflow automation services">
+                            <div class="caroucel-item no-image">
+                                <h3>AI Workflow</h3>
+                                <p>Scale operations with ai workflow automation built for real business processes.
+                                    We connect CRM, email, forms, payments, and internal tools to remove repetitive
+                                    work and reduce manual errors. As an ai automation services partner, we design
+                                    smart triggers, approval paths, and monitoring so your team saves time and moves
+                                    faster with reliable automation.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
                         </a>
 
-                        <a href="https://wordpress.com/" class="caroucel-link" aria-label="Visit WordPress">
-                            <div class="caroucel-item item-four"></div>
+                        <a href="/marketing-automation-services/" class="caroucel-link"
+                            aria-label="Marketing automation consulting services">
+                            <div class="caroucel-item no-image">
+                                <h3>Marketing Automation</h3>
+                                <p>As your marketing automation consultant, we implement journeys that turn leads
+                                    into opportunities using practical data and segmentation. Our ai marketing
+                                    automation setup covers email flows, campaign triggers, scoring models, and
+                                    performance dashboards. You get consistent follow-up, better conversion rates,
+                                    and visibility into what channels, messages, and offers generate qualified
+                                    pipeline.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
                         </a>
 
-                        <!-- ... repeat for remaining items with descriptive aria-labels ... -->
+                        <a href="/backend-development/" class="caroucel-link"
+                            aria-label="Backend development services">
+                            <div class="caroucel-item no-image">
+                                <h3>Backend Development</h3>
+                                <p>Our backend development services are designed for performance, security, and
+                                    stable scaling under growth. We build API-first systems, optimize database
+                                    structure, and manage integrations across your platform. Whether you need
+                                    backend web development for a new product or refactoring for an existing app, we
+                                    deliver reliable architecture and maintainable code standards.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
+                        </a>
+
+                        <a href="/frontend-development/" class="caroucel-link"
+                            aria-label="Front end React development services">
+                            <div class="caroucel-item no-image">
+                                <h3>Front End Development</h3>
+                                <p>We provide front end React development focused on speed, usability, and clean UI
+                                    architecture. If you need a react js developer or a react front end developer for
+                                    a business platform, we deliver responsive interfaces with accessible components,
+                                    optimized loading, and clear state management. The result is better user
+                                    engagement and smoother product experience.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
+                        </a>
+
+                        <a href="/our-services/" class="caroucel-link"
+                            aria-label="Explore all services">
+                            <div class="caroucel-item no-image">
+                                <h3>Custom Software</h3>
+                                <p>Looking for custom software development that fits your workflows and growth plans?
+                                    We deliver tailored products with modern architecture, secure integrations, and
+                                    practical release cycles. Our software development services include discovery,
+                                    planning, development, QA, and support. You get a focused team that turns complex
+                                    requirements into scalable, business-ready digital solutions.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
+                        </a>
+
+                        <a href="/our-services/" class="caroucel-link"
+                            aria-label="Web application development services">
+                            <div class="caroucel-item no-image">
+                                <h3>Web Application</h3>
+                                <p>We build web application development projects for teams that need speed, clarity,
+                                    and strong technical execution. From MVP products to enterprise portals, our
+                                    process aligns strategy, design, and engineering. As an application development
+                                    company in the UK, we create secure, responsive platforms that support your users,
+                                    operations, and long-term product roadmap.</p>
+                                <span class="caroucel-item-cta">Learn More</span>
+                            </div>
+                        </a>
+
+                        <!--
+                        <a href="/frontend-development/" class="caroucel-link"
+                            aria-label="Explore frontend development projects">
+                            <div class="caroucel-item item-nine"></div>
+                        </a>
+
+                        <a href="/ai-automation-agency/" class="caroucel-link"
+                            aria-label="Explore AI automation agency projects">
+                            <div class="caroucel-item item-ten"></div>
+                        </a>
+
+                        <a href="/our-services/" class="caroucel-link"
+                            aria-label="View all Terra Connect services">
+                            <div class="caroucel-item item-eleven"></div>
+                        </a>
+
+                        <a href="/portfolio/" class="caroucel-link" aria-label="View full portfolio">
+                            <div class="caroucel-item item-twelve"></div>
+                        </a>
+
+                        <a href="/process/initial-consultation/" class="caroucel-link"
+                            aria-label="View our process">
+                            <div class="caroucel-item item-terteen"></div>
+                        </a>
+
+                        <a href="/contacts/" class="caroucel-link" aria-label="Contact Terra Connect">
+                            <div class="caroucel-item item-forteen"></div>
+                        </a>
+
+                        <a href="/about-us/" class="caroucel-link" aria-label="Learn more about Terra Connect">
+                            <div class="caroucel-item item-fifteen"></div>
+                        </a>
 
                         <a href="https://www.shopify.com/uk" class="caroucel-link" aria-label="Shop with Shopify UK">
                             <div class="caroucel-item item-sixteen"></div>
                         </a>
+                        -->
 
+                    </div>
+                    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel slide indicators">
+                        <!-- Dots generated by JS based on scroll steps -->
                     </div>
                 </div>
             </section>
@@ -766,6 +999,35 @@
                         </p>
 
                         <a class="btn focus-ring" href="/ai-automation-agency/">Read More...</a>
+                    </article>
+                    <article class="service-block">
+                        <h3>AI Workflow Automation</h3>
+                        <hr>
+                        <p>
+                            Manual tasks slow down growth and create bottlenecks across sales, operations, and support.
+                            We design AI-powered workflows that connect your tools, automate repetitive work, and keep data moving in real time.
+                            <br><br>
+                            From lead routing and CRM updates to proposal generation, onboarding, and internal approvals,
+                            our workflow automations reduce errors and free your team for higher-value work.
+                            <br><br>
+                            We build on trusted platforms like Make, n8n, and API-based integrations to deliver reliable
+                            automations that scale with your business.
+                        </p>
+                        <a class="btn focus-ring" href="/ai-workflow-automation/">Read More...</a>
+                    </article>
+                    <article class="service-block">
+                        <h3>Marketing Automation Services</h3>
+                        <hr>
+                        <p>
+                            We help you automate the full marketing funnel with smarter campaigns, better segmentation,
+                            and personalized messaging powered by AI.
+                            <br><br>
+                            Our team sets up lead nurturing sequences, email automation, audience scoring, campaign triggers,
+                            and reporting dashboards so your marketing runs consistently without manual follow-up.
+                            <br><br>
+                            The result is faster pipeline growth, improved conversion rates, and clear visibility on what drives ROI.
+                        </p>
+                        <a class="btn focus-ring" href="/marketing-automation-services/">Read More...</a>
                     </article>
                     <article class="service-block">
                         <h3>Mobile Application Development</h3>
@@ -852,44 +1114,143 @@
                     <a class="btn secondary focus-ring" href="/contacts/">KNOW MORE</a>
                 </div> -->
             </div>
+
+            <!-- Testimonials -->
+            <section class="testimonials-section" aria-labelledby="testimonials-heading">
+                <h2 id="testimonials-heading">What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <blockquote>
+                            <p>&ldquo;Terra Connect transformed our online presence. Their AI chatbot integration increased customer engagement by 300%. Professional team with outstanding communication throughout the project.&rdquo;</p>
+                        </blockquote>
+                        <footer>
+                            <strong>Sarah J.</strong>
+                            <span class="testimonial-role">CEO, Tech Startup</span>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <blockquote>
+                            <p>&ldquo;From concept to launch in 6 weeks. The team delivered exactly what we needed and communicated every step of the way. Our new website loads 40% faster and converts significantly better.&rdquo;</p>
+                        </blockquote>
+                        <footer>
+                            <strong>Michael C.</strong>
+                            <span class="testimonial-role">Founder, E-commerce Brand</span>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <blockquote>
+                            <p>&ldquo;Our mobile app now has 42% better retention rates. The development quality is exceptional and the ongoing support keeps everything running smoothly.&rdquo;</p>
+                        </blockquote>
+                        <footer>
+                            <strong>Emma R.</strong>
+                            <span class="testimonial-role">Product Manager, FinTech Company</span>
+                        </footer>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
         <div class="footer-background">
             <footer>
-                <section class="footer-box-content">
-                    <div class="footer-box">
-                        <img src="/images/img-png/logo/logo.png" alt="Terra Connect logo" width="200" height="60"
+                <div class="footer-content">
+                    <!-- Column 1: Company Info -->
+                    <div class="footer-column">
+                        <img src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60"
                             loading="lazy" />
+                        <p class="footer-tagline">AI Agency &amp; Digital Solutions in London</p>
+                        <div class="footer-contact-info">
+                            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@terraconnect.co.uk">hello@terraconnect.co.uk</a></p>
+                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, United Kingdom</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/TerraConnectLtd" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/sorin-rotaru-terraconnect/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://x.com/sorin03032839?s=11" aria-label="X (Twitter)" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
 
-                        <nav class="footer-menu" aria-label="Footer">
-                            <a href="/">HOME</a>
-                            <a href="/about-us/">ABOUT</a>
-                            <a href="/frontend-development/">FRONT-END</a>
-                            <a href="/backend-development/">BACK-END</a>
-                            <a href="/mobile-applications/">MOBILE APPS</a>
-                            <a href="/ai-automation-agency/">AUTOMATION</a>
-                            <a href="/contacts/">CONTACT</a>
+                    <!-- Column 2: Services -->
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <nav aria-label="Footer services">
+                            <a href="/frontend-development/">Front-End Development</a>
+                            <a href="/backend-development/">Back-End Development</a>
+                            <a href="/mobile-applications/">Mobile Applications</a>
+                            <a href="/ai-automation-agency/">AI &amp; Automation</a>
                         </nav>
                     </div>
 
-                    <div class="contact-us">
-                        <h4>WANT TO ASK MORE<br />INFORMATION?<br />CONTACT US.</h4>
-                        <div class="hero-cta">
-                            <a class="btn focus-ring" href="/contacts/index.html">GET IN TOUCH</a>
-                        </div>
+                    <!-- Column 3: Company -->
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <nav aria-label="Footer company">
+                            <a href="/">Home</a>
+                            <a href="/portfolio/">Portfolio</a>
+                            <a href="/our-services/">Our Services</a>
+                            <a href="/process/initial-consultation/">Our Process</a>
+                            <a href="/about-us/">About Us</a>
+                            <a href="/contacts/">Contact</a>
+                            <a href="/get-a-quote/">Get a Quote</a>
+                        </nav>
                     </div>
-                </section>
+
+                    <!-- Column 4: Legal & CTA -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <nav aria-label="Footer legal">
+                            <a href="/privacy-policy/">Privacy Policy</a>
+                            <a href="/terms-of-service/">Terms of Service</a>
+                            <a href="/cookie-policy/">Cookie Policy</a>
+                        </nav>
+                    </div>
+                </div>
 
                 <div class="copyright">
-                    <h5>Terra Connect Ltd / London</h5>
-                    <h5>©2025 All Rights Reserved.</h5>
+                    <p>&#169; 2025 Terra Connect Ltd. All Rights Reserved.</p>
+                    <p>Terra Connect Ltd &bull; London &bull; Registered in England &amp; Wales</p>
                 </div>
             </footer>
         </div>
     </div>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent" role="dialog" aria-label="Cookie consent" style="display: none;">
+        <div class="cookie-consent-content">
+            <p>We use cookies to improve your experience and analyse site traffic. By clicking &ldquo;Accept&rdquo;, you consent to the use of cookies. See our <a href="/cookie-policy/">Cookie Policy</a> for details.</p>
+            <div class="cookie-consent-buttons">
+                <button id="cookieAccept" class="btn cookie-btn-accept">Accept</button>
+                <button id="cookieDecline" class="btn cookie-btn-decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
     <script src="/scripts/scripts.js" defer></script>
+
+    <!-- Cookie Consent Script -->
+    <script>
+        (function () {
+            var consent = localStorage.getItem('tc_cookie_consent');
+            var banner = document.getElementById('cookieConsent');
+            if (!banner) return;
+            if (!consent) {
+                banner.style.display = 'flex';
+            }
+            document.getElementById('cookieAccept').addEventListener('click', function () {
+                localStorage.setItem('tc_cookie_consent', 'accepted');
+                banner.style.display = 'none';
+            });
+            document.getElementById('cookieDecline').addEventListener('click', function () {
+                localStorage.setItem('tc_cookie_consent', 'declined');
+                banner.style.display = 'none';
+            });
+        })();
+    </script>
 
 </body>
 

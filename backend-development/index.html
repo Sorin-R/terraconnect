@@ -201,19 +201,19 @@
         }
 
         /* ============ Menu Nav ============ */
-        nav {
+        #navMenu {
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        nav ul {
+        #navMenu ul {
             display: flex;
             list-style: none;
             gap: 10px;
         }
 
-        nav ul li a {
+        #navMenu ul li a {
             color: #fff;
             font-weight: 500;
             font-size: 16px;
@@ -223,12 +223,12 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        nav ul li a:hover {
+        #navMenu ul li a:hover {
             color: #ffffff;
         }
 
-        nav ul li a::after,
-        nav ul li a::before {
+        #navMenu ul li a::after,
+        #navMenu ul li a::before {
             content: '';
             position: absolute;
             width: 0;
@@ -238,18 +238,18 @@
             transition: width 0.3s ease-in-out;
         }
 
-        nav ul li a::after {
+        #navMenu ul li a::after {
             bottom: -6px;
         }
 
-        nav ul li a::before {
+        #navMenu ul li a::before {
             top: -6px;
         }
 
-        nav ul li a:hover::after,
-        nav ul li a:hover::before,
-        nav ul li a.active-page::after,
-        nav ul li a.active-page::before {
+        #navMenu ul li a:hover::after,
+        #navMenu ul li a:hover::before,
+        #navMenu ul li a.active-page::after,
+        #navMenu ul li a.active-page::before {
             width: 100%;
         }
 
@@ -300,9 +300,7 @@
         }
 
         .hero-p {
-            position: static;
-            max-width: 1200px;
-            color: #ffffff;
+            position: static;color: #ffffff;
             margin: 0;
             text-align: center;
             transform: translateX(100%);
@@ -609,7 +607,7 @@
                 display: flex;
             }
 
-            nav {
+            #navMenu {
                 display: none;
                 position: fixed;
                 inset: 0;
@@ -621,21 +619,21 @@
                 z-index: 1000;
             }
 
-            nav.active {
+            #navMenu.active {
                 display: block;
             }
 
-            nav ul {
+            #navMenu ul {
                 flex-direction: column;
                 gap: 10px;
                 margin-top: 0;
             }
 
-            nav ul li {
+            #navMenu ul li {
                 margin: 0;
             }
 
-            nav ul li a {
+            #navMenu ul li a {
                 font-size: 18px;
                 padding: 15px 24px;
                 display: block;
@@ -643,8 +641,8 @@
                 margin: 0 auto;
             }
 
-            nav ul li a::before,
-            nav ul li a::after {
+            #navMenu ul li a::before,
+            #navMenu ul li a::after {
                 content: none !important;
             }
 
@@ -698,7 +696,7 @@
     <div class="background">
         <header id="site-header">
             <a href="../index.html" class="logo-link" aria-label="Terra Connect Home">
-                <img class="logo-header" src="/images/img-png/logo/logo.png" alt="Terra Connect logo" width="200"
+                <img class="logo-header" src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200"
                     height="60" fetchpriority="high" />
             </a>
 
@@ -712,6 +710,9 @@
                     <li><a aria-current="page" href="/">Home</a></li>
                     <!-- <li><a href="our-works.html">Works</a></li>
                     <li><a href="services.html">Services</a></li> -->
+                    <li><a href="/portfolio/">Portfolio</a></li>
+                    <li><a href="/our-services/">Our Services</a></li>
+                    <li><a href="/process/initial-consultation/">Our Process</a></li>
                     <li><a href="/about-us/">About</a></li>
                     <li><a href="/contacts/">Contact</a></li>
                 </ul>
@@ -727,7 +728,8 @@
                         Backend Development Services
                     </h1>
                     <p class="hero-p">
-                        The powerhouse behind every great website and app. We build secure, scalable backend systems
+                        The powerhouse behind every great website and app.<br>
+                        We build secure, scalable backend systems<br>
                         that make your digital presence work seamlessly behind the scenes.
                     </p>
                 </div>
@@ -984,32 +986,53 @@
         <!-- Footer -->
         <div class="footer-background">
             <footer>
-                <section class="footer-box-content">
-                    <div class="footer-box">
-                        <img src="/images/img-png/logo/logo.png" alt="Terra Connect logo" width="200" height="60"
-                            loading="lazy" />
-
-                        <nav class="footer-menu" aria-label="Footer">
-                            <a href="/">HOME</a>
-                            <a href="/about-us/">ABOUT</a>
-                            <a href="/frontend-development/">FRONT-END</a>
-                            <a href="/backent-development/">BACK-END</a>
-                            <a href="/ai-automation-agency/">AUTOMATION</a>
-                            <a href="/contacts/">CONTACT</a>
-                        </nav>
-                    </div>
-
-                    <div class="contact-us">
-                        <h4>WANT TO ASK MORE<br />INFORMATION?<br />CONTACT US.</h4>
-                        <div class="hero-cta">
-                            <a class="btn focus-ring" href="/contacts/index.html">GET IN TOUCH</a>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <img src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60" loading="lazy" />
+                        <p class="footer-tagline">AI Agency &amp; Digital Solutions in London</p>
+                        <div class="footer-contact-info">
+                            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@terraconnect.co.uk">hello@terraconnect.co.uk</a></p>
+                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, United Kingdom</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/TerraConnectLtd" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/sorin-rotaru-terraconnect/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://x.com/sorin03032839?s=11" aria-label="X (Twitter)" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </section>
-
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <nav aria-label="Footer services">
+                            <a href="/frontend-development/">Front-End Development</a>
+                            <a href="/backend-development/">Back-End Development</a>
+                            <a href="/mobile-applications/">Mobile Applications</a>
+                            <a href="/ai-automation-agency/">AI &amp; Automation</a>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <nav aria-label="Footer company">
+                            <a href="/">Home</a>
+                            <a href="/portfolio/">Portfolio</a>
+                            <a href="/our-services/">Our Services</a>
+                            <a href="/process/initial-consultation/">Our Process</a>
+                            <a href="/about-us/">About Us</a>
+                            <a href="/contacts/">Contact</a>
+                            <a href="/get-a-quote/">Get a Quote</a>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <nav aria-label="Footer legal">
+                            <a href="/privacy-policy/">Privacy Policy</a>
+                            <a href="/terms-of-service/">Terms of Service</a>
+                            <a href="/cookie-policy/">Cookie Policy</a>
+                        </nav>
+                    </div>
+                </div>
                 <div class="copyright">
-                    <h5>Terra Connect Ltd / London</h5>
-                    <h5>©2025 All Rights Reserved.</h5>
+                    <p>&#169; 2025 Terra Connect Ltd. All Rights Reserved.</p>
+                    <p>Terra Connect Ltd &bull; London &bull; Registered in England &amp; Wales</p>
                 </div>
             </footer>
         </div>

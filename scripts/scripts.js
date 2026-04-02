@@ -4,12 +4,124 @@
 
 (function () {
     const body = document.body;
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    function normalizePath(pathname) {
+        if (!pathname) return '/';
+        let path = pathname.split('?')[0].split('#')[0];
+        path = path.replace(/\/index\.html$/i, '/');
+        path = path.replace(/\/{2,}/g, '/');
+        if (path !== '/' && path.endsWith('/')) path = path.slice(0, -1);
+        return path || '/';
+    }
+
+    function hrefToPath(href) {
+        try {
+            const url = new URL(href, window.location.origin);
+            return normalizePath(url.pathname);
+        } catch (_err) {
+            return normalizePath(href);
+        }
+    }
+
+    function fallbackLabelFromPath() {
+        const parts = normalizePath(window.location.pathname)
+            .split('/')
+            .filter(Boolean);
+        const last = parts[parts.length - 1] || 'Page';
+        return decodeURIComponent(last)
+            .replace(/[-_]+/g, ' ')
+            .replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function buildDynamicMenuLabel() {
+        const h1 = document.querySelector('h1');
+        const headingText = (h1 ? h1.textContent : '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (!headingText) return fallbackLabelFromPath();
+        const words = headingText.split(' ');
+        if (words.length > 3) return words.slice(0, 3).join(' ');
+        return headingText;
+    }
+
+    function syncCurrentPageInHeaderMenu() {
+        if (!navMenu) return;
+        const list = navMenu.querySelector('ul');
+        if (!list) return;
+
+        const currentPath = normalizePath(window.location.pathname);
+        const isProcessSection =
+            currentPath === '/process' || currentPath.startsWith('/process/');
+        const isServicesSection =
+            currentPath === '/services' || currentPath.startsWith('/services/');
+        const links = Array.from(list.querySelectorAll('a[href]'));
+        const linkData = links.map(link => ({
+            link,
+            path: hrefToPath(link.getAttribute('href')),
+        }));
+
+        let matchedLink = null;
+
+        // 1) Exact path match
+        matchedLink =
+            linkData.find(item => item.path === currentPath)?.link || null;
+
+        // 2) Section fallback for process steps: keep "Our Process" active
+        if (!matchedLink && isProcessSection) {
+            matchedLink =
+                linkData.find(item => item.path.startsWith('/process'))?.link ||
+                null;
+        }
+
+        // 3) Section fallback for new service detail pages
+        if (!matchedLink && isServicesSection) {
+            matchedLink =
+                linkData.find(item => item.path === '/our-services')?.link ||
+                null;
+        }
+
+        const matched = Boolean(matchedLink);
+
+        links.forEach(link => {
+            const isCurrent = link === matchedLink;
+            if (isCurrent) {
+                link.classList.add('active-page');
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.classList.remove('active-page');
+                link.removeAttribute('aria-current');
+            }
+        });
+
+        if (matched || currentPath === '/') return;
+
+        const li = document.createElement('li');
+        li.className = 'menu-dynamic-current';
+
+        const link = document.createElement('a');
+        link.href =
+            window.location.pathname === '/'
+                ? '/'
+                : window.location.pathname.endsWith('/')
+                  ? window.location.pathname
+                  : window.location.pathname + '/';
+        link.textContent = buildDynamicMenuLabel();
+        link.classList.add('active-page');
+        link.setAttribute('aria-current', 'page');
+
+        li.appendChild(link);
+        list.appendChild(li);
+    }
+
+    syncCurrentPageInHeaderMenu();
+    document.addEventListener('DOMContentLoaded', syncCurrentPageInHeaderMenu);
+    window.addEventListener('pageshow', syncCurrentPageInHeaderMenu);
 
     /* =======================
      Mobile menu toggle
   ======================= */
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
 
     function openMenu() {
         navMenu.classList.add('active');
@@ -200,7 +312,7 @@
         const breakpoint = 1024; // desktop only
 
         // If we're on mobile, exit immediately (no scroll handler at all)
-        if (window.innerWidth < breakpoint) {
+        if (window.innerWidth <= breakpoint) {
             document.addEventListener('DOMContentLoaded', () => {
                 const h1 = document.querySelector('.hero-text h1');
                 const p = document.querySelector('.hero-text p');
@@ -288,45 +400,126 @@
 
         function getStep() {
             const first = carouselWrap.querySelector('.caroucel-item');
-            if (!first) return 0;
+            if (!first) return 1;
             const rect = first.getBoundingClientRect();
             // include gap
             const styles = window.getComputedStyle(carouselWrap);
             const gap = parseFloat(styles.gap || styles.columnGap || '0') || 0;
-            return rect.width + gap;
+            return Math.max(1, rect.width + gap);
         }
 
-        function getVisibleCount() {
-            const container = carouselWrap.closest('.carousel-container');
-            if (!container) return 1;
-            const cw = container.clientWidth;
-            // approximate current card width from first card
-            const first = carouselWrap.querySelector('.caroucel-item');
-            const rect = first ? first.getBoundingClientRect() : { width: 300 };
-            return Math.max(1, Math.floor(cw / rect.width));
+        function getViewportWidth() {
+            const viewport = carouselWrap.parentElement;
+            if (!viewport) return 0;
+
+            const viewportRect = viewport.getBoundingClientRect();
+            const catalog = document.getElementById('catalog');
+            if (!catalog) return viewport.clientWidth;
+
+            // On desktop, #catalog has overlay panels (.holl / .right-holl) that
+            // visually cover part of the carousel area. Subtract that overlap so
+            // last-card math uses the real visible width.
+            const blockers = ['.holl', '.right-holl'];
+            let coveredWidth = 0;
+
+            blockers.forEach(selector => {
+                const el = catalog.querySelector(selector);
+                if (!el) return;
+                const r = el.getBoundingClientRect();
+                const yOverlap =
+                    Math.max(
+                        0,
+                        Math.min(viewportRect.bottom, r.bottom) -
+                            Math.max(viewportRect.top, r.top)
+                    );
+                if (yOverlap <= 0) return;
+                const overlap =
+                    Math.max(
+                        0,
+                        Math.min(viewportRect.right, r.right) -
+                            Math.max(viewportRect.left, r.left)
+                    );
+                coveredWidth += overlap;
+            });
+
+            return Math.max(1, viewport.clientWidth - coveredWidth);
+        }
+
+        function getMaxOffset() {
+            const viewportWidth = getViewportWidth();
+            return Math.max(0, carouselWrap.scrollWidth - viewportWidth);
+        }
+
+        function getLastItemStartOffset() {
+            const items = carouselWrap.querySelectorAll('.caroucel-item');
+            if (!items.length) return 0;
+            const last = items[items.length - 1];
+            return Math.max(0, last.offsetLeft);
+        }
+
+        function getEndOffset() {
+            const maxOffset = getMaxOffset();
+            // Desktop requirement: final stop should place the last card as the
+            // only visible card in the carousel window (aligned at the start).
+            if (window.innerWidth > 1024) {
+                return Math.max(maxOffset, getLastItemStartOffset());
+            }
+            return maxOffset;
         }
 
         function maxIndex() {
-            const total =
-                carouselWrap.querySelectorAll('.caroucel-item').length;
-            const visible = getVisibleCount();
-            return Math.max(0, total - visible);
+            const step = getStep();
+            const endOffset = getEndOffset();
+            return Math.max(0, Math.ceil(endOffset / step));
         }
 
         function applyTransform() {
             const step = getStep();
-            const offset = currentIndex * step;
+            const endOffset = getEndOffset();
+            const offset = Math.min(currentIndex * step, endOffset);
             carouselWrap.style.transform = `translateX(-${offset}px)`;
-            updateButtons();
+            updateButtons(offset, endOffset);
         }
 
-        function updateButtons() {
+        const dotsContainer = document.getElementById('carouselDots');
+
+        function buildDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = '';
+            const totalSteps = maxIndex() + 1;
+
+            for (let i = 0; i < totalSteps; i++) {
+                const dot = document.createElement('button');
+                dot.className = 'carousel-dot' + (i === currentIndex ? ' active' : '');
+                dot.setAttribute('role', 'tab');
+                dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+                dot.setAttribute('aria-selected', i === currentIndex ? 'true' : 'false');
+                dot.addEventListener('click', function () {
+                    currentIndex = i;
+                    applyTransform();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            if (!dotsContainer) return;
+            var dots = dotsContainer.querySelectorAll('.carousel-dot');
+            dots.forEach(function (dot, i) {
+                var isActive = i === currentIndex;
+                dot.classList.toggle('active', isActive);
+                dot.setAttribute('aria-selected', String(isActive));
+            });
+        }
+
+        function updateButtons(offset = 0, endOffset = getEndOffset()) {
             const atStart = currentIndex <= 0;
-            const atEnd = currentIndex >= maxIndex();
+            const atEnd = offset >= endOffset - 1;
             prevBtn.disabled = atStart;
             nextBtn.disabled = atEnd;
             prevBtn.setAttribute('aria-disabled', String(atStart));
             nextBtn.setAttribute('aria-disabled', String(atEnd));
+            updateDots();
         }
 
         function move(dir) {
@@ -338,8 +531,18 @@
             applyTransform();
         }
 
-        prevBtn.addEventListener('click', () => move('prev'));
-        nextBtn.addEventListener('click', () => move('next'));
+        prevBtn.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (prevBtn.disabled) return;
+            move('prev');
+        });
+        nextBtn.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (nextBtn.disabled) return;
+            move('next');
+        });
 
         // Keyboard when carousel has focus
         carouselWrap.addEventListener('keydown', e => {
@@ -374,6 +577,7 @@
         // Resize observer keeps measurements fresh
         const ro = new ResizeObserver(() => {
             currentIndex = Math.min(currentIndex, maxIndex());
+            buildDots();
             applyTransform();
         });
         ro.observe(carouselWrap);
@@ -381,6 +585,7 @@
 
         // Init
         currentIndex = 0;
+        buildDots();
         applyTransform();
     }
 
@@ -432,61 +637,11 @@
     window.closeFullscreen = closeFullscreen;
 })();
 
-/* =======================
- Carousel update on resize (centering active card on mobile)
- ======================= */
-function updateCarousel() {
-    const container = document.querySelector('.carousel-container');
-    if (!container || !carousel) return;
-
-    const firstCard = carousel.querySelector('.caroucel-item');
-    const styles = window.getComputedStyle(carousel);
-
-    // Real measurements
-    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 0;
-    const gap = parseFloat(styles.gap || styles.columnGap || '0') || 0;
-    const paddingLeft = parseFloat(styles.paddingLeft || '0') || 0;
-    const paddingRight = parseFloat(styles.paddingRight || '0') || 0;
-
-    const step = cardWidth + gap;
-
-    if (window.innerWidth <= 1024) {
-        // Center the ACTIVE card (currentPosition) exactly in the viewport
-        const containerWidth = container.clientWidth;
-        const center = (containerWidth - cardWidth) / 2;
-
-        // Position of the active card's left edge inside the wrap
-        const cardLeft = paddingLeft + currentPosition * step;
-
-        // Translate so that active card is centered:
-        //   translateX = center - cardLeft
-        carousel.style.transform = `translateX(${center - cardLeft}px)`;
-    } else {
-        // Desktop: normal left-based shifting
-        const offset = currentPosition * step;
-        carousel.style.transform = `translateX(-${offset}px)`;
-    }
-
-    updateNavigationState();
-}
-
-// Init (force first slide, then apply transform on next frame)
-currentPosition = 0;
-requestAnimationFrame(updateCarousel);
-
-// If you use a ResizeObserver, keep this clamp so it never jumps forward:
-const ro = new ResizeObserver(() => {
-    currentPosition = Math.min(
-        currentPosition,
-        Math.max(0, totalItems - getVisibleItems())
-    );
-    updateCarousel();
-});
-
 /* FAQ Accordion */
 const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
+    if (!question) return;
     question.setAttribute('aria-expanded', 'false');
 
     question.addEventListener('click', () => {
@@ -619,9 +774,9 @@ function animateCounters() {
 document.addEventListener('DOMContentLoaded', animateCounters);
 
 // Form submission handling
-document
-    .querySelector('.contact-form')
-    .addEventListener('submit', function (e) {
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Get form data
@@ -637,6 +792,10 @@ document
 
         requiredFields.forEach(field => {
             const input = document.getElementById(field);
+            if (!input) {
+                isValid = false;
+                return;
+            }
             if (!formObject[field] || formObject[field].trim() === '') {
                 input.style.borderColor = '#ef4444';
                 isValid = false;
@@ -666,3 +825,4 @@ document
             alert('Please fill in all required fields.');
         }
     });
+}
