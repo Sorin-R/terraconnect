@@ -7,7 +7,6 @@
 
     /* iOS/Android often fail to render fixed body backgrounds reliably */
     body {
-        background-image: url('/images/img-webp/jeremiah.webp') !important;
         background-size: cover !important;
         background-position: center top !important;
         background-repeat: no-repeat !important;
@@ -521,13 +520,6 @@
         text-align: center;
     }
 }
-/* ======== Mobile (<= 440px) ======== */
-@media (max-width: 440px) {
-    .web-section .first-image {
-        margin-left: 100px;
-    }
-}
-
 /* ======== Motion / Parallax performance ======== */
 /* @media (max-width: 1024px) {
     .background,

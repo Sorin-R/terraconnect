@@ -1,0 +1,76 @@
+<div class="footer-background">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60" loading="lazy" />
+                <p class="footer-tagline">AI Agency &amp; Digital Solutions in London</p>
+                <div class="footer-contact-info">
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@terraconnect.co.uk">hello@terraconnect.co.uk</a></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, United Kingdom</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/TerraConnectLtd" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/sorin-rotaru-terraconnect/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://x.com/sorin03032839?s=11" aria-label="X" rel="noopener noreferrer" target="_blank"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/terraconnect.co.uk/" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://t.me/terraconnect" aria-label="Telegram" rel="noopener noreferrer" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Services</h4>
+                <nav aria-label="Footer services">
+                    <a href="/frontend-development/">Front-End Development</a>
+                    <a href="/backend-development/">Back-End Development</a>
+                    <a href="/mobile-applications/">Mobile Applications</a>
+                    <a href="/ai-automation-agency/">AI &amp; Automation</a>
+                    <a href="/ai-workflow-automation/">AI Workflow Automation</a>
+                    <a href="/marketing-automation-services/">Marketing Automation Services</a>
+                    <a href="/services/ai-consulting-strategy/">AI Consulting &amp; Strategy</a>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <nav aria-label="Footer company">
+                    <a href="/">Home</a>
+                    <a href="/portfolio/">Portfolio</a>
+                    <a href="/our-services/">Our Services</a>
+                    <a href="/process/initial-consultation/">Our Process</a>
+                    <a href="/about-us/">About Us</a>
+                    <a href="/contacts/">Contact</a>
+                    <a href="/get-a-quote/">Get a Quote</a>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <nav aria-label="Footer legal">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                    <a href="/cookie-policy/">Cookie Policy</a>
+                    <a href="/accessibility-statement/">Accessibility Statement</a>
+                    <a href="/data-processing-agreement/">Data Processing Agreement</a>
+                    <a href="/cancellation-policy/">Cancellation Policy</a>
+                    <a href="/service-level-agreement/">Service Level Agreement</a>
+                </nav>
+            </div>
+        </div>
+
+        <div style="text-align:center;padding:10px 0 16px;font-size:0.78rem;border-top:1px solid rgba(255,255,255,0.07);">
+            <a href="/anti-spam-policy/" style="color:#888;text-decoration:none;">Anti-Spam Policy</a>
+            <span style="color:#555;margin:0 8px;">&bull;</span>
+            <a href="/intellectual-property-policy/" style="color:#888;text-decoration:none;">IP Policy</a>
+            <span style="color:#555;margin:0 8px;">&bull;</span>
+            <a href="/complaints-policy/" style="color:#888;text-decoration:none;">Complaints &amp; Disputes</a>
+            <span style="color:#555;margin:0 8px;">&bull;</span>
+            <a href="/subprocessor-list/" style="color:#888;text-decoration:none;">Subprocessor List</a>
+            <span style="color:#555;margin:0 8px;">&bull;</span>
+            <a href="/security-policy/" style="color:#888;text-decoration:none;">Security Policy</a>
+        </div>
+        <div class="copyright">
+            <p>&#169; 2026 Terra Connect Ltd. All Rights Reserved.</p>
+            <p>Terra Connect Ltd &bull; London &bull; Registered in England &amp; Wales</p>
+        </div>
+    </footer>
+</div>

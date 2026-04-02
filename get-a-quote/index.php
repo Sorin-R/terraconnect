@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head><!-- Critical Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Preconnect / DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Primary SEO -->
+    <title>Get a Quote — Terra Connect | AI Agency in London</title>
+    <meta name="description"
+        content="Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, app development, and automation solutions in London." />
+    <meta name="keywords"
+        content="get a quote, AI development quote, web development pricing, app development cost, London AI agency quote, project estimation" />
+
+    <!-- Canonical / Hreflang - CORRECTED -->
+    <link rel="canonical" href="https://www.terraconnect.co.uk/get-a-quote/" />
+    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/get-a-quote/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/get-a-quote/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.terraconnect.co.uk/get-a-quote/" />
+    <meta property="og:title" content="Get a Quote — Terra Connect | AI Agency in London" />
+    <meta property="og:description"
+        content="Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, and app development in London." />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/img-png/og-image.jpg" />
+    <meta property="og:site_name" content="Terra Connect Ltd" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@terraconnect" />
+    <meta name="twitter:creator" content="@terraconnect" />
+    <meta name="twitter:title" content="Get a Quote — Terra Connect | AI Agency in London" />
+    <meta name="twitter:description"
+        content="Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, and app development in London." />
+
+    <!-- App / Theme -->
+    <meta name="theme-color" content="#06B6D4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Terra Connect" />
+
+    <!-- Favicons / Manifest -->
+    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <!-- Preload critical - CORRECTED PATH -->
+    <link rel="preload" href="/styles/index.css" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+        as="style" />
+
+    <!-- Fonts / Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="print" onload="this.media='all'" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <!-- Structured Data for ContactPage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Get a Quote",
+            "description": "Get a free quote for AI development services from Terra Connect. Request pricing for web development, AI chatbots, app development, and automation solutions.",
+            "url": "https://www.terraconnect.co.uk/get-a-quote/",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.terraconnect.co.uk/img-png/logo.png",
+                    "width": 200,
+                    "height": 60
+                }
+            }
+        }
+    </script>
+
+    <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https:;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        frame-src https://www.google.com;
+        ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <!-- Emergency CSS Styles -->
+    <style>
+        /* ============ Base Reset ============ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            overflow-x: hidden !important;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
+                sans-serif;
+            color: #fff;
+            background-image: url('/images/img-webp/jeremiah.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Visually hidden but accessible */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 1px, 1px);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            z-index: 4000;
+            background: #fff;
+            color: #000;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .focus-ring:focus-visible {
+            outline: 3px solid #4657ed;
+            outline-offset: 3px;
+        }
+
+        /* ============ Header ============ */
+        header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            margin: 0;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background-color: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease,
+                border-radius 0.3s ease;
+            border-radius: 20px;
+        }
+
+        header.scrolled {
+            background-color: rgb(2, 10, 34);
+            box-shadow: #4657ed 0 0 5px 2px;
+        }
+
+        /* ============ Menu Nav ============ */
+        #navMenu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navMenu ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        #navMenu ul li a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 3px 20px;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #navMenu ul li a:hover {
+            color: #ffffff;
+        }
+
+        #navMenu ul li a::after,
+        #navMenu ul li a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #navMenu ul li a::after {
+            bottom: -6px;
+        }
+
+        #navMenu ul li a::before {
+            top: -6px;
+        }
+
+        #navMenu ul li a:hover::after,
+        #navMenu ul li a:hover::before,
+        #navMenu ul li a.active-page::after,
+        #navMenu ul li a.active-page::before {
+            width: 100%;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 32px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 1111;
+            background: transparent;
+            border: 0;
+            color: #fff;
+        }
+
+        /* ============ Logo ============ */
+        .logo-header {
+            width: 250px;
+            height: auto;
+            z-index: 100;
+        }
+
+        /* ============ Hero ============ */
+        .hero {
+            text-align: center;
+            color: #ffffff;
+            padding: 120px 2px 80px;
+            /* background: rgba(5, 5, 23, 0.5); */
+        }
+
+        .hero-h1 {
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+
+        .hero-h1 {
+            position: static;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+        }
+
+        .hero-p {
+            position: static;color: #ffffff;
+            margin: 0;
+            text-align: center;
+            transform: translateX(100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .animate-h1 {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .animate-p {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0 50px 0;
+            align-items: center;
+        }
+
+        /* ============ Layout Backgrounds ============ */
+        main {
+            min-height: 100vh;
+            background: rgba(5, 5, 23, 0.8);
+            text-align: left;
+            padding-top: 96px;
+            padding-bottom: 100px;
+        }
+
+        /* ======== Mobile / Tablet Styles (<= 1024px) ======== */
+        @media (max-width: 1024px) {
+            .logo-header {
+                width: 180px;
+                height: auto;
+                position: static;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            #navMenu {
+                display: none;
+                position: fixed;
+                inset: 0;
+                width: 100%;
+                height: 100dvh;
+                background-color: rgb(2, 10, 34);
+                text-align: center;
+                padding: 80px 0 20px;
+                z-index: 1000;
+            }
+
+            #navMenu.active {
+                display: block;
+            }
+
+            #navMenu ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 0;
+            }
+
+            #navMenu ul li {
+                margin: 0;
+            }
+
+            #navMenu ul li a {
+                font-size: 18px;
+                padding: 15px 24px;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            #navMenu ul li a::before,
+            #navMenu ul li a::after {
+                content: none !important;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .hero-text {
+                padding: 20px;
+            }
+        }
+
+        .get-a-quote-contact-section {
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="background">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+        <main id="main">
+            <!-- Contact Form -->
+            <section class="contact-section get-a-quote-contact-section">
+                <div class="form-section">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form class="contact-form" action="#" method="POST" aria-labelledby="contact-form-title">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required aria-required="true">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Please select a service</option>
+                                <option value="ai-chatbots">AI Chatbots</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="app-development">App Development</option>
+                                <option value="backend-systems">Backend Systems</option>
+                                <option value="ai-integration">AI Integration</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Please select budget range</option>
+                                <option value="under-5k">Under £5,000</option>
+                                <option value="5k-15k">£5,000 - £15,000</option>
+                                <option value="15k-30k">£15,000 - £30,000</option>
+                                <option value="30k-50k">£30,000 - £50,000</option>
+                                <option value="over-50k">Over £50,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">When do you need this completed?</option>
+                                <option value="asap">ASAP (Rush job)</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="2-3-months">2-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-months-plus">6+ months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" required aria-required="true"
+                                placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn focus-ring">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    </div>
+
+    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <title>Our Services — Terra Connect | AI Agency in London</title>
+    <meta name="description"
+        content="Browse Terra Connect services: AI automation, frontend, backend, mobile app development, and new specialist services now live." />
+    <meta name="keywords"
+        content="Terra Connect services, AI automation services, frontend development, backend development, mobile app development, software services" />
+
+    <link rel="canonical" href="https://www.terraconnect.co.uk/our-services/" />
+    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/our-services/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/our-services/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.terraconnect.co.uk/our-services/" />
+    <meta property="og:title" content="Our Services — Terra Connect" />
+    <meta property="og:description"
+        content="Explore current and newly launched Terra Connect services across AI, web, software, and mobile development." />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:site_name" content="Terra Connect Ltd" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Services — Terra Connect" />
+    <meta name="twitter:description"
+        content="Explore current and newly launched Terra Connect services across AI, web, software, and mobile development." />
+
+    <meta name="theme-color" content="#06B6D4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Terra Connect" />
+
+    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <link rel="preload" href="/styles/index.css" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="print" onload="this.media='all'" />
+
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https:;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        frame-src https://www.google.com;
+        " />
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            overflow-x: hidden !important;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background-color: rgb(2, 10, 34);
+            color: #fff;
+            background-image: url('/images/img-webp/jeremiah.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .skip-link { position: absolute; left: -9999px; top: -9999px; }
+
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            z-index: 4000;
+            background: #fff;
+            color: #000;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .focus-ring:focus-visible {
+            outline: 3px solid #4657ed;
+            outline-offset: 3px;
+        }
+
+        header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            margin: 0;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background-color: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            border-radius: 20px;
+        }
+
+        header.scrolled {
+            background-color: rgb(2, 10, 34);
+            box-shadow: #4657ed 0 0 5px 2px;
+        }
+
+        #navMenu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navMenu ul { display: flex; list-style: none; gap: 10px; }
+
+        #navMenu ul li a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 3px 20px;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #navMenu ul li a::after,
+        #navMenu ul li a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #navMenu ul li a::after { bottom: -6px; }
+        #navMenu ul li a::before { top: -6px; }
+
+        #navMenu ul li a:hover::after,
+        #navMenu ul li a:hover::before,
+        #navMenu ul li a.active-page::after,
+        #navMenu ul li a.active-page::before { width: 100%; }
+
+        .menu-icon {
+            display: none;
+            font-size: 32px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 1111;
+            background: transparent;
+            border: 0;
+            color: #fff;
+        }
+
+        .logo-header { width: 250px; height: auto; z-index: 100; }
+
+        main {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: left;
+            padding-top: 96px;
+            padding-bottom: 50px;
+        }
+
+        .hero {
+            text-align: center;
+            color: #ffffff;
+            padding: 120px 8px 48px;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .hero-h1 {
+            position: static;
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4657ed, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+        }
+
+        .hero-p {
+            position: static;
+            color: #ffffff;
+            margin: 0;
+            text-align: center;
+            transform: translateX(100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .animate-h1 { transform: translateX(0); opacity: 1; }
+        .animate-p { transform: translateX(0); opacity: 1; }
+
+        .services-wrap {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .services-intro {
+            background: rgba(2, 10, 34, 0.9);
+            border-radius: 16px;
+            border: 1px solid rgba(70, 87, 237, 0.26);
+            padding: 26px;
+            margin-bottom: 24px;
+            line-height: 1.75;
+            color: #dbe2f2;
+        }
+
+        .services-section-title {
+            margin: 24px 0 14px;
+            font-size: 1.35rem;
+            color: #f3f7ff;
+            letter-spacing: 0.01em;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .service-card {
+            background: rgba(2, 10, 34, 0.9);
+            border: 1px solid rgba(70, 87, 237, 0.3);
+            border-radius: 14px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.08rem;
+            color: #f7f9ff;
+            line-height: 1.45;
+        }
+
+        .service-card p {
+            color: #c9d2e8;
+            line-height: 1.65;
+            font-size: 0.96rem;
+        }
+
+        .service-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .service-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(70, 87, 237, 0.35);
+            background: rgba(70, 87, 237, 0.16);
+            color: #eaf0ff;
+        }
+
+        .service-badge.live {
+            border-color: rgba(16, 185, 129, 0.45);
+            background: rgba(16, 185, 129, 0.2);
+            color: #d1fae5;
+        }
+
+        .service-actions {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .services-cta {
+            margin-top: 26px;
+            padding: 30px 22px;
+            border-radius: 16px;
+            border: 1px solid rgba(70, 87, 237, 0.32);
+            background: rgba(2, 10, 34, 0.9);
+            text-align: center;
+        }
+
+        .services-cta p {
+            color: #cfdaef;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .logo-header { width: 180px; height: auto; position: static; }
+            .menu-icon { display: flex; }
+
+            #navMenu {
+                display: none;
+                position: fixed;
+                inset: 0;
+                width: 100%;
+                height: 100dvh;
+                background-color: rgb(2, 10, 34);
+                text-align: center;
+                padding: 80px 0 20px;
+                z-index: 1000;
+            }
+
+            #navMenu.active { display: block; }
+            #navMenu ul { flex-direction: column; gap: 10px; margin-top: 0; }
+
+            #navMenu ul li a {
+                font-size: 18px;
+                padding: 15px 24px;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            #navMenu ul li a::before,
+            #navMenu ul li a::after { content: none !important; }
+
+            .hero { padding: 112px 8px 34px; }
+            .hero-h1 { font-size: 2.45rem; }
+            .hero-p { font-size: 1.05rem; }
+
+            .services-grid { grid-template-columns: 1fr; }
+
+            .service-actions {
+                justify-content: center;
+            }
+
+            .service-actions .btn,
+            .service-actions a.btn {
+                display: block;
+                width: min(260px, 100%);
+                margin: 10px auto 0;
+                text-align: center;
+            }
+
+            .services-cta .btn,
+            .services-cta a.btn {
+                display: block;
+                width: min(260px, 100%);
+                margin: 10px auto;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="background">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+
+        <main id="main">
+            <section class="hero" aria-labelledby="services-heading">
+                <div class="hero-text">
+                    <h1 id="services-heading" class="hero-h1">Our Services</h1>
+                    <p class="hero-p">All Terra Connect services in one place.<br>14 live service pages are now available<br>ready for your next project.</p>
+                </div>
+            </section>
+
+            <section class="services-wrap" aria-label="Service links hub">
+                <div class="services-intro">
+                    This page is your central service hub. All services below are now live with active pages ready to explore and use for discovery, planning, and project execution.
+                </div>
+
+                <h2 class="services-section-title">Live Services (Already On Website)</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Front-End Development</h3>
+                        <p>Responsive, accessible, and conversion-focused frontend experiences for modern businesses.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/frontend-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Back-End Development</h3>
+                        <p>Scalable backend systems, APIs, integrations, and secure server-side architecture.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/backend-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Mobile Applications</h3>
+                        <p>iOS and Android app delivery with product-first UX and performance-minded development.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/mobile-applications/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>AI &amp; Automation Agency</h3>
+                        <p>AI workflow optimization, automation systems, and practical implementation for business growth.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/ai-automation-agency/">Open Service Page</a></div>
+                    </article>
+                </div>
+
+                <h2 class="services-section-title">New Specialist Services (Now Live)</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>React Native App Development Services</h3>
+                        <p>Cross-platform React Native delivery with reusable components and scalable architecture.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/react-native-app-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>iOS App Development (Swift)</h3>
+                        <p>Native iOS application engineering focused on quality, speed, and long-term maintainability.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/ios-app-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Android App Development</h3>
+                        <p>Custom Android app design and development for user retention, performance, and reliability.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/android-app-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Cross-Platform App Development</h3>
+                        <p>Unified mobile products for iOS and Android with shared logic and platform-specific polish.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/cross-platform-app-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Web App Development Services</h3>
+                        <p>Interactive web application builds for dashboards, SaaS products, and internal platforms.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/web-app-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Custom Software Development</h3>
+                        <p>Bespoke software systems tailored to operations, workflows, and business-specific logic.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/custom-software-development/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>AI Consulting &amp; Strategy</h3>
+                        <p>Practical AI roadmaps, tool selection, and implementation planning aligned to business outcomes.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/ai-consulting-strategy/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>AI Workflow Automation</h3>
+                        <p>Automation design for sales, operations, and support using AI-enhanced process flows.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/ai-workflow-automation/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Marketing Automation Services</h3>
+                        <p>Lead nurturing and campaign automation with CRM-connected workflows and conversion tracking.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/marketing-automation-services/">Open Service Page</a></div>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>E-commerce Development Services</h3>
+                        <p>Shopify, WooCommerce, and scalable e-commerce architecture for growth-focused stores.</p>
+                        <div class="service-meta"><span class="service-badge live">Live</span></div>
+                        <div class="service-actions"><a class="btn focus-ring" href="/services/ecommerce-development/">Open Service Page</a></div>
+                    </article>
+                </div>
+
+                <section class="services-cta" aria-label="Services call to action">
+                    <p>Need one of the planned services first? We can prioritize and launch that page and delivery workflow immediately.</p>
+                    <a class="btn focus-ring" href="/get-a-quote/">Get a Quote</a>
+                    <a class="btn secondary focus-ring" href="/contacts/">Contact Us</a>
+                </section>
+            </section>
+        </main>
+
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    </div>
+
+    <script src="/scripts/scripts.js?v=20260402-3"></script>
+</body>
+
+</html>

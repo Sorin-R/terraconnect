@@ -240,7 +240,7 @@
     function normalizePath(pathname) {
         if (!pathname) return '/';
         let path = pathname.split('?')[0].split('#')[0];
-        path = path.replace(/\/index\.html$/i, '/');
+        path = path.replace(/\/index\.(html|php)$/i, '/');
         path = path.replace(/\/{2,}/g, '/');
         if (path !== '/' && path.endsWith('/')) path = path.slice(0, -1);
         return path || '/';

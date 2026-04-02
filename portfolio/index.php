@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <title>Portfolio — Terra Connect | AI Agency in London</title>
+    <meta name="description"
+        content="Explore Terra Connect portfolio projects across AI automation, websites, backend systems, and mobile experiences delivered for growth-focused businesses." />
+    <meta name="keywords"
+        content="Terra Connect portfolio, AI agency projects London, web development case studies, mobile app portfolio, backend development projects" />
+
+    <link rel="canonical" href="https://www.terraconnect.co.uk/portfolio/" />
+    <link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/portfolio/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/portfolio/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.terraconnect.co.uk/portfolio/" />
+    <meta property="og:title" content="Portfolio — Terra Connect | AI Agency in London" />
+    <meta property="og:description"
+        content="Selected projects from Terra Connect covering AI solutions, modern web platforms, mobile apps, and scalable backend systems." />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
+    <meta property="og:site_name" content="Terra Connect Ltd" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio — Terra Connect | AI Agency in London" />
+    <meta name="twitter:description"
+        content="Selected projects from Terra Connect covering AI solutions, modern web platforms, mobile apps, and scalable backend systems." />
+
+    <meta name="theme-color" content="#06B6D4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Terra Connect" />
+
+    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <link rel="preload" href="/styles/index.css" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="print" onload="this.media='all'" />
+
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Terra Connect Portfolio",
+            "description": "Selected Terra Connect projects in AI, web development, backend engineering, and mobile applications.",
+            "url": "https://www.terraconnect.co.uk/portfolio/",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd",
+                "url": "https://www.terraconnect.co.uk/"
+            }
+        }
+    </script>
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https:;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        frame-src https://www.google.com;
+        " />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            overflow-x: hidden !important;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background-color: rgb(2, 10, 34);
+            color: #fff;
+            background-image: url('/images/img-webp/jeremiah.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            z-index: 4000;
+            background: #fff;
+            color: #000;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .focus-ring:focus-visible {
+            outline: 3px solid #4657ed;
+            outline-offset: 3px;
+        }
+
+        header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            margin: 0;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background-color: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            border-radius: 20px;
+        }
+
+        header.scrolled {
+            background-color: rgb(2, 10, 34);
+            box-shadow: #4657ed 0 0 5px 2px;
+        }
+
+        #navMenu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navMenu ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        #navMenu ul li a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 3px 20px;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #navMenu ul li a::after,
+        #navMenu ul li a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #navMenu ul li a::after {
+            bottom: -6px;
+        }
+
+        #navMenu ul li a::before {
+            top: -6px;
+        }
+
+        #navMenu ul li a:hover::after,
+        #navMenu ul li a:hover::before,
+        #navMenu ul li a.active-page::after,
+        #navMenu ul li a.active-page::before {
+            width: 100%;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 32px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 1111;
+            background: transparent;
+            border: 0;
+            color: #fff;
+        }
+
+        .logo-header {
+            width: 250px;
+            height: auto;
+            z-index: 100;
+        }
+
+        main {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: left;
+            padding-top: 96px;
+            padding-bottom: 50px;
+        }
+
+        .hero {
+            text-align: center;
+            color: #ffffff;
+            padding: 120px 8px 50px;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+
+        .hero-h1 {
+            position: static;
+            font-size: 3.4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4657ed, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+        }
+
+        .hero-p {
+            position: static;
+            color: #ffffff;
+            margin: 0;
+            text-align: center;
+            transform: translateX(100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .animate-h1 {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .animate-p {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0 0;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-wrap {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .portfolio-intro {
+            background: rgba(2, 10, 34, 0.9);
+            border-radius: 18px;
+            border: 1px solid rgba(70, 87, 237, 0.25);
+            padding: 30px;
+            margin-bottom: 24px;
+            line-height: 1.75;
+            color: #dbe2f2;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(280px, 1fr));
+            gap: 22px;
+            margin-bottom: 26px;
+        }
+
+        .portfolio-card {
+            background: rgba(2, 10, 34, 0.9);
+            border: 1px solid rgba(70, 87, 237, 0.28);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            position: relative;
+            min-height: 560px;
+        }
+
+        .portfolio-card img {
+            width: 90%;
+            height: auto;
+            border-radius: 12px;
+            position: absolute;
+            top: 16px;
+            right: -30%;
+            transition: transform 1s ease, right 1s ease;
+        }
+
+        .portfolio-card:hover img {
+            right: 5%;
+            width: 90%;
+            transform: scale(1.08);
+        }
+
+        .portfolio-content {
+            margin-top: 300px;
+            padding: 14px 4px 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.2rem;
+            color: #f7f9ff;
+            line-height: 1.4;
+        }
+
+        .portfolio-content p {
+            color: #c8d2ea;
+            line-height: 1.65;
+            font-size: 0.98rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .portfolio-tags li {
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(70, 87, 237, 0.4);
+            background: rgba(70, 87, 237, 0.16);
+            color: #eaf0ff;
+        }
+
+        .portfolio-actions {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-cta {
+            background: rgba(2, 10, 34, 0.9);
+            border: 1px solid rgba(70, 87, 237, 0.3);
+            border-radius: 18px;
+            padding: 34px 24px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+
+        .portfolio-cta h2 {
+            margin: 0 0 14px;
+            font-size: 2rem;
+            color: #f3f6ff;
+        }
+
+        .portfolio-cta p {
+            color: #cfdaef;
+            max-width: 760px;
+            margin: 0 auto 18px;
+            line-height: 1.7;
+            font-size: 1.04rem;
+        }
+
+        @media (max-width: 1024px) {
+            .logo-header {
+                width: 180px;
+                height: auto;
+                position: static;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            #navMenu {
+                display: none;
+                position: fixed;
+                inset: 0;
+                width: 100%;
+                height: 100dvh;
+                background-color: rgb(2, 10, 34);
+                text-align: center;
+                padding: 80px 0 20px;
+                z-index: 1000;
+            }
+
+            #navMenu.active {
+                display: block;
+            }
+
+            #navMenu ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 0;
+            }
+
+            #navMenu ul li a {
+                font-size: 18px;
+                padding: 15px 24px;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            #navMenu ul li a::before,
+            #navMenu ul li a::after {
+                content: none !important;
+            }
+
+            .hero {
+                padding: 112px 8px 34px;
+            }
+
+            .hero-h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-p {
+                font-size: 1.08rem;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-card {
+                padding: 14px;
+                min-height: 0;
+            }
+
+            .portfolio-card img {
+                position: static;
+                width: 100%;
+                height: auto;
+                max-height: 320px;
+                object-fit: contain;
+                right: auto;
+                transform: none;
+                transition: none;
+            }
+
+            .portfolio-card:hover img {
+                right: auto;
+                width: 100%;
+                transform: none;
+            }
+
+            .portfolio-content {
+                margin-top: 0;
+                align-items: center;
+                text-align: center;
+            }
+
+            .portfolio-intro,
+            .portfolio-content h3,
+            .portfolio-content p,
+            .portfolio-cta,
+            .portfolio-cta p {
+                text-align: center;
+            }
+
+            .portfolio-tags,
+            .portfolio-actions {
+                justify-content: center;
+            }
+
+            .portfolio-cta h2 {
+                font-size: 1.65rem;
+            }
+
+            .portfolio-cta {
+                padding: 28px 18px;
+            }
+
+            .portfolio-cta .btn,
+            .portfolio-cta .btn.secondary {
+                display: block;
+                width: min(260px, 100%);
+                margin: 10px auto;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .portfolio-card img {
+                position: static;
+                right: auto;
+                width: 100%;
+                transform: none;
+                transition: none;
+            }
+
+            .portfolio-content {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="background">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+
+        <main id="main">
+            <section class="hero" aria-labelledby="portfolio-heading">
+                <div class="hero-text">
+                    <h1 id="portfolio-heading" class="hero-h1">Portfolio</h1>
+                    <p class="hero-p">
+                        Real work delivered for startups and growing businesses.<br>
+                        Explore selected builds across AI, web, backend, and mobile products<br>
+                        with clear outcomes and execution quality.
+                    </p>
+                </div>
+                <div class="hero-cta">
+                    <a class="btn focus-ring" href="/get-a-quote/">Start Your Project</a>
+                    <a class="btn secondary focus-ring" href="/contacts/">Talk to Us</a>
+                </div>
+            </section>
+
+            <section class="portfolio-wrap" aria-label="Portfolio projects">
+                <div class="portfolio-intro">
+                    Every project in this portfolio is built with the same objective: measurable business outcomes.
+                    We focus on clean UX, fast load times, scalable architecture, and conversion-focused user flows.
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/sorin.terraconnect.png" alt="Sorin Rotaru personal portfolio website project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Professional portfolio website for Sorin Rotaru with a clean hero layout, structured
+                                navigation, and sections for about, portfolio, education, and contact.</p>
+                            <ul class="portfolio-tags">
+                                <li>Portfolio Site</li>
+                                <li>Frontend Build</li>
+                                <li>Responsive UI</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn focus-ring" href="https://sorin.terraconnect.co.uk/" target="_blank" rel="noopener noreferrer">View Live</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/buy-zone.png" alt="Buy Zone e-commerce project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>BuyZone E-commerce Store</h3>
+                            <p>Online retail storefront focused on gaming products with category navigation, search,
+                                promotions, and a streamlined path from discovery to checkout.</p>
+                            <ul class="portfolio-tags">
+                                <li>E-commerce</li>
+                                <li>UI/UX</li>
+                                <li>Conversion Flow</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn focus-ring" href="https://buy-zone.co.uk/" target="_blank" rel="noopener noreferrer">View Live</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/gbone.png" alt="GBONE furniture assembly website project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>GBONE Service Website</h3>
+                            <p>Service-business website for a furniture assembly brand, designed with clear service
+                                categories, strong trust messaging, and a lead-oriented homepage structure.</p>
+                            <ul class="portfolio-tags">
+                                <li>Service Website</li>
+                                <li>Lead Generation</li>
+                                <li>Frontend</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn secondary focus-ring" href="/frontend-development/">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/seo-tool.png" alt="SEO research dashboard web app project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>SEO Analytics Dashboard</h3>
+                            <p>Data-driven SEO research tool with KPI cards, rank tracking, and multi-site
+                                visibility metrics designed for daily monitoring and decision support.</p>
+                            <ul class="portfolio-tags">
+                                <li>Web App</li>
+                                <li>Analytics</li>
+                                <li>Dashboard UI</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn secondary focus-ring" href="/ai-workflow-automation/">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/app.png" alt="Social-style mobile app interface project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>Social Mobile App UI</h3>
+                            <p>Mobile-first interface concept with feed-style interactions, social actions, and
+                                engagement-focused navigation designed for daily usage.</p>
+                            <ul class="portfolio-tags">
+                                <li>Mobile Apps</li>
+                                <li>UI Design</li>
+                                <li>User Engagement</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn secondary focus-ring" href="/mobile-applications/">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="/images/img-png/laptop.png" alt="Mental Muscle Movement event website project preview" loading="lazy" />
+                        <div class="portfolio-content">
+                            <h3>Community Event Website</h3>
+                            <p>Website for a sports and wellness community featuring event promotion, registration
+                                paths, and content sections aligned to participation goals.</p>
+                            <ul class="portfolio-tags">
+                                <li>Website Build</li>
+                                <li>Event Promotion</li>
+                                <li>Content Structure</li>
+                            </ul>
+                            <div class="portfolio-actions">
+                                <a class="btn secondary focus-ring" href="/frontend-development/">Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <section class="portfolio-cta" aria-label="Portfolio call to action">
+                    <h2>Ready to Build Something Similar?</h2>
+                    <p>
+                        If you need a project with this level of quality and execution, we can plan the scope,
+                        timeline, and delivery approach with you.
+                    </p>
+                    <a class="btn focus-ring" href="/get-a-quote/">Get a Quote</a>
+                    <a class="btn secondary focus-ring" href="/contacts/">Contact Us</a>
+                </section>
+            </section>
+        </main>
+
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    </div>
+
+    <script src="/scripts/scripts.js?v=20260402-3"></script>
+</body>
+
+</html>

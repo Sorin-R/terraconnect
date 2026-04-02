@@ -4,6 +4,12 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://terraconnect.co.uk/$1 [L,R=301]
 
+DirectoryIndex index.php index.html
+
+# Redirect legacy index.html URLs to clean directory URLs
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
+
 
 # ----------------------------------------------------------------------
 # Content Security Policy (CSP)
