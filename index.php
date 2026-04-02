@@ -276,7 +276,7 @@ media="print" onload="this.media='all'" />
             <section class="web-section" aria-labelledby="web-services-heading">
                 <h2 id="web-services-heading" class="visually-hidden">Technologies we use</h2>
                 <!-- <article class="web-icon"></article> -->
-                <article class="web-icon">
+                <article class="web-icon" data-tech="html">
                     <div title="HTML5 web development">
                         <h3>{ HTML 5 }</h3>
                         <img class="first-image" src="/images/img-png/web-section-img/html.png"
@@ -284,7 +284,7 @@ media="print" onload="this.media='all'" />
                     </div>
                 </article>
 
-                <article class="web-icon">
+                <article class="web-icon" data-tech="css">
                     <div title="CSS3 styling and design">
                         <h3>{ CSS 3 }</h3>
                         <img src="/images/img-png/web-section-img/css.png" alt="CSS3 styling and responsive design"
@@ -292,7 +292,7 @@ media="print" onload="this.media='all'" />
                     </div>
                 </article>
 
-                <article class="web-icon">
+                <article class="web-icon" data-tech="javascript">
                     <div title="JavaScript programming">
                         <h3>{ JS }</h3>
                         <img src="/images/img-png/web-section-img/js.png" alt="JavaScript programming language"
@@ -300,7 +300,7 @@ media="print" onload="this.media='all'" />
                     </div>
                 </article>
 
-                <article class="web-icon">
+                <article class="web-icon" data-tech="bootstrap">
                     <div title="Bootstrap framework">
                         <h3>{ B }</h3>
                         <img src="/images/img-png/web-section-img/bootstrap.png" alt="Bootstrap CSS framework"
@@ -308,7 +308,7 @@ media="print" onload="this.media='all'" />
                     </div>
                 </article>
 
-                <article class="web-icon">
+                <article class="web-icon" data-tech="react">
                     <div title="React framework">
                         <h3>{ React }</h3>
                         <img src="/images/img-png/web-section-img/react.png" alt="React JavaScript framework"
@@ -316,7 +316,7 @@ media="print" onload="this.media='all'" />
                     </div>
                 </article>
 
-                <article class="web-icon">
+                <article class="web-icon" data-tech="nodejs">
                     <div title="Node.js runtime">
                         <h3>{ Node }</h3>
                         <img src="/images/img-png/web-section-img/node.png" alt="Node.js backend runtime environment"

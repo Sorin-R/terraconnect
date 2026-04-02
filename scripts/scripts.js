@@ -11,6 +11,38 @@
     const CONSENT_MAX_AGE_DAYS = 365;
     const CONSENT_ACCEPTED = 'accepted';
     const CONSENT_DECLINED = 'declined';
+    const TECH_STACK_INFO = {
+        html: {
+            title: 'HTML5',
+            description:
+                'HTML is the structure of every webpage. It defines headings, text, buttons, forms, and content blocks so browsers know what to display.',
+        },
+        css: {
+            title: 'CSS3',
+            description:
+                'CSS controls design and layout. It handles colors, spacing, typography, animations, and responsive behavior across desktop, tablet, and mobile.',
+        },
+        javascript: {
+            title: 'JavaScript',
+            description:
+                'JavaScript adds interactivity. It powers dynamic UI behavior like sliders, menus, form validation, and live updates without reloading pages.',
+        },
+        bootstrap: {
+            title: 'Bootstrap',
+            description:
+                'Bootstrap is a UI framework with prebuilt components and grid utilities. It speeds up development and helps keep pages consistent and responsive.',
+        },
+        react: {
+            title: 'React',
+            description:
+                'React is a component-based frontend library. It helps build fast, scalable interfaces where reusable blocks update efficiently as data changes.',
+        },
+        nodejs: {
+            title: 'Node.js',
+            description:
+                'Node.js runs JavaScript on the server. It is used for APIs, backend services, integrations, and realtime features with high performance.',
+        },
+    };
     const NON_ESSENTIAL_COOKIE_PATTERNS = [
         /^_ga($|_)/i,
         /^_gid$/i,
@@ -276,6 +308,94 @@
         return headingText;
     }
 
+    function initTechInfoModal() {
+        const techIcons = Array.from(
+            document.querySelectorAll('.web-section .web-icon[data-tech]')
+        );
+        if (!techIcons.length) return;
+
+        let modal = document.getElementById('techInfoModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'techInfoModal';
+            modal.className = 'tech-info-modal';
+            modal.hidden = true;
+            modal.innerHTML = `
+                <div class="tech-info-modal__overlay" data-tech-close="true"></div>
+                <div class="tech-info-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="techInfoModalTitle">
+                    <button type="button" class="tech-info-modal__close" aria-label="Close technology info" data-tech-close="true">&times;</button>
+                    <h3 id="techInfoModalTitle" class="tech-info-modal__title"></h3>
+                    <p class="tech-info-modal__text" id="techInfoModalText"></p>
+                </div>
+            `;
+            body.appendChild(modal);
+        }
+
+        const titleEl = modal.querySelector('#techInfoModalTitle');
+        const textEl = modal.querySelector('#techInfoModalText');
+        if (!titleEl || !textEl) return;
+
+        let lastFocusedElement = null;
+
+        const closeModal = () => {
+            modal.classList.remove('is-open');
+            modal.hidden = true;
+            if (!navMenu || !navMenu.classList.contains('active')) {
+                body.classList.remove('no-scroll');
+            }
+            if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                lastFocusedElement.focus();
+            }
+        };
+
+        const openModal = (techKey, triggerElement) => {
+            const info = TECH_STACK_INFO[techKey];
+            if (!info) return;
+            titleEl.textContent = info.title;
+            textEl.textContent = info.description;
+            lastFocusedElement = triggerElement || document.activeElement;
+            modal.hidden = false;
+            modal.classList.add('is-open');
+            body.classList.add('no-scroll');
+            const closeBtn = modal.querySelector('.tech-info-modal__close');
+            if (closeBtn) closeBtn.focus();
+        };
+
+        techIcons.forEach(icon => {
+            const techKey = (icon.dataset.tech || '').trim().toLowerCase();
+            const info = TECH_STACK_INFO[techKey];
+            if (!info) return;
+
+            icon.classList.add('is-interactive');
+            icon.setAttribute('role', 'button');
+            icon.setAttribute('tabindex', '0');
+            icon.setAttribute('aria-haspopup', 'dialog');
+            icon.setAttribute('aria-label', `Learn more about ${info.title}`);
+
+            icon.addEventListener('click', () => openModal(techKey, icon));
+            icon.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openModal(techKey, icon);
+                }
+            });
+        });
+
+        modal.addEventListener('click', event => {
+            const target = event.target;
+            if (!(target instanceof HTMLElement)) return;
+            if (target.matches('[data-tech-close="true"]')) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+                closeModal();
+            }
+        });
+    }
+
     function syncCurrentPageInHeaderMenu() {
         if (!navMenu) return;
         const list = navMenu.querySelector('ul');
@@ -349,6 +469,7 @@
     document.addEventListener('DOMContentLoaded', syncCurrentPageInHeaderMenu);
     window.addEventListener('pageshow', syncCurrentPageInHeaderMenu);
     initCookieConsent();
+    initTechInfoModal();
 
     /* =======================
      Mobile menu toggle
