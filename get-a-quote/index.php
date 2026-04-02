@@ -120,7 +120,7 @@ media="print" onload="this.media='all'" />
             <!-- Contact Form -->
             <section class="contact-section get-a-quote-contact-section">
                 <div class="form-section">
-                    <h2 class="section-title">Send Us a Message</h2>
+                    <h1 id="contact-form-title" class="section-title">Get a Quote</h1>
                     <form class="contact-form" action="#" method="POST" aria-labelledby="contact-form-title">
                         <div class="form-grid">
                             <div class="form-group">
