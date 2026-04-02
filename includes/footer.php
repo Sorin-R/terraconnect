@@ -82,3 +82,27 @@
         </div>
     </footer>
 </div>
+
+<div class="speak-human-widget" id="speakHumanWidget">
+    <button class="speak-human-fab focus-ring" id="speakHumanToggle" type="button" aria-expanded="false"
+        aria-controls="speakHumanPanel" aria-label="Open Talk to Human chat">
+        <i class="fa-solid fa-comment-dots fa-beat-fade" aria-hidden="true"></i>
+        <span class="sr-only">Talk to Human</span>
+    </button>
+
+    <div class="speak-human-panel" id="speakHumanPanel" hidden>
+        <div class="speak-human-panel-header">
+            <strong>Talk to Human</strong>
+            <button class="speak-human-close focus-ring" id="speakHumanClose" type="button" aria-label="Close chat">
+                &times;
+            </button>
+        </div>
+        <p class="speak-human-hint">Type your message and we will continue on WhatsApp.</p>
+        <label class="sr-only" for="speakHumanMessage">Message</label>
+        <textarea id="speakHumanMessage" maxlength="600"
+            placeholder="Hi Terra Connect, I would like to discuss my project..."></textarea>
+        <button class="btn speak-human-send focus-ring" id="speakHumanSend" type="button">
+            Send to WhatsApp
+        </button>
+    </div>
+</div>

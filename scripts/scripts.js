@@ -7,6 +7,7 @@
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const GA_MEASUREMENT_ID = 'G-2REQR762M8';
+    const WHATSAPP_PHONE_NUMBER = '447537988738';
     const CONSENT_COOKIE_KEY = 'tc_cookie_consent';
     const CONSENT_MAX_AGE_DAYS = 365;
     const CONSENT_ACCEPTED = 'accepted';
@@ -396,6 +397,80 @@
         });
     }
 
+    function initSpeakHumanWidget() {
+        const widget = document.getElementById('speakHumanWidget');
+        if (!widget) return;
+
+        const toggleBtn = document.getElementById('speakHumanToggle');
+        const panel = document.getElementById('speakHumanPanel');
+        const closeBtn = document.getElementById('speakHumanClose');
+        const sendBtn = document.getElementById('speakHumanSend');
+        const messageInput = document.getElementById('speakHumanMessage');
+
+        if (!toggleBtn || !panel || !closeBtn || !sendBtn || !messageInput) return;
+
+        const fallbackMessage =
+            'Hi Terra Connect, I would like to speak with a human.';
+
+        function setOpen(isOpen) {
+            panel.hidden = !isOpen;
+            widget.classList.toggle('is-open', isOpen);
+            toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            toggleBtn.setAttribute(
+                'aria-label',
+                isOpen ? 'Close Talk to Human chat' : 'Open Talk to Human chat'
+            );
+            if (isOpen) {
+                messageInput.focus();
+            }
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
+            setOpen(!isOpen);
+        });
+
+        closeBtn.addEventListener('click', () => {
+            setOpen(false);
+            toggleBtn.focus();
+        });
+
+        sendBtn.addEventListener('click', () => {
+            const userMessage = messageInput.value.trim();
+            const message = userMessage || fallbackMessage;
+            const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(
+                message
+            )}`;
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        });
+
+        messageInput.addEventListener('keydown', event => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendBtn.click();
+            }
+        });
+
+        document.addEventListener('click', event => {
+            if (
+                toggleBtn.getAttribute('aria-expanded') === 'true' &&
+                !widget.contains(event.target)
+            ) {
+                setOpen(false);
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (
+                event.key === 'Escape' &&
+                toggleBtn.getAttribute('aria-expanded') === 'true'
+            ) {
+                setOpen(false);
+                toggleBtn.focus();
+            }
+        });
+    }
+
     function syncCurrentPageInHeaderMenu() {
         if (!navMenu) return;
         const list = navMenu.querySelector('ul');
@@ -470,6 +545,7 @@
     window.addEventListener('pageshow', syncCurrentPageInHeaderMenu);
     initCookieConsent();
     initTechInfoModal();
+    initSpeakHumanWidget();
 
     /* =======================
      Mobile menu toggle

@@ -420,6 +420,19 @@
         text-align: center;
     }
 
+    .speak-human-widget {
+        right: 14px;
+        bottom: 88px;
+    }
+
+    .speak-human-fab {
+        width: 52px !important;
+        height: 52px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 18px;
+    }
+
     .service-block .btn,
     .service-block a.btn {
         width: 100%;
