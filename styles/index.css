@@ -253,7 +253,7 @@ h2.visible {
     /* margin: 0 -20px; */
     overflow: hidden;
     position: relative;
-    background-image: url('/images/img-png/jeremiah1.png');
+    background-image: url('/images/img-webp/jeremiah.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -367,7 +367,7 @@ h2.visible {
     position: absolute;
     left: 0;
     z-index: 2;
-    background-image: url('/images/img-png/jeremiah.png');
+    background-image: url('/images/img-webp/jeremiah.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -399,7 +399,7 @@ h2.visible {
     right: 0;
     width: 50px;
     height: 100%;
-    background-image: url('/images/img-png/jeremiah.png');
+    background-image: url('/images/img-webp/jeremiah.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
