@@ -5,6 +5,24 @@
         font-size: 30px;
     }
 
+    /* iOS/Android often fail to render fixed body backgrounds reliably */
+    body {
+        background-image: url('/images/img-webp/jeremiah.webp') !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        background-color: rgb(2, 10, 34) !important;
+    }
+
+    main {
+        background: rgba(5, 5, 23, 0.45) !important;
+    }
+
+    .web-section {
+        background-color: rgba(2, 10, 34, 0.45) !important;
+    }
+
     /* Header adjustments */
     header {
         padding: 12px 5%;
