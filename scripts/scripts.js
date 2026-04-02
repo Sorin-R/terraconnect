@@ -190,9 +190,9 @@
         banner.style.display = 'none';
         banner.innerHTML = `
             <div class="cookie-consent-content">
-                <p>We use essential cookies to run this website and optional analytics cookies to improve performance. Click &ldquo;Accept analytics&rdquo; to allow analytics cookies, or &ldquo;Decline&rdquo; to continue with essential cookies only. See our <a href="/cookie-policy/">Cookie Policy</a> for details.</p>
+                <p>We use essential cookies to run this website and optional analytics cookies to improve performance. Click &ldquo;Accept&rdquo; to allow analytics cookies, or &ldquo;Decline&rdquo; to continue with essential cookies only. See our <a href="/cookie-policy/">Cookie Policy</a> for details.</p>
                 <div class="cookie-consent-buttons">
-                    <button id="cookieAccept" class="btn cookie-btn-accept" type="button">Accept analytics</button>
+                    <button id="cookieAccept" class="btn cookie-btn-accept" type="button">Accept</button>
                     <button id="cookieDecline" class="btn cookie-btn-decline" type="button">Decline</button>
                 </div>
             </div>
