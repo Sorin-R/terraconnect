@@ -435,7 +435,7 @@ h2.visible {
     #navMenu ul li a.active-page,
     #navMenu ul li a[aria-current='page'] {
         color: #ffffff !important;
-        background: rgba(70, 87, 237, 0.22) !important;
+        background: transparent !important;
         border-radius: 0;
     }
 
