@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2REQR762M8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-2REQR762M8');
-    </script>
-
-    <!-- Critical Meta -->
+<head><!-- Critical Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -1219,38 +1209,7 @@
         </div>
     </div>
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookieConsent" class="cookie-consent" role="dialog" aria-label="Cookie consent" style="display: none;">
-        <div class="cookie-consent-content">
-            <p>We use cookies to improve your experience and analyse site traffic. By clicking &ldquo;Accept&rdquo;, you consent to the use of cookies. See our <a href="/cookie-policy/">Cookie Policy</a> for details.</p>
-            <div class="cookie-consent-buttons">
-                <button id="cookieAccept" class="btn cookie-btn-accept">Accept</button>
-                <button id="cookieDecline" class="btn cookie-btn-decline">Decline</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="/scripts/scripts.js" defer></script>
-
-    <!-- Cookie Consent Script -->
-    <script>
-        (function () {
-            var consent = localStorage.getItem('tc_cookie_consent');
-            var banner = document.getElementById('cookieConsent');
-            if (!banner) return;
-            if (!consent) {
-                banner.style.display = 'flex';
-            }
-            document.getElementById('cookieAccept').addEventListener('click', function () {
-                localStorage.setItem('tc_cookie_consent', 'accepted');
-                banner.style.display = 'none';
-            });
-            document.getElementById('cookieDecline').addEventListener('click', function () {
-                localStorage.setItem('tc_cookie_consent', 'declined');
-                banner.style.display = 'none';
-            });
-        })();
-    </script>
+    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
 
 </body>
 

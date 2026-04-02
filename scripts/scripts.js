@@ -6,6 +6,236 @@
     const body = document.body;
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
+    const GA_MEASUREMENT_ID = 'G-2REQR762M8';
+    const CONSENT_COOKIE_KEY = 'tc_cookie_consent';
+    const CONSENT_MAX_AGE_DAYS = 365;
+    const CONSENT_ACCEPTED = 'accepted';
+    const CONSENT_DECLINED = 'declined';
+    const NON_ESSENTIAL_COOKIE_PATTERNS = [
+        /^_ga($|_)/i,
+        /^_gid$/i,
+        /^_gat/i,
+        /^AMP_/i,
+        /^amplitude_/i,
+    ];
+    const NON_ESSENTIAL_STORAGE_PATTERNS = [
+        /^_ga($|_)/i,
+        /^_gid$/i,
+        /^_gat/i,
+        /amplitude/i,
+        /google_analytics/i,
+        /ga:/i,
+    ];
+
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+
+    function getCookie(name) {
+        const safeName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const match = document.cookie.match(
+            new RegExp(`(?:^|; )${safeName}=([^;]*)`)
+        );
+        return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    function setCookie(name, value, days) {
+        const maxAge = Math.max(1, Math.floor(days * 24 * 60 * 60));
+        const secureFlag = window.location.protocol === 'https:' ? '; Secure' : '';
+        document.cookie = `${name}=${encodeURIComponent(
+            value
+        )}; Max-Age=${maxAge}; Path=/; SameSite=Lax${secureFlag}`;
+    }
+
+    function getCandidateDomains() {
+        const host = window.location.hostname;
+        if (!host) return [];
+        const parts = host.split('.').filter(Boolean);
+        const domains = new Set([host, `.${host}`]);
+        for (let i = 1; i < parts.length - 1; i += 1) {
+            const domain = parts.slice(i).join('.');
+            domains.add(domain);
+            domains.add(`.${domain}`);
+        }
+        return Array.from(domains);
+    }
+
+    function deleteCookieEverywhere(name) {
+        const secureFlag = window.location.protocol === 'https:' ? '; Secure' : '';
+        const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+        const domains = [null, ...getCandidateDomains()];
+        domains.forEach(domain => {
+            const domainPart = domain ? `; Domain=${domain}` : '';
+            document.cookie = `${name}=; Expires=${expires}; Max-Age=0; Path=/${domainPart}${secureFlag}`;
+            document.cookie = `${name}=; Expires=${expires}; Max-Age=0; Path=/${domainPart}; SameSite=Lax${secureFlag}`;
+        });
+    }
+
+    function clearNonEssentialClientData() {
+        const cookieNames = document.cookie
+            .split(';')
+            .map(chunk => chunk.trim())
+            .filter(Boolean)
+            .map(chunk => chunk.split('=')[0]);
+
+        cookieNames.forEach(name => {
+            if (NON_ESSENTIAL_COOKIE_PATTERNS.some(pattern => pattern.test(name))) {
+                deleteCookieEverywhere(name);
+            }
+        });
+
+        try {
+            const keysToDelete = [];
+            for (let i = 0; i < localStorage.length; i += 1) {
+                const key = localStorage.key(i);
+                if (!key) continue;
+                if (
+                    key !== CONSENT_COOKIE_KEY &&
+                    NON_ESSENTIAL_STORAGE_PATTERNS.some(pattern => pattern.test(key))
+                ) {
+                    keysToDelete.push(key);
+                }
+            }
+            keysToDelete.forEach(key => localStorage.removeItem(key));
+        } catch (_err) {
+            // Ignore storage access failures.
+        }
+
+        try {
+            const keysToDelete = [];
+            for (let i = 0; i < sessionStorage.length; i += 1) {
+                const key = sessionStorage.key(i);
+                if (!key) continue;
+                if (NON_ESSENTIAL_STORAGE_PATTERNS.some(pattern => pattern.test(key))) {
+                    keysToDelete.push(key);
+                }
+            }
+            keysToDelete.forEach(key => sessionStorage.removeItem(key));
+        } catch (_err) {
+            // Ignore storage access failures.
+        }
+    }
+
+    function readStoredConsent() {
+        const cookieValue = getCookie(CONSENT_COOKIE_KEY);
+        if (cookieValue === CONSENT_ACCEPTED || cookieValue === CONSENT_DECLINED) {
+            return cookieValue;
+        }
+
+        // Backward compatibility for earlier localStorage implementation.
+        try {
+            const legacy = localStorage.getItem(CONSENT_COOKIE_KEY);
+            if (legacy === CONSENT_ACCEPTED || legacy === CONSENT_DECLINED) {
+                setCookie(CONSENT_COOKIE_KEY, legacy, CONSENT_MAX_AGE_DAYS);
+                return legacy;
+            }
+        } catch (_err) {
+            // Ignore storage access failures.
+        }
+
+        return null;
+    }
+
+    function storeConsent(value) {
+        setCookie(CONSENT_COOKIE_KEY, value, CONSENT_MAX_AGE_DAYS);
+        try {
+            localStorage.setItem(CONSENT_COOKIE_KEY, value);
+        } catch (_err) {
+            // Ignore storage access failures.
+        }
+    }
+
+    function ensureGoogleAnalyticsLoaded() {
+        if (window.__tcGaLoaded) return;
+
+        window.dataLayer = window.dataLayer || [];
+        if (typeof window.gtag !== 'function') {
+            window.gtag = function gtag() {
+                window.dataLayer.push(arguments);
+            };
+        }
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+
+        window.gtag('js', new Date());
+        window.gtag('config', GA_MEASUREMENT_ID, {
+            anonymize_ip: true,
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false,
+        });
+
+        window.__tcGaLoaded = true;
+    }
+
+    function applyAnalyticsConsent(consent) {
+        if (consent === CONSENT_ACCEPTED) {
+            window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+            ensureGoogleAnalyticsLoaded();
+            return;
+        }
+        window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+        clearNonEssentialClientData();
+    }
+
+    function buildCookieBanner() {
+        const existing = document.getElementById('cookieConsent');
+        if (existing) return existing;
+
+        const banner = document.createElement('div');
+        banner.id = 'cookieConsent';
+        banner.className = 'cookie-consent';
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', 'Cookie consent');
+        banner.style.display = 'none';
+        banner.innerHTML = `
+            <div class="cookie-consent-content">
+                <p>We use essential cookies to run this website and optional analytics cookies to improve performance. Click &ldquo;Accept analytics&rdquo; to allow analytics cookies, or &ldquo;Decline&rdquo; to continue with essential cookies only. See our <a href="/cookie-policy/">Cookie Policy</a> for details.</p>
+                <div class="cookie-consent-buttons">
+                    <button id="cookieAccept" class="btn cookie-btn-accept" type="button">Accept analytics</button>
+                    <button id="cookieDecline" class="btn cookie-btn-decline" type="button">Decline</button>
+                </div>
+            </div>
+        `;
+
+        body.appendChild(banner);
+        return banner;
+    }
+
+    function setBannerVisible(banner, visible) {
+        if (!banner) return;
+        banner.style.display = visible ? 'flex' : 'none';
+    }
+
+    function bindCookieBannerEvents(banner) {
+        if (!banner || banner.dataset.bound === 'true') return;
+        const acceptBtn = banner.querySelector('#cookieAccept');
+        const declineBtn = banner.querySelector('#cookieDecline');
+        if (!acceptBtn || !declineBtn) return;
+
+        acceptBtn.addEventListener('click', () => {
+            storeConsent(CONSENT_ACCEPTED);
+            applyAnalyticsConsent(CONSENT_ACCEPTED);
+            setBannerVisible(banner, false);
+        });
+
+        declineBtn.addEventListener('click', () => {
+            storeConsent(CONSENT_DECLINED);
+            applyAnalyticsConsent(CONSENT_DECLINED);
+            setBannerVisible(banner, false);
+        });
+
+        banner.dataset.bound = 'true';
+    }
+
+    function initCookieConsent() {
+        const consent = readStoredConsent();
+        applyAnalyticsConsent(consent);
+
+        const banner = buildCookieBanner();
+        bindCookieBannerEvents(banner);
+        setBannerVisible(banner, !consent);
+    }
 
     function normalizePath(pathname) {
         if (!pathname) return '/';
@@ -118,6 +348,7 @@
     syncCurrentPageInHeaderMenu();
     document.addEventListener('DOMContentLoaded', syncCurrentPageInHeaderMenu);
     window.addEventListener('pageshow', syncCurrentPageInHeaderMenu);
+    initCookieConsent();
 
     /* =======================
      Mobile menu toggle
