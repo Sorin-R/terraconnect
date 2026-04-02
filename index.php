@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 
-<head><!-- Critical Meta -->
+<head>
+    <!-- Critical Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +33,7 @@
     <meta property="og:title" content="AI Agency — Web & App Development in London | Terra Connect" />
     <meta property="og:description"
         content="London AI Agency: web & app development. We build fast, accessible AI chatbots, websites, apps, and backend systems for UK businesses." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/img-png/og-image.jpg" />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -49,7 +50,7 @@
     <meta name="apple-mobile-web-app-title" content="Terra Connect" />
 
     <!-- Favicons / Manifest -->
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
@@ -64,442 +65,182 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        media="print" onload="this.media='all'" />
+media="print" onload="this.media='all'" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
 
+    <link rel="stylesheet" href="/styles/pages/home.css" />
+
     <!-- Structured Data for Organization -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Terra Connect Ltd",
-            "alternateName": "Terra Connect",
-            "url": "https://www.terraconnect.co.uk/",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.terraconnect.co.uk/img-png/logo.png",
-                "width": 200,
-                "height": 60
-            },
-            "description": "Professional web & app development company in London, UK. We provide front-end, back-end and full-stack development for startups and businesses.",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "London",
-                "addressCountry": "GB"
-            },
-            "sameAs": [
-                "https://www.facebook.com/TerraConnectLtd",
-                "https://www.linkedin.com/in/sorin-rotaru-terraconnect/",
-                "https://x.com/sorin03032839?s=11"
-            ]
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Terra Connect Ltd",
+        "alternateName": "Terra Connect",
+        "url": "https://www.terraconnect.co.uk/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+            "width": 200,
+            "height": 60
+        },
+        "description": "Professional web & app development company in London, UK. We provide front-end, back-end and full-stack development for startups and businesses.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "GB"
+        },
+        "sameAs": [
+            "https://www.facebook.com/TerraConnectLtd",
+            "https://www.linkedin.com/in/sorin-rotaru-terraconnect/",
+            "https://x.com/sorin03032839?s=11"
+        ]
+    }
     </script>
 
     <!-- Structured Data for LocalBusiness -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Terra Connect Ltd",
-            "image": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
-            "description": "AI agency in London offering web development, mobile apps, AI chatbots, and automation solutions for startups and businesses.",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "London",
-                "addressRegion": "England",
-                "addressCountry": "GB"
-            },
-            "email": "hello@terraconnect.co.uk",
-            "url": "https://www.terraconnect.co.uk/",
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "18:00"
-            },
-            "sameAs": [
-                "https://www.facebook.com/TerraConnectLtd",
-                "https://www.linkedin.com/in/sorin-rotaru-terraconnect/",
-                "https://x.com/sorin03032839?s=11"
-            ]
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Terra Connect Ltd",
+        "image": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
+        "description": "AI agency in London offering web development, mobile apps, AI chatbots, and automation solutions for startups and businesses.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "England",
+            "addressCountry": "GB"
+        },
+        "email": "hello@terraconnect.co.uk",
+        "url": "https://www.terraconnect.co.uk/",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/TerraConnectLtd",
+            "https://www.linkedin.com/in/sorin-rotaru-terraconnect/",
+            "https://x.com/sorin03032839?s=11"
+        ]
+    }
     </script>
 
     <!-- Structured Data for Services -->
     <script type="application/ld+json">
-        [
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "Front-End Development",
-                "description": "Custom website development with React, HTML5, CSS3, and modern JavaScript frameworks for fast, responsive, and accessible websites.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/frontend-development/"
+    [{
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Front-End Development",
+            "description": "Custom website development with React, HTML5, CSS3, and modern JavaScript frameworks for fast, responsive, and accessible websites.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "Back-End Development",
-                "description": "Robust backend systems, APIs, databases, and server-side development with Node.js and modern technologies.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/backend-development/"
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "AI Agency & Automation",
-                "description": "AI chatbots, AI agents, and automation solutions to streamline business operations and improve customer engagement.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/ai-automation-agency/"
+            "url": "https://www.terraconnect.co.uk/frontend-development/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Back-End Development",
+            "description": "Robust backend systems, APIs, databases, and server-side development with Node.js and modern technologies.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "Mobile Application Development",
-                "description": "Custom iOS and Android app development including native and cross-platform solutions for businesses.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/mobile-applications/"
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "AI Workflow Automation",
-                "description": "Design and implementation of end-to-end automated workflows using AI, integrations, and no-code platforms.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/ai-workflow-automation/"
+            "url": "https://www.terraconnect.co.uk/backend-development/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "AI Agency & Automation",
+            "description": "AI chatbots, AI agents, and automation solutions to streamline business operations and improve customer engagement.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
             },
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "Marketing Automation Services",
-                "description": "AI-driven marketing automation for lead nurturing, campaign orchestration, segmentation, and reporting.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Terra Connect Ltd"
-                },
-                "areaServed": { "@type": "Country", "name": "GB" },
-                "url": "https://www.terraconnect.co.uk/marketing-automation-services/"
-            }
-        ]
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
+            },
+            "url": "https://www.terraconnect.co.uk/ai-automation-agency/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Mobile Application Development",
+            "description": "Custom iOS and Android app development including native and cross-platform solutions for businesses.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
+            },
+            "url": "https://www.terraconnect.co.uk/mobile-applications/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "AI Workflow Automation",
+            "description": "Design and implementation of end-to-end automated workflows using AI, integrations, and no-code platforms.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
+            },
+            "url": "https://www.terraconnect.co.uk/ai-workflow-automation/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Marketing Automation Services",
+            "description": "AI-driven marketing automation for lead nurturing, campaign orchestration, segmentation, and reporting.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Terra Connect Ltd"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "GB"
+            },
+            "url": "https://www.terraconnect.co.uk/marketing-automation-services/"
+        }
+    ]
     </script>
 
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
         frame-src https://www.google.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
-    <!-- Emergency CSS Styles -->
-    <style>
-        /* ============ Base Reset ============ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            overflow-x: hidden !important;
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
-                sans-serif;
-            color: #fff;
-            background-image: url('/images/img-webp/jeremiah.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        /* Visually hidden but accessible */
-        .visually-hidden {
-            position: absolute !important;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 1px, 1px);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }
-
-        .skip-link:focus {
-            left: 16px;
-            top: 16px;
-            z-index: 4000;
-            background: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 8px;
-        }
-
-        .focus-ring:focus-visible {
-            outline: 3px solid #4657ed;
-            outline-offset: 3px;
-        }
-
-        /* ============ Header ============ */
-        header {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            margin: 0;
-            padding: 12px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background-color: transparent;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease,
-                border-radius 0.3s ease;
-            border-radius: 20px;
-        }
-
-        header.scrolled {
-            background-color: rgb(2, 10, 34);
-            box-shadow: #4657ed 0 0 5px 2px;
-        }
-
-        /* ============ Menu Nav ============ */
-        #navMenu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #navMenu ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        #navMenu ul li a {
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 3px 20px;
-            position: relative;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        #navMenu ul li a:hover {
-            color: #ffffff;
-        }
-
-        #navMenu ul li a::after,
-        #navMenu ul li a::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            left: 0;
-            background-color: #ffffff;
-            transition: width 0.3s ease-in-out;
-        }
-
-        #navMenu ul li a::after {
-            bottom: -6px;
-        }
-
-        #navMenu ul li a::before {
-            top: -6px;
-        }
-
-        #navMenu ul li a:hover::after,
-        #navMenu ul li a:hover::before,
-        #navMenu ul li a.active-page::after,
-        #navMenu ul li a.active-page::before {
-            width: 100%;
-        }
-
-        .menu-icon {
-            display: none;
-            font-size: 32px;
-            line-height: 1;
-            cursor: pointer;
-            z-index: 1111;
-            background: transparent;
-            border: 0;
-            color: #fff;
-        }
-
-        /* ============ Logo ============ */
-        .logo-header {
-            width: 250px;
-            height: auto;
-            z-index: 100;
-        }
-
-        /* ============ Hero ============ */
-        .hero {
-            text-align: center;
-            color: #ffffff;
-            padding: 120px 2px 80px;
-            /* background: rgba(5, 5, 23, 0.5); */
-        }
-
-        .hero-h1 {
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 100px;
-        }
-
-        .hero-h1 {
-            position: static;
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-        }
-
-        .hero-p {
-            position: static;color: #ffffff;
-            margin: 0;
-            text-align: center;
-            transform: translateX(100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-            font-size: 1.3rem;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        .animate-h1 {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .animate-p {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .hero-cta {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0 50px 0;
-            align-items: center;
-        }
-
-        /* ============ Layout Backgrounds ============ */
-        main {
-            min-height: 100vh;
-            background: rgba(5, 5, 23, 0.8);
-            text-align: left;
-            padding-top: 96px;
-        }
-
-        /* ======== Mobile / Tablet Styles (<= 1024px) ======== */
-        @media (max-width: 1024px) {
-            .logo-header {
-                width: 180px;
-                height: auto;
-                position: static;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            #navMenu {
-                display: none;
-                position: fixed;
-                inset: 0;
-                width: 100%;
-                height: 100dvh;
-                background-color: rgb(2, 10, 34);
-                text-align: center;
-                padding: 80px 0 20px;
-                z-index: 1000;
-            }
-
-            #navMenu.active {
-                display: block;
-            }
-
-            #navMenu ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 0;
-            }
-
-            #navMenu ul li {
-                margin: 0;
-            }
-
-            #navMenu ul li a {
-                font-size: 18px;
-                padding: 15px 24px;
-                display: block;
-                width: auto;
-                margin: 0 auto;
-            }
-
-            #navMenu ul li a::before,
-            #navMenu ul li a::after {
-                content: none !important;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            .hero-text {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -516,7 +257,7 @@
                     <h1 id="hero-heading" class="hero-h1">
                         Ai Agency & Digital Solutions that <br /> Drive Growth for <br /> Startups & Businesses
                     </h1>
-                    <div class="hero-p-background"> 
+                    <div class="hero-p-background">
                         <p class="hero-p">
                             “We design and develop AI agents, chatbots, and websites<br>
                             plus mobile apps and backend systems<br>
@@ -538,48 +279,48 @@
                 <article class="web-icon">
                     <div title="HTML5 web development">
                         <h3>{ HTML 5 }</h3>
-                        <img class="first-image" src="/images/img-png/web-section-img/html.png" alt="HTML5 web development technology" width="100"
-                            height="100" loading="lazy" />
+                        <img class="first-image" src="/images/img-png/web-section-img/html.png"
+                            alt="HTML5 web development technology" width="100" height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
                     <div title="CSS3 styling and design">
                         <h3>{ CSS 3 }</h3>
-                        <img src="/images/img-png/web-section-img/css.png" alt="CSS3 styling and responsive design" width="100" height="100"
-                            loading="lazy" />
+                        <img src="/images/img-png/web-section-img/css.png" alt="CSS3 styling and responsive design"
+                            width="100" height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
                     <div title="JavaScript programming">
                         <h3>{ JS }</h3>
-                        <img src="/images/img-png/web-section-img/js.png" alt="JavaScript programming language" width="100" height="100"
-                            loading="lazy" />
+                        <img src="/images/img-png/web-section-img/js.png" alt="JavaScript programming language"
+                            width="100" height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
                     <div title="Bootstrap framework">
                         <h3>{ B }</h3>
-                        <img src="/images/img-png/web-section-img/bootstrap.png" alt="Bootstrap CSS framework" width="100"
-                            height="100" loading="lazy" />
+                        <img src="/images/img-png/web-section-img/bootstrap.png" alt="Bootstrap CSS framework"
+                            width="100" height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
                     <div title="React framework">
                         <h3>{ React }</h3>
-                        <img src="/images/img-png/web-section-img/react.png" alt="React JavaScript framework" width="100" height="100"
-                            loading="lazy" />
+                        <img src="/images/img-png/web-section-img/react.png" alt="React JavaScript framework"
+                            width="100" height="100" loading="lazy" />
                     </div>
                 </article>
 
                 <article class="web-icon">
                     <div title="Node.js runtime">
                         <h3>{ Node }</h3>
-                        <img src="/images/img-png/web-section-img/node.png" alt="Node.js backend runtime environment" width="100" height="100"
-                            loading="lazy" />
+                        <img src="/images/img-png/web-section-img/node.png" alt="Node.js backend runtime environment"
+                            width="100" height="100" loading="lazy" />
                     </div>
                 </article>
             </section>
@@ -625,7 +366,8 @@
                         <div class="lower-block-row a-6">
                             <h3>3</h3>
                             <p>Design User Interface</p>
-                            <a class="tile-link" href="/process/design-user-interface/" aria-label="Design User Interface"></a>
+                            <a class="tile-link" href="/process/design-user-interface/"
+                                aria-label="Design User Interface"></a>
                         </div>
                         <div class="lower-block-row a-7">
                             <h3>5</h3>
@@ -702,7 +444,8 @@
 
                     <aside class="right-block">
                         <div class="right-block-row">
-                            <a href="/process/design-user-interface/" class="tile-link" aria-label="Design User Interface"></a>
+                            <a href="/process/design-user-interface/" class="tile-link"
+                                aria-label="Design User Interface"></a>
                             <div class="content">
                                 <h3>3</h3>
                                 <p>Design User <br> Interface</p>
@@ -804,8 +547,7 @@
                             </div>
                         </a>
 
-                        <a href="/backend-development/" class="caroucel-link"
-                            aria-label="Backend development services">
+                        <a href="/backend-development/" class="caroucel-link" aria-label="Backend development services">
                             <div class="caroucel-item no-image">
                                 <h3>Backend Development</h3>
                                 <p>Our backend development services are designed for performance, security, and
@@ -830,8 +572,7 @@
                             </div>
                         </a>
 
-                        <a href="/our-services/" class="caroucel-link"
-                            aria-label="Explore all services">
+                        <a href="/our-services/" class="caroucel-link" aria-label="Explore all services">
                             <div class="caroucel-item no-image">
                                 <h3>Custom Software</h3>
                                 <p>Looking for custom software development that fits your workflows and growth plans?
@@ -972,9 +713,11 @@
                         <hr>
                         <p>
                             Manual tasks slow down growth and create bottlenecks across sales, operations, and support.
-                            We design AI-powered workflows that connect your tools, automate repetitive work, and keep data moving in real time.
+                            We design AI-powered workflows that connect your tools, automate repetitive work, and keep
+                            data moving in real time.
                             <br><br>
-                            From lead routing and CRM updates to proposal generation, onboarding, and internal approvals,
+                            From lead routing and CRM updates to proposal generation, onboarding, and internal
+                            approvals,
                             our workflow automations reduce errors and free your team for higher-value work.
                             <br><br>
                             We build on trusted platforms like Make, n8n, and API-based integrations to deliver reliable
@@ -989,10 +732,12 @@
                             We help you automate the full marketing funnel with smarter campaigns, better segmentation,
                             and personalized messaging powered by AI.
                             <br><br>
-                            Our team sets up lead nurturing sequences, email automation, audience scoring, campaign triggers,
+                            Our team sets up lead nurturing sequences, email automation, audience scoring, campaign
+                            triggers,
                             and reporting dashboards so your marketing runs consistently without manual follow-up.
                             <br><br>
-                            The result is faster pipeline growth, improved conversion rates, and clear visibility on what drives ROI.
+                            The result is faster pipeline growth, improved conversion rates, and clear visibility on
+                            what drives ROI.
                         </p>
                         <a class="btn focus-ring" href="/marketing-automation-services/">Read More...</a>
                     </article>
@@ -1000,14 +745,20 @@
                         <h3>Mobile Application Development</h3>
                         <hr>
                         <p>
-                            In today’s mobile-first world, having a dedicated mobile application is essential for business success.
-                            We develop custom iOS and Android apps that engage users, drive revenue, and build lasting customer relationships.
+                            In today’s mobile-first world, having a dedicated mobile application is essential for
+                            business success.
+                            We develop custom iOS and Android apps that engage users, drive revenue, and build lasting
+                            customer relationships.
                             <br><br>
-                            Whether you need a native iOS app, a powerful Android application, or a cross-platform solution that reaches both markets,
-                            our experienced mobile development team delivers high-quality apps that exceed user expectations.
+                            Whether you need a native iOS app, a powerful Android application, or a cross-platform
+                            solution that reaches both markets,
+                            our experienced mobile development team delivers high-quality apps that exceed user
+                            expectations.
                             <br><br>
-                            From initial concept and design through launch and ongoing support, we guide you through every step of the mobile app development process.
-                            Our apps achieve 3x higher conversion rates, generate significantly higher revenue, and improve customer retention by 42%.
+                            From initial concept and design through launch and ongoing support, we guide you through
+                            every step of the mobile app development process.
+                            Our apps achieve 3x higher conversion rates, generate significantly higher revenue, and
+                            improve customer retention by 42%.
                         </p>
                         <br>
                         <a class="btn focus-ring" href="/mobile-applications/">Read More...</a>
@@ -1087,9 +838,12 @@
                 <h2 id="testimonials-heading">What Our Clients Say</h2>
                 <div class="testimonials-grid">
                     <article class="testimonial-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
                         <blockquote>
-                            <p>&ldquo;Terra Connect transformed our online presence. Their AI chatbot integration increased customer engagement by 300%. Professional team with outstanding communication throughout the project.&rdquo;</p>
+                            <p>&ldquo;Terra Connect transformed our online presence. Their AI chatbot integration
+                                increased customer engagement by 300%. Professional team with outstanding communication
+                                throughout the project.&rdquo;</p>
                         </blockquote>
                         <footer>
                             <strong>Sarah J.</strong>
@@ -1098,9 +852,12 @@
                     </article>
 
                     <article class="testimonial-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
                         <blockquote>
-                            <p>&ldquo;From concept to launch in 6 weeks. The team delivered exactly what we needed and communicated every step of the way. Our new website loads 40% faster and converts significantly better.&rdquo;</p>
+                            <p>&ldquo;From concept to launch in 6 weeks. The team delivered exactly what we needed and
+                                communicated every step of the way. Our new website loads 40% faster and converts
+                                significantly better.&rdquo;</p>
                         </blockquote>
                         <footer>
                             <strong>Michael C.</strong>
@@ -1109,9 +866,11 @@
                     </article>
 
                     <article class="testimonial-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
                         <blockquote>
-                            <p>&ldquo;Our mobile app now has 42% better retention rates. The development quality is exceptional and the ongoing support keeps everything running smoothly.&rdquo;</p>
+                            <p>&ldquo;Our mobile app now has 42% better retention rates. The development quality is
+                                exceptional and the ongoing support keeps everything running smoothly.&rdquo;</p>
                         </blockquote>
                         <footer>
                             <strong>Emma R.</strong>
@@ -1126,7 +885,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 
 </body>
 

@@ -1,10 +1,12 @@
 <header id="site-header">
     <a href="/" class="logo-link" aria-label="Terra Connect Home">
-        <img class="logo-header" src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60" fetchpriority="high" />
+        <img class="logo-header" src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60"
+            fetchpriority="high" />
     </a>
 
-    <button class="menu-icon focus-ring" id="menuToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Open menu">
-        <i class="fas fa-bars" aria-hidden="true"></i>
+    <button class="menu-icon focus-ring" id="menuToggle" aria-controls="navMenu" aria-expanded="false"
+        aria-label="Open menu">
+        <img src="/images/img-svg/burger.svg" alt="" width="28" height="28" aria-hidden="true" />
     </button>
 
     <nav id="navMenu" aria-label="Primary">

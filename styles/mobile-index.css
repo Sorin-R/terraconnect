@@ -55,6 +55,29 @@
         border-radius: 0 !important;
     }
 
+    .menu-icon {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1111;
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu-icon i,
+    .menu-icon img,
+    .menu-icon .menu-close-symbol {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .menu-icon img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
     header.scrolled,
     #site-header.scrolled {
         top: 0 !important;
@@ -99,7 +122,12 @@
     }
 
     #navMenu ul {
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 10px !important;
+        width: 100% !important;
     }
 
     #navMenu ul li a {
@@ -108,6 +136,18 @@
         min-width: 0 !important;
         margin: 0 auto !important;
         text-align: right !important;
+    }
+
+    #navMenu ul li a::before,
+    #navMenu ul li a::after {
+        content: none !important;
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    #navMenu ul li {
+        margin: 0 !important;
     }
 
     #navMenu ul li a.active-page {

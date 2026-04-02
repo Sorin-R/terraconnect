@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
+        body { overflow-x: hidden !important; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background-color: rgb(2, 10, 34); color: #fff; background-image: url('/images/img-webp/jeremiah.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
+
+        main { min-height: 100vh; background: rgba(5, 5, 23, 0.8); padding-top: 120px; padding-bottom: 40px; display: flow-root; }
+        @media (max-width: 1024px) {
+
+            #navMenu.active { display: block; }
+
+        }
+        .sla-table { width:100%;border-collapse:collapse;margin:15px 0; }
+        .sla-table th,.sla-table td { padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.2); }
+        .sla-table th { background:rgba(70,87,237,0.15);color:#fff;font-weight:600; }
+        .sla-table td { color:#e0e0e0; }
+        .priority-critical { color:#ff6b6b;font-weight:600; }
+        .priority-high { color:#ffa94d;font-weight:600; }
+        .priority-medium { color:#6b7cf0;font-weight:600; }
+        .priority-low { color:#888;font-weight:600; }
+
+/* Inline style replacements */
+.inline-style-1 { max-width:900px;margin:0 auto 40px;padding:60px 40px; }
+.inline-style-2 { font-size:2.5rem;text-align:center;margin-bottom:10px;position:static;transform:none;opacity:1; }
+.inline-style-3 { text-align:center;color:#888;margin-bottom:10px; }
+.inline-style-4 { text-align:center;color:#888;margin-bottom:40px; }
+.inline-style-5 { text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none; }
+.inline-style-6 { margin-top:10px; }
+.inline-style-7 { margin-top:10px;color:#888;font-size:0.9rem; }
+.inline-style-8 { margin:15px 0;padding-left:20px; }
+.inline-style-9 { margin-bottom:10px; }
+.inline-style-10 { color:#06b6d4; }

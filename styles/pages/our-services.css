@@ -1,0 +1,198 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            overflow-x: hidden !important;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background-color: rgb(2, 10, 34);
+            color: #fff;
+            background-image: url('/images/img-webp/jeremiah.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        main {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: left;
+            padding-top: 96px;
+            padding-bottom: 50px;
+        }
+
+        .hero {
+            text-align: center;
+            color: #ffffff;
+            padding: 120px 8px 48px;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .hero-h1 {
+            position: static;
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4657ed, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+        }
+
+        .hero-p {
+            position: static;
+            color: #ffffff;
+            margin: 0;
+            text-align: center;
+            transform: translateX(100%);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .animate-h1 { transform: translateX(0); opacity: 1; }
+        .animate-p { transform: translateX(0); opacity: 1; }
+
+        .services-wrap {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .services-intro {
+            background: rgba(2, 10, 34, 0.9);
+            border-radius: 16px;
+            border: 1px solid rgba(70, 87, 237, 0.26);
+            padding: 26px;
+            margin-bottom: 24px;
+            line-height: 1.75;
+            color: #dbe2f2;
+        }
+
+        .services-section-title {
+            margin: 24px 0 14px;
+            font-size: 1.35rem;
+            color: #f3f7ff;
+            letter-spacing: 0.01em;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .service-card {
+            background: rgba(2, 10, 34, 0.9);
+            border: 1px solid rgba(70, 87, 237, 0.3);
+            border-radius: 14px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.08rem;
+            color: #f7f9ff;
+            line-height: 1.45;
+        }
+
+        .service-card p {
+            color: #c9d2e8;
+            line-height: 1.65;
+            font-size: 0.96rem;
+        }
+
+        .service-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .service-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(70, 87, 237, 0.35);
+            background: rgba(70, 87, 237, 0.16);
+            color: #eaf0ff;
+        }
+
+        .service-badge.live {
+            border-color: rgba(16, 185, 129, 0.45);
+            background: rgba(16, 185, 129, 0.2);
+            color: #d1fae5;
+        }
+
+        .service-actions {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .services-cta {
+            margin-top: 26px;
+            padding: 30px 22px;
+            border-radius: 16px;
+            border: 1px solid rgba(70, 87, 237, 0.32);
+            background: rgba(2, 10, 34, 0.9);
+            text-align: center;
+        }
+
+        .services-cta p {
+            color: #cfdaef;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        @media (max-width: 1024px) {
+
+            #navMenu.active { display: block; }
+
+            .hero { padding: 112px 8px 34px; }
+            .hero-h1 { font-size: 2.45rem; }
+            .hero-p { font-size: 1.05rem; }
+
+            .services-grid { grid-template-columns: 1fr; }
+
+            .service-actions {
+                justify-content: center;
+            }
+
+            .service-actions .btn,
+            .service-actions a.btn {
+                display: block;
+                width: min(260px, 100%);
+                margin: 10px auto 0;
+                text-align: center;
+            }
+
+            .services-cta .btn,
+            .services-cta a.btn {
+                display: block;
+                width: min(260px, 100%);
+                margin: 10px auto;
+                text-align: center;
+            }
+        }

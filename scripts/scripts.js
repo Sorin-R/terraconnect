@@ -354,14 +354,24 @@
      Mobile menu toggle
   ======================= */
 
+    function setMenuToggleIcon(isOpen) {
+        if (!menuToggle) return;
+        if (isOpen) {
+            menuToggle.innerHTML =
+                '<img src="/images/img-svg/close.svg" alt="" width="28" height="28" aria-hidden="true" />';
+            return;
+        }
+
+        menuToggle.innerHTML =
+            '<img src="/images/img-svg/burger.svg" alt="" width="28" height="28" aria-hidden="true" />';
+    }
+
     function openMenu() {
         navMenu.classList.add('active');
         body.classList.add('no-scroll');
         menuToggle.setAttribute('aria-expanded', 'true');
         menuToggle.setAttribute('aria-label', 'Close menu');
-        // swap icon (bars -> times)
-        menuToggle.innerHTML =
-            '<i class="fas fa-times" aria-hidden="true"></i>';
+        setMenuToggleIcon(true);
     }
 
     function closeMenu() {
@@ -369,8 +379,7 @@
         body.classList.remove('no-scroll');
         menuToggle.setAttribute('aria-expanded', 'false');
         menuToggle.setAttribute('aria-label', 'Open menu');
-        // swap icon back
-        menuToggle.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i>';
+        setMenuToggleIcon(false);
     }
 
     function toggleMenu() {
@@ -380,6 +389,8 @@
     }
 
     if (menuToggle && navMenu) {
+        setMenuToggleIcon(false);
+
         menuToggle.addEventListener('click', e => {
             e.stopPropagation();
             toggleMenu();

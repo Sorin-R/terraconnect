@@ -35,7 +35,7 @@
     <meta property="og:title" content="AI Automation Agency Guide: How AI Chatbots Drive Marketing Success" />
     <meta property="og:description" content="Discover how AI automation agencies use chatbots and AI marketing 
         strategies to boost business efficiency by 85% and reduce costs by 60%." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/img-png/og-image.jpg" />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -52,7 +52,7 @@
     <meta name="apple-mobile-web-app-title" content="Terra Connect" />
 
     <!-- Favicons / Manifest -->
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
@@ -67,11 +67,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        media="print" onload="this.media='all'" />
+media="print" onload="this.media='all'" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <link rel="stylesheet" href="/styles/pages/ai-automation-agency.css" />
 
     <!-- Structured Data for Article -->
     <script type="application/ld+json">
@@ -89,7 +92,7 @@
                 "name": "Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/img-png/logo.png",
+                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }
@@ -105,299 +108,17 @@
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
         frame-src https://www.google.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
-    <!-- Emergency CSS Styles -->
-    <style>
-        /* ============ Base Reset ============ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            overflow-x: hidden !important;
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
-                sans-serif;
-            color: #fff;
-            background-image: url('/images/img-webp/jeremiah.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        /* Visually hidden but accessible */
-        .visually-hidden {
-            position: absolute !important;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 1px, 1px);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }
-
-        .skip-link:focus {
-            left: 16px;
-            top: 16px;
-            z-index: 4000;
-            background: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 8px;
-        }
-
-        .focus-ring:focus-visible {
-            outline: 3px solid #4657ed;
-            outline-offset: 3px;
-        }
-
-        /* ============ Header ============ */
-        header {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            margin: 0;
-            padding: 12px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background-color: transparent;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease,
-                border-radius 0.3s ease;
-            border-radius: 20px;
-        }
-
-        header.scrolled {
-            background-color: rgb(2, 10, 34);
-            box-shadow: #4657ed 0 0 5px 2px;
-        }
-
-        /* ============ Menu Nav ============ */
-        #navMenu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #navMenu ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        #navMenu ul li a {
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 3px 20px;
-            position: relative;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        #navMenu ul li a:hover {
-            color: #ffffff;
-        }
-
-        #navMenu ul li a::after,
-        #navMenu ul li a::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            left: 0;
-            background-color: #ffffff;
-            transition: width 0.3s ease-in-out;
-        }
-
-        #navMenu ul li a::after {
-            bottom: -6px;
-        }
-
-        #navMenu ul li a::before {
-            top: -6px;
-        }
-
-        #navMenu ul li a:hover::after,
-        #navMenu ul li a:hover::before,
-        #navMenu ul li a.active-page::after,
-        #navMenu ul li a.active-page::before {
-            width: 100%;
-        }
-
-        .menu-icon {
-            display: none;
-            font-size: 32px;
-            line-height: 1;
-            cursor: pointer;
-            z-index: 1111;
-            background: transparent;
-            border: 0;
-            color: #fff;
-        }
-
-        /* ============ Logo ============ */
-        .logo-header {
-            width: 250px;
-            height: auto;
-            z-index: 100;
-        }
-
-        /* ============ Hero ============ */
-        .hero {
-            text-align: center;
-            color: #ffffff;
-            padding: 120px 2px 80px;
-            /* background: rgba(5, 5, 23, 0.5); */
-        }
-
-        .hero-h1 {
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 100px;
-        }
-
-        .hero-h1 {
-            position: static;
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-        }
-
-        .hero-p {
-            position: static;color: #ffffff;
-            margin: 0;
-            text-align: center;
-            transform: translateX(100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-            font-size: 1.3rem;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        .animate-h1 {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .animate-p {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .hero-cta {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0 50px 0;
-            align-items: center;
-        }
-
-        /* ============ Layout Backgrounds ============ */
-        main {
-            min-height: 100vh;
-            background: rgba(5, 5, 23, 0.8);
-            text-align: left;
-            padding-top: 96px;
-            padding-bottom: 100px;
-        }
-
-
-        /* ======== Mobile / Tablet Styles (<= 1024px) ======== */
-        @media (max-width: 1024px) {
-            .logo-header {
-                width: 180px;
-                height: auto;
-                position: static;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            #navMenu {
-                display: none;
-                position: fixed;
-                inset: 0;
-                width: 100%;
-                height: 100dvh;
-                background-color: rgb(2, 10, 34);
-                text-align: center;
-                padding: 80px 0 20px;
-                z-index: 1000;
-            }
-
-            #navMenu.active {
-                display: block;
-            }
-
-            #navMenu ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 0;
-            }
-
-            #navMenu ul li {
-                margin: 0;
-            }
-
-            #navMenu ul li a {
-                font-size: 18px;
-                padding: 15px 24px;
-                display: block;
-                width: auto;
-                margin: 0 auto;
-            }
-
-            #navMenu ul li a::before,
-            #navMenu ul li a::after {
-                content: none !important;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            .hero-text {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -561,21 +282,21 @@
                 </div>
 
                 <div class="benefits-grid">
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="increase-efficiency">
                         <div class="benefit-counter" data-target="85">0%</div>
-                        <div class="benefit-label"><a href="/increase-efficiency/">Increase Efficiency</a></div>
+                        <div class="benefit-label"><a href="#increase-efficiency">Increase Efficiency</a></div>
                         <div class="benefit-description">AI automation streamlines workflows and eliminates repetitive
                             tasks, boosting overall productivity.</div>
                     </div>
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="reduce-costs">
                         <div class="benefit-counter" data-target="60">0%</div>
-                        <div class="benefit-label"><a href="/reduce-costs/">Reduce Costs</a></div>
+                        <div class="benefit-label"><a href="#reduce-costs">Reduce Costs</a></div>
                         <div class="benefit-description">Automated processes significantly lower operational expenses
                             while maintaining quality.</div>
                     </div>
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="competitive-advantages">
                         <div class="benefit-counter" data-target="95">0%</div>
-                        <div class="benefit-label"><a href="/competitive-advantages/">Competitive Advantages</a></div>
+                        <div class="benefit-label"><a href="#competitive-advantages">Competitive Advantages</a></div>
                         <div class="benefit-description">Stay ahead with cutting-edge AI technology that gives you a
                             market edge.</div>
                     </div>
@@ -641,9 +362,9 @@
                 <p>Also, a trusted AI partner give strong support systems. So, this makes sure smooth work after setup. Plus,
                     every service boosts productivity and drives growth.</p>
 
-                <h3>AI Agents and <a href="/ai-chatbots/">AI Chatbots</a></h3>
+                <h3 id="ai-chatbots">AI Agents and <a href="#ai-chatbots">AI Chatbots</a></h3>
 
-                <p>AI agents and <a href="/ai-chatbots/">chatbots</a> are key services. They make customer service work
+                <p>AI agents and <a href="#ai-chatbots">chatbots</a> are key services. They make customer service work
                     better and keep people engaged. Also, chatbots automate talks. So, they give 24/7 support.</p>
 
                 <h4>Key features include:</h4>
@@ -654,7 +375,7 @@
                 </ul>
 
                 <p>Also, these tools make communication processes smoother. So, this cuts workload. Plus, <a
-                        href="/ai-chatbots/">AI chatbots</a> learn and grow. So, they offer accurate help.</p>
+                        href="#ai-chatbots">AI chatbots</a> learn and grow. So, they offer accurate help.</p>
 
                 <p>Also, agencies make sure their smooth use into existing systems.</p>
 
@@ -1042,7 +763,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 
 </body>
 

@@ -1,176 +1,255 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    
-    <!-- Homepage - Highest Priority -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.terraconnect.co.uk/" />
-        <!-- Add images if your homepage has important visuals -->
-        <image:image>
-            <image:loc>https://www.terraconnect.co.uk/img-png/logo.png</image:loc>
-            <image:title>Terra Connect - AI Agency London</image:title>
-        </image:image>
-    </url>
-
-    <!-- Core Service Pages - High Priority -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/ai-automation-agency/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/ai-automation-agency/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/frontend-development/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/frontend-development/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/backend-development/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/backend-development/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/mobile-applications/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/mobile-applications/" />
-    </url>
-
-    <!-- Essential Pages - Medium Priority -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/about-us/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/about-us/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/portfolio/</loc>
-        <lastmod>2026-04-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/portfolio/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/our-services/</loc>
-        <lastmod>2026-04-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/our-services/" />
-    </url>
-
-    <!-- Contact Page - High Priority (conversion focused) -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/contacts/</loc>
-        <lastmod>2026-03-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/contacts/" />
-    </url>
-
-    <!-- Process Pages - Medium Priority -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/initial-consultation/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/initial-consultation/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/optimal-solutions/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/optimal-solutions/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/design-user-interface/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/design-user-interface/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/working-prototype/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/working-prototype/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/agile-development/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/agile-development/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/quality-assurance/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/quality-assurance/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/launch-product/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/launch-product/" />
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/process/support-updates/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.terraconnect.co.uk/process/support-updates/" />
-    </url>
-
-    <!-- Legal Pages -->
-    <url>
-        <loc>https://www.terraconnect.co.uk/privacy-policy/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/terms-of-service/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
-        <loc>https://www.terraconnect.co.uk/cookie-policy/</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://terraconnect.co.uk/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/about-us/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/accessibility-statement/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/ai-automation-agency/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/ai-workflow-automation/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/anti-spam-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/backend-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/cancellation-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/complaints-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/contacts/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/cookie-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/data-processing-agreement/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/frontend-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/get-a-quote/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/intellectual-property-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/marketing-automation-services/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/mobile-applications/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/our-services/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/portfolio/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/privacy-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/agile-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/design-user-interface/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/initial-consultation/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/launch-product/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/optimal-solutions/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/quality-assurance/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/support-updates/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/process/working-prototype/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/security-policy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/service-level-agreement/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/ai-consulting-strategy/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/ai-workflow-automation/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/android-app-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/cross-platform-app-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/custom-software-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/ecommerce-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/ios-app-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/marketing-automation-services/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/react-native-app-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/services/web-app-development/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/subprocessor-list/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraconnect.co.uk/terms-of-service/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

@@ -23,60 +23,33 @@
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#06B6D4" />
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
     <link rel="manifest" href="/icon/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
+<link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;" />
+    <link rel="stylesheet" href="/styles/pages/data-processing-agreement.css" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://kit.fontawesome.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; }
-        body { overflow-x: hidden !important; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background-color: rgb(2, 10, 34); color: #fff; background-image: url('/images/img-webp/jeremiah.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
-        .skip-link { position: absolute; left: -9999px; top: -9999px; }
-        .skip-link:focus { left: 16px; top: 16px; z-index: 4000; background: #fff; color: #000; padding: 8px 12px; border-radius: 8px; }
-        .focus-ring:focus-visible { outline: 3px solid #4657ed; outline-offset: 3px; }
-        header { position: fixed; top: 10px; left: 10px; right: 10px; margin: 0; padding: 12px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background-color: transparent; transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; border-radius: 20px; }
-        header.scrolled { background-color: rgb(2, 10, 34); box-shadow: #4657ed 0 0 5px 2px; }
-        #navMenu { display: flex; align-items: center; justify-content: center; }
-        #navMenu ul { display: flex; list-style: none; gap: 10px; }
-        #navMenu ul li a { color: #fff; font-weight: 500; font-size: 16px; padding: 3px 20px; position: relative; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease; }
-        #navMenu ul li a::after, #navMenu ul li a::before { content: ''; position: absolute; width: 0; height: 3px; left: 0; background-color: #ffffff; transition: width 0.3s ease-in-out; }
-        #navMenu ul li a::after { bottom: -6px; }
-        #navMenu ul li a::before { top: -6px; }
-        #navMenu ul li a:hover::after, #navMenu ul li a:hover::before { width: 100%; }
-        .menu-icon { display: none; font-size: 32px; line-height: 1; cursor: pointer; z-index: 1111; background: transparent; border: 0; color: #fff; }
-        .logo-header { width: 250px; height: auto; z-index: 100; }
-        main { min-height: 100vh; background: rgba(5, 5, 23, 0.8); padding-top: 120px; padding-bottom: 40px; display: flow-root; }
-        @media (max-width: 1024px) {
-            .logo-header { width: 180px; height: auto; }
-            .menu-icon { display: flex; }
-            #navMenu { display: none; position: fixed; inset: 0; width: 100%; height: 100dvh; background-color: rgb(2, 10, 34); text-align: center; padding: 80px 0 20px; z-index: 1000; }
-            #navMenu.active { display: block; }
-            #navMenu ul { flex-direction: column; gap: 10px; }
-            #navMenu ul li a { font-size: 18px; padding: 15px 24px; display: block; }
-            #navMenu ul li a::before, #navMenu ul li a::after { content: none !important; }
-        }
-    </style>
-</head>
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" /></head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
     <main id="main">
-        <div class="content-section" style="max-width:900px;margin:0 auto 40px;padding:60px 40px;">
-            <h1 style="font-size:2.5rem;text-align:center;margin-bottom:10px;position:static;transform:none;opacity:1;">Data Processing Agreement</h1>
-            <p style="text-align:center;color:#888;margin-bottom:10px;"><strong>Version:</strong> 1.0 &mdash; April 2026</p>
-            <p style="text-align:center;color:#888;margin-bottom:40px;">This DPA forms part of the service agreement between Terra Connect Ltd and the Client and complies with UK GDPR Article 28.</p>
+        <div class="content-section inline-style-1">
+            <h1 class="inline-style-2">Data Processing Agreement</h1>
+            <p class="inline-style-3"><strong>Version:</strong> 1.0 &mdash; April 2026</p>
+            <p class="inline-style-4">This DPA forms part of the service agreement between Terra Connect Ltd and the Client and complies with UK GDPR Article 28.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">1. Definitions</h2>
+            <h2 class="inline-style-5">1. Definitions</h2>
             <p>In this Data Processing Agreement (&ldquo;DPA&rdquo;):</p>
             <ul>
                 <li><strong>&ldquo;Controller&rdquo;</strong> means the Client, who determines the purposes and means of processing personal data</li>
@@ -88,16 +61,16 @@
                 <li><strong>&ldquo;UK GDPR&rdquo;</strong> means the General Data Protection Regulation as retained in UK law under the Data Protection Act 2018</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">2. Scope &amp; Nature of Processing</h2>
+            <h2 class="inline-style-5">2. Scope &amp; Nature of Processing</h2>
             <p>Terra Connect Ltd will process personal data on behalf of the Client solely:</p>
             <ul>
                 <li>As necessary to provide the services described in the service agreement or statement of work</li>
                 <li>In accordance with the Controller&rsquo;s documented instructions</li>
                 <li>In compliance with this DPA and applicable data protection law</li>
             </ul>
-            <p style="margin-top:10px;">The subject matter, nature, purpose, and duration of processing, as well as the types of personal data and categories of data subjects, are set out in <strong>Schedule 1</strong> below.</p>
+            <p class="inline-style-6">The subject matter, nature, purpose, and duration of processing, as well as the types of personal data and categories of data subjects, are set out in <strong>Schedule 1</strong> below.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">3. Processor Obligations</h2>
+            <h2 class="inline-style-5">3. Processor Obligations</h2>
             <p>Terra Connect Ltd, acting as Processor, shall:</p>
             <ul>
                 <li>Process personal data only on documented instructions from the Controller, unless required to do so by UK law</li>
@@ -110,10 +83,10 @@
                 <li>Make available all information necessary to demonstrate compliance with this DPA and allow for and contribute to audits</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">4. Controller Instructions</h2>
+            <h2 class="inline-style-5">4. Controller Instructions</h2>
             <p>The Controller shall ensure that its instructions to the Processor are lawful and comply with applicable data protection legislation. Where the Processor considers that an instruction infringes UK GDPR or other applicable data protection law, it shall immediately inform the Controller. The Processor shall not be required to follow instructions that are unlawful.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">5. Security Measures</h2>
+            <h2 class="inline-style-5">5. Security Measures</h2>
             <p>Taking into account the state of the art, costs, and the nature, scope, context, and purposes of processing, the Processor implements the following technical and organisational measures:</p>
             <ul>
                 <li><strong>Encryption:</strong> Data encrypted in transit (TLS 1.2+) and at rest where applicable</li>
@@ -125,19 +98,19 @@
                 <li><strong>Incident response:</strong> Documented breach response procedure with ICO notification within 72 hours</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">6. Sub-processors</h2>
-            <p>The Controller grants general written authorisation for the Processor to engage sub-processors. A current list of sub-processors is available at <a href="/subprocessor-list/" style="color:#06b6d4;">terraconnect.co.uk/subprocessor-list</a>.</p>
-            <p style="margin-top:10px;">The Processor shall:</p>
+            <h2 class="inline-style-5">6. Sub-processors</h2>
+            <p>The Controller grants general written authorisation for the Processor to engage sub-processors. A current list of sub-processors is available at <a href="/subprocessor-list/" class="inline-style-7">terraconnect.co.uk/subprocessor-list</a>.</p>
+            <p class="inline-style-6">The Processor shall:</p>
             <ul>
                 <li>Impose data protection obligations equivalent to those in this DPA on any sub-processor by way of a written contract</li>
                 <li>Notify the Controller of any intended changes to sub-processors (additions or replacements) with at least <strong>14 days&rsquo; notice</strong></li>
                 <li>Remain fully liable to the Controller for the performance of the sub-processor&rsquo;s obligations</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">7. Data Subject Rights</h2>
+            <h2 class="inline-style-5">7. Data Subject Rights</h2>
             <p>The Processor shall promptly notify the Controller if it receives a request from a data subject exercising their rights under UK GDPR (access, rectification, erasure, restriction, portability, objection). The Processor shall not respond directly to such requests unless instructed to do so by the Controller, and shall provide all reasonable assistance to enable the Controller to respond within the required timeframe.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">8. Data Breach Notification</h2>
+            <h2 class="inline-style-5">8. Data Breach Notification</h2>
             <p>The Processor shall notify the Controller of any personal data breach <strong>without undue delay</strong> and, where feasible, within <strong>24 hours</strong> of becoming aware of the breach. The notification shall include:</p>
             <ul>
                 <li>A description of the nature of the breach</li>
@@ -147,57 +120,57 @@
                 <li>Measures taken or proposed to address the breach</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">9. International Transfers</h2>
+            <h2 class="inline-style-5">9. International Transfers</h2>
             <p>The Processor shall not transfer personal data outside the UK without ensuring an adequate level of protection is in place, including Standard Contractual Clauses (UK IDTA), adequacy regulations, or other appropriate safeguards under UK GDPR Chapter V.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">10. Data Return &amp; Deletion</h2>
+            <h2 class="inline-style-5">10. Data Return &amp; Deletion</h2>
             <p>Upon termination or expiry of the service agreement, the Processor shall, at the Controller&rsquo;s election:</p>
             <ul>
                 <li>Return all personal data to the Controller in a commonly used, machine-readable format; or</li>
                 <li>Securely delete or destroy all personal data and certify in writing that this has been done</li>
             </ul>
-            <p style="margin-top:10px;">The Processor may retain personal data to the extent required by UK law, and shall protect such retained data from further processing except as required by law.</p>
+            <p class="inline-style-6">The Processor may retain personal data to the extent required by UK law, and shall protect such retained data from further processing except as required by law.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">11. Audit Rights</h2>
+            <h2 class="inline-style-5">11. Audit Rights</h2>
             <p>The Controller has the right to audit the Processor&rsquo;s compliance with this DPA upon reasonable notice (minimum 14 days). Audits shall be conducted at the Controller&rsquo;s expense, no more than once per year, during normal business hours, and with minimum disruption to the Processor&rsquo;s business. The Processor may satisfy audit obligations by providing relevant third-party audit reports (e.g. ISO 27001 certification).</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">12. Governing Law</h2>
+            <h2 class="inline-style-5">12. Governing Law</h2>
             <p>This DPA is governed by the laws of England and Wales and shall be construed in accordance with them.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">Schedule 1 &mdash; Processing Details</h2>
-            <table style="width:100%;border-collapse:collapse;margin:15px 0;">
+            <h2 class="inline-style-5">Schedule 1 &mdash; Processing Details</h2>
+            <table class="inline-style-8">
                 <tbody>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;width:35%;">Subject Matter</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Delivery of web development, mobile application development, AI automation, and related digital services</td>
+                        <td class="inline-style-9">Subject Matter</td>
+                        <td class="inline-style-10">Delivery of web development, mobile application development, AI automation, and related digital services</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;">Nature of Processing</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Collection, storage, retrieval, consultation, use, disclosure, erasure, and destruction of personal data as necessary to deliver the agreed services</td>
+                        <td class="inline-style-11">Nature of Processing</td>
+                        <td class="inline-style-10">Collection, storage, retrieval, consultation, use, disclosure, erasure, and destruction of personal data as necessary to deliver the agreed services</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;">Purpose</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Building, testing, and deploying digital products and services on behalf of the Controller</td>
+                        <td class="inline-style-11">Purpose</td>
+                        <td class="inline-style-10">Building, testing, and deploying digital products and services on behalf of the Controller</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;">Duration</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">For the term of the service agreement plus any applicable legal retention period</td>
+                        <td class="inline-style-11">Duration</td>
+                        <td class="inline-style-10">For the term of the service agreement plus any applicable legal retention period</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;">Types of Personal Data</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">As specified in the service agreement; typically may include contact details, usage data, and other data provided by the Controller</td>
+                        <td class="inline-style-11">Types of Personal Data</td>
+                        <td class="inline-style-10">As specified in the service agreement; typically may include contact details, usage data, and other data provided by the Controller</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#6b7cf0;font-weight:600;">Categories of Data Subjects</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">The Controller&rsquo;s customers, employees, or end-users as specified in the service agreement</td>
+                        <td class="inline-style-11">Categories of Data Subjects</td>
+                        <td class="inline-style-10">The Controller&rsquo;s customers, employees, or end-users as specified in the service agreement</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">Request This DPA</h2>
+            <h2 class="inline-style-5">Request This DPA</h2>
             <p>To receive a signed copy of this Data Processing Agreement for your records, or to discuss its terms, please contact us:</p>
-            <p style="margin-top:10px;">
-                <strong>Data Protection Contact:</strong> <a href="mailto:privacy@terraconnect.co.uk" style="color:#06b6d4;">privacy@terraconnect.co.uk</a><br />
+            <p class="inline-style-6">
+                <strong>Data Protection Contact:</strong> <a href="mailto:privacy@terraconnect.co.uk" class="inline-style-7">privacy@terraconnect.co.uk</a><br />
                 <strong>Company:</strong> Terra Connect Ltd (Company No. 12492304)<br />
                 <strong>Address:</strong> 57 Tonbridge Drive, Basildon, SS15 6ND, United Kingdom
             </p>
@@ -208,6 +181,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 </body>
 </html>

@@ -23,122 +23,95 @@
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#06B6D4" />
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
     <link rel="manifest" href="/icon/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
+<link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;" />
+    <link rel="stylesheet" href="/styles/pages/intellectual-property-policy.css" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://kit.fontawesome.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; }
-        body { overflow-x: hidden !important; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background-color: rgb(2, 10, 34); color: #fff; background-image: url('/images/img-webp/jeremiah.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
-        .skip-link { position: absolute; left: -9999px; top: -9999px; }
-        .skip-link:focus { left: 16px; top: 16px; z-index: 4000; background: #fff; color: #000; padding: 8px 12px; border-radius: 8px; }
-        .focus-ring:focus-visible { outline: 3px solid #4657ed; outline-offset: 3px; }
-        header { position: fixed; top: 10px; left: 10px; right: 10px; margin: 0; padding: 12px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background-color: transparent; transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; border-radius: 20px; }
-        header.scrolled { background-color: rgb(2, 10, 34); box-shadow: #4657ed 0 0 5px 2px; }
-        #navMenu { display: flex; align-items: center; justify-content: center; }
-        #navMenu ul { display: flex; list-style: none; gap: 10px; }
-        #navMenu ul li a { color: #fff; font-weight: 500; font-size: 16px; padding: 3px 20px; position: relative; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease; }
-        #navMenu ul li a::after, #navMenu ul li a::before { content: ''; position: absolute; width: 0; height: 3px; left: 0; background-color: #ffffff; transition: width 0.3s ease-in-out; }
-        #navMenu ul li a::after { bottom: -6px; }
-        #navMenu ul li a::before { top: -6px; }
-        #navMenu ul li a:hover::after, #navMenu ul li a:hover::before { width: 100%; }
-        .menu-icon { display: none; font-size: 32px; line-height: 1; cursor: pointer; z-index: 1111; background: transparent; border: 0; color: #fff; }
-        .logo-header { width: 250px; height: auto; z-index: 100; }
-        main { min-height: 100vh; background: rgba(5, 5, 23, 0.8); padding-top: 120px; padding-bottom: 40px; display: flow-root; }
-        @media (max-width: 1024px) {
-            .logo-header { width: 180px; }
-            .menu-icon { display: flex; }
-            #navMenu { display: none; position: fixed; inset: 0; width: 100%; height: 100dvh; background-color: rgb(2, 10, 34); text-align: center; padding: 80px 0 20px; z-index: 1000; }
-            #navMenu.active { display: block; }
-            #navMenu ul { flex-direction: column; gap: 10px; }
-            #navMenu ul li a { font-size: 18px; padding: 15px 24px; display: block; }
-            #navMenu ul li a::before, #navMenu ul li a::after { content: none !important; }
-        }
-    </style>
-</head>
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" /></head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
     <main id="main">
-        <div class="content-section" style="max-width:900px;margin:0 auto 40px;padding:60px 40px;">
-            <h1 style="font-size:2.5rem;text-align:center;margin-bottom:10px;position:static;transform:none;opacity:1;">Intellectual Property Policy</h1>
-            <p style="text-align:center;color:#888;margin-bottom:40px;"><strong>Last Updated:</strong> April 2026</p>
+        <div class="content-section inline-style-1">
+            <h1 class="inline-style-2">Intellectual Property Policy</h1>
+            <p class="inline-style-3"><strong>Last Updated:</strong> April 2026</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">1. Overview</h2>
+            <h2 class="inline-style-4">1. Overview</h2>
             <p>This Intellectual Property Policy explains who owns the intellectual property rights in work created during and after a service engagement with Terra Connect Ltd. It covers our website content, custom-built deliverables, pre-existing IP, and third-party components.</p>
-            <p style="margin-top:10px;">This policy is governed by English law, including the <strong>Copyright, Designs and Patents Act 1988</strong> and the <strong>Trade Marks Act 1994</strong>.</p>
+            <p class="inline-style-5">This policy is governed by English law, including the <strong>Copyright, Designs and Patents Act 1988</strong> and the <strong>Trade Marks Act 1994</strong>.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">2. Terra Connect Ltd Website &amp; Brand</h2>
+            <h2 class="inline-style-4">2. Terra Connect Ltd Website &amp; Brand</h2>
             <p>All content, trademarks, logos, source code, designs, text, images, and other materials on <strong>terraconnect.co.uk</strong> are the exclusive property of Terra Connect Ltd, unless otherwise stated, and are protected by copyright and other intellectual property laws.</p>
-            <ul style="margin-top:10px;">
+            <ul class="inline-style-5">
                 <li>You may not copy, reproduce, distribute, or create derivative works from our website content without our prior written consent</li>
                 <li>Our name, logo, and trading style are unregistered trademarks of Terra Connect Ltd</li>
                 <li>Viewing our website does not transfer any IP rights to you</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">3. Custom Deliverables &mdash; Client Projects</h2>
+            <h2 class="inline-style-4">3. Custom Deliverables &mdash; Client Projects</h2>
 
-            <h3 style="color:#6b7cf0;margin:20px 0 10px;font-size:1.1rem;">a) Default Position</h3>
+            <h3 class="inline-style-6">a) Default Position</h3>
             <p>Unless otherwise agreed in writing in the service agreement or statement of work, the following applies:</p>
-            <table style="width:100%;border-collapse:collapse;margin:15px 0;">
+            <table class="inline-style-7">
                 <thead>
                     <tr>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">What</th>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">Owner</th>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">Notes</th>
+                        <th class="inline-style-8">What</th>
+                        <th class="inline-style-8">Owner</th>
+                        <th class="inline-style-8">Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Custom code written specifically for your project</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Client (upon full payment)</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Ownership transfers on receipt of final payment</td>
+                        <td class="inline-style-9">Custom code written specifically for your project</td>
+                        <td class="inline-style-9">Client (upon full payment)</td>
+                        <td class="inline-style-9">Ownership transfers on receipt of final payment</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Design assets created specifically for your project</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Client (upon full payment)</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Includes logos, UI designs, and graphics made for you</td>
+                        <td class="inline-style-9">Design assets created specifically for your project</td>
+                        <td class="inline-style-9">Client (upon full payment)</td>
+                        <td class="inline-style-9">Includes logos, UI designs, and graphics made for you</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Pre-existing Terra Connect tools, frameworks, and libraries</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Terra Connect Ltd</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Licensed to you for use in the delivered project</td>
+                        <td class="inline-style-9">Pre-existing Terra Connect tools, frameworks, and libraries</td>
+                        <td class="inline-style-9">Terra Connect Ltd</td>
+                        <td class="inline-style-9">Licensed to you for use in the delivered project</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Third-party open-source software and components</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Respective licence holders</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Governed by their respective licences (e.g. MIT, Apache 2.0)</td>
+                        <td class="inline-style-9">Third-party open-source software and components</td>
+                        <td class="inline-style-9">Respective licence holders</td>
+                        <td class="inline-style-9">Governed by their respective licences (e.g. MIT, Apache 2.0)</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Content you provide (text, images, data)</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Client</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">You grant us a licence to use it for the project</td>
+                        <td class="inline-style-9">Content you provide (text, images, data)</td>
+                        <td class="inline-style-9">Client</td>
+                        <td class="inline-style-9">You grant us a licence to use it for the project</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3 style="color:#6b7cf0;margin:20px 0 10px;font-size:1.1rem;">b) Condition of Transfer</h3>
+            <h3 class="inline-style-6">b) Condition of Transfer</h3>
             <p>IP ownership in custom deliverables transfers to you only upon <strong>receipt of full and final payment</strong> for the project. Until full payment is received, Terra Connect Ltd retains all intellectual property rights, and any licence granted is suspended.</p>
 
-            <h3 style="color:#6b7cf0;margin:20px 0 10px;font-size:1.1rem;">c) Portfolio Licence</h3>
+            <h3 class="inline-style-6">c) Portfolio Licence</h3>
             <p>Unless you request otherwise in writing before project commencement, you grant Terra Connect Ltd a perpetual, royalty-free, non-exclusive licence to display your project in our portfolio (website, social media, proposals) for marketing and demonstration purposes.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">4. Open-Source Components</h2>
+            <h2 class="inline-style-4">4. Open-Source Components</h2>
             <p>Many of our projects incorporate open-source software. We ensure all open-source components are used in compliance with their respective licences. We will notify you of all open-source components included in your deliverable and their licence terms upon request.</p>
-            <p style="margin-top:10px;">Common licences used include MIT, Apache 2.0, and ISC. These generally permit commercial use, modification, and distribution provided attribution requirements are met.</p>
+            <p class="inline-style-5">Common licences used include MIT, Apache 2.0, and ISC. These generally permit commercial use, modification, and distribution provided attribution requirements are met.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">5. Client Warranties</h2>
+            <h2 class="inline-style-4">5. Client Warranties</h2>
             <p>By engaging our services, you warrant that:</p>
             <ul>
                 <li>You own or have the right to use all content, materials, data, and IP you provide to us</li>
@@ -146,15 +119,15 @@
                 <li>You will indemnify Terra Connect Ltd against any claims arising from materials you provided</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">6. Infringement</h2>
+            <h2 class="inline-style-4">6. Infringement</h2>
             <p>If you believe that content on our website or in our deliverables infringes your intellectual property rights, please contact us promptly:</p>
-            <p style="margin-top:10px;">
-                <strong>Email:</strong> <a href="mailto:hello@terraconnect.co.uk" style="color:#06b6d4;">hello@terraconnect.co.uk</a><br />
+            <p class="inline-style-5">
+                <strong>Email:</strong> <a href="mailto:hello@terraconnect.co.uk" class="inline-style-10">hello@terraconnect.co.uk</a><br />
                 <strong>Subject:</strong> IP Infringement Notice<br />
                 <strong>Company:</strong> Terra Connect Ltd (Company No. 12492304)<br />
                 <strong>Address:</strong> 57 Tonbridge Drive, Basildon, SS15 6ND, United Kingdom
             </p>
-            <p style="margin-top:10px;">Please include your contact details, a description of the alleged infringement, and the location of the infringing content.</p>
+            <p class="inline-style-5">Please include your contact details, a description of the alleged infringement, and the location of the infringing content.</p>
         </div>
     </main>
 
@@ -162,6 +135,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 </body>
 </html>

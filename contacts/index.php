@@ -32,7 +32,7 @@
     <meta property="og:title" content="Contact Terra Connect — AI Agency in London" />
     <meta property="og:description"
         content="Get in touch with Terra Connect for AI development services. Located in Basildon, serving London and the UK." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/img-png/og-image.jpg" />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -49,7 +49,7 @@
     <meta name="apple-mobile-web-app-title" content="Terra Connect" />
 
     <!-- Favicons / Manifest -->
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
@@ -64,11 +64,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        media="print" onload="this.media='all'" />
+media="print" onload="this.media='all'" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <link rel="stylesheet" href="/styles/pages/contacts.css" />
 
     <!-- Structured Data for Contact Page -->
     <script type="application/ld+json">
@@ -83,7 +86,7 @@
                 "name": " Terra Connect Ltd",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/img-png/logo.png",
+                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }
@@ -94,568 +97,17 @@
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
         frame-src https://www.google.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
-    <!-- Emergency CSS Styles -->
-    <style>
-        /* ============ Base Reset ============ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            overflow-x: hidden !important;
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
-                sans-serif;
-            color: #fff;
-            background-image: url('/images/img-webp/jeremiah.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        body.no-scroll {
-            overflow: hidden;
-        }
-
-        /* Visually hidden but accessible */
-        .visually-hidden {
-            position: absolute !important;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 1px, 1px);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }
-
-        .skip-link:focus {
-            left: 16px;
-            top: 16px;
-            z-index: 4000;
-            background: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 8px;
-        }
-
-        .focus-ring:focus-visible {
-            outline: 3px solid #4657ed;
-            outline-offset: 3px;
-        }
-
-        /* ============ Header ============ */
-        header {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            margin: 0;
-            padding: 12px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background-color: transparent;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease,
-                border-radius 0.3s ease;
-            border-radius: 20px;
-        }
-
-        header.scrolled {
-            background-color: rgb(2, 10, 34);
-            box-shadow: #4657ed 0 0 5px 2px;
-        }
-
-        /* ============ Menu Nav ============ */
-        #navMenu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #navMenu ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        #navMenu ul li a {
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 3px 20px;
-            position: relative;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            text-decoration: none;
-        }
-
-        #navMenu ul li a:hover {
-            color: #ffffff;
-        }
-
-        #navMenu ul li a::after,
-        #navMenu ul li a::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            left: 0;
-            background-color: #ffffff;
-            transition: width 0.3s ease-in-out;
-        }
-
-        #navMenu ul li a::after {
-            bottom: -6px;
-        }
-
-        #navMenu ul li a::before {
-            top: -6px;
-        }
-
-        #navMenu ul li a:hover::after,
-        #navMenu ul li a:hover::before,
-        #navMenu ul li a.active-page::after,
-        #navMenu ul li a.active-page::before {
-            width: 100%;
-        }
-
-        .menu-icon {
-            display: none;
-            font-size: 32px;
-            line-height: 1;
-            cursor: pointer;
-            z-index: 1111;
-            background: transparent;
-            border: 0;
-            color: #fff;
-        }
-
-        /* ============ Logo ============ */
-        .logo-header {
-            width: 250px;
-            height: auto;
-            z-index: 100;
-        }
-
-        /* ============ Hero ============ */
-        .hero {
-            text-align: center;
-            color: #ffffff;
-            padding: 120px 20px 80px;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 60px;
-        }
-
-        .hero-h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #4657ed, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 20px;
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-            margin-bottom: 100px;
-        }
-
-        .hero-p {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: #e5e7eb;line-height: 1.6;
-            transform: translateX(100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-        }
-
-        .animate-h1 {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .animate-p {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .hero-cta {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0 50px 0;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        /* ============ Buttons ============ */
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #4657ed, #06b6d4);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(70, 87, 237, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(70, 87, 237, 0.4);
-        }
-
-        .btn.secondary {
-            background: transparent;
-            border: 2px solid #4657ed;
-            color: #4657ed;
-        }
-
-        .btn.secondary:hover {
-            background: #4657ed;
-            color: #fff;
-        }
-
-        /* ============ Layout Backgrounds ============ */
-        main {
-            min-height: 100vh;
-            background: rgba(0, 0, 0, 0.532);
-            text-align: left;
-            padding-top: 96px;
-            padding-bottom: 50px;
-        }
-
-
-        /* ============ Contact Sections ============ */
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .contact-section {
-            background: rgba(2, 10, 34, 0.9);
-            border-radius: 20px;
-            margin-bottom: 40px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(70, 87, 237, 0.2);
-            overflow: hidden;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #4657ed, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        /* ============ Contact Info Cards ============ */
-        .contact-info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 40px;
-        }
-
-        .contact-card {
-            background: rgba(70, 87, 237, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(70, 87, 237, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(70, 87, 237, 0.2);
-        }
-
-        .contact-icon {
-            font-size: 2.5rem;
-            color: #4657ed;
-            margin-bottom: 20px;
-        }
-
-        .contact-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 15px;
-        }
-
-        .contact-details {
-            color: #e5e7eb;
-            line-height: 1.6;
-        }
-
-        .contact-details a {
-            color: #06b6d4;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-details a:hover {
-            color: #4657ed;
-        }
-
-        /* ============ Contact Form ============ */
-        .form-section {
-            padding: 40px;
-        }
-
-        .contact-form {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            color: #e5e7eb;
-            font-weight: 500;
-            margin-bottom: 8px;
-            font-size: 1rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            background: rgba(70, 87, 237, 0.1);
-            border: 1px solid rgba(70, 87, 237, 0.3);
-            border-radius: 10px;
-            color: #fff;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #4657ed;
-            box-shadow: 0 0 0 3px rgba(70, 87, 237, 0.2);
-        }
-
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: #9ca3af;
-        }
-
-        .form-submit {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        /* ============ Google Maps ============ */
-        .map-section {
-            padding: 0;
-            height: 400px;
-        }
-
-        .map-container {
-            width: 100%;
-            height: 100%;
-            border-radius: 0 0 20px 20px;
-            overflow: hidden;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            filter: hue-rotate(200deg) invert(90%) saturate(120%);
-        }
-
-        /* ============ Social Links ============ */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: rgba(70, 87, 237, 0.1);
-            border: 1px solid rgba(70, 87, 237, 0.3);
-            border-radius: 50%;
-            color: #4657ed;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: #4657ed;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-
-        /* ======== Mobile / Tablet Styles (<= 1024px) ======== */
-        @media (max-width: 1024px) {
-            .logo-header {
-                width: 180px;
-                height: auto;
-                position: static;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            #navMenu {
-                display: none;
-                position: fixed;
-                inset: 0;
-                width: 100%;
-                height: 100dvh;
-                background-color: rgb(2, 10, 34);
-                text-align: center;
-                padding: 80px 0 20px;
-                z-index: 1000;
-            }
-
-            #navMenu.active {
-                display: block;
-            }
-
-            #navMenu ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 0;
-            }
-
-            #navMenu ul li {
-                margin: 0;
-            }
-
-            #navMenu ul li a {
-                font-size: 18px;
-                padding: 15px 24px;
-                display: block;
-                width: auto;
-                margin: 0 auto;
-            }
-
-            #navMenu ul li a::before,
-            #navMenu ul li a::after {
-                content: none !important;
-            }
-
-            .hero-h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-p {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .contact-info-grid {
-                grid-template-columns: 1fr;
-                padding: 20px;
-            }
-
-            .form-section {
-                padding: 20px;
-            }
-
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-container {
-                padding: 0 10px;
-            }
-
-            .map-section {
-                height: 300px;
-            }
-        }
-
-        /* ============ Reduced Motion ============ */
-        @media (prefers-reduced-motion: reduce) {
-
-            .hero-h1,
-            .hero-p,
-            .btn,
-            .info-item {
-                transition: none !important;
-                animation: none !important;
-                transform: none !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -846,9 +298,9 @@
                         <div class="map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39728.89279988514!2d0.4283156!3d51.5702464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6e4a6e4a6e5%3A0x6e4a6e4a6e4a6e4!2sBasildon%2C%20SS15%206ND%2C%20UK!5e0!3m2!1sen!2sus!4v1699000000000!5m2!1sen!2sus"
-                                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="600" height="400" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                title="Terra Connect Location - Basildon, Essex SS15 6ND">
+                                title="Terra Connect Location - Basildon, Essex SS15 6ND" class="inline-style-1">
                             </iframe>
                         </div>
                     </div>
@@ -856,15 +308,15 @@
 
                 <!-- Why Choose Us CTA -->
                 <section class="contact-section">
-                    <div class="form-section" style="text-align: center;">
+                    <div class="form-section inline-style-2">
                         <h2 class="section-title">Why Work With Terra Connect?</h2>
                         <div
-                            style="max-width: 800px; margin: 0 auto; color: #e5e7eb; font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">
-                            <p style="margin-bottom: 20px;">As London's premier AI agency, we combine cutting-edge
+                            class="inline-style-3">
+                            <p class="inline-style-4">As London's premier AI agency, we combine cutting-edge
                                 technology with practical business solutions. Our team understands the unique challenges
                                 facing UK businesses and delivers solutions that drive real results.</p>
 
-                            <p style="margin-bottom: 20px;">From AI-powered chatbots that enhance customer service to
+                            <p class="inline-style-4">From AI-powered chatbots that enhance customer service to
                                 sophisticated web applications that streamline operations, we're committed to helping
                                 your business thrive in the digital age.</p>
 
@@ -872,7 +324,7 @@
                                     consultation.</strong></p>
                         </div>
 
-                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <div class="inline-style-5">
                             <a class="btn focus-ring" href="tel:+447537988738">Call Now</a>
                             <a class="btn secondary focus-ring" href="mailto:info@terraconnect.co.uk">Email Us</a>
                         </div>
@@ -885,7 +337,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 
 </body>
 

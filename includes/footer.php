@@ -5,15 +5,23 @@
                 <img src="/images/img-svg/logo.svg" alt="Terra Connect logo" width="200" height="60" loading="lazy" />
                 <p class="footer-tagline">AI Agency &amp; Digital Solutions in London</p>
                 <div class="footer-contact-info">
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@terraconnect.co.uk">hello@terraconnect.co.uk</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a
+                            href="mailto:hello@terraconnect.co.uk">hello@terraconnect.co.uk</a></p>
                     <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, United Kingdom</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/TerraConnectLtd" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/sorin-rotaru-terraconnect/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="https://x.com/sorin03032839?s=11" aria-label="X" rel="noopener noreferrer" target="_blank"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/terraconnect.co.uk/" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://t.me/terraconnect" aria-label="Telegram" rel="noopener noreferrer" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/TerraConnectLtd" aria-label="Facebook" rel="noopener noreferrer"
+                        target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/sorin-rotaru-terraconnect/" aria-label="LinkedIn"
+                        rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"
+                            aria-hidden="true"></i></a>
+                    <a href="https://x.com/sorin03032839?s=11" aria-label="X" rel="noopener noreferrer"
+                        target="_blank"><i class="fa fa-x-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/terraconnect.co.uk/" aria-label="Instagram"
+                        rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://t.me/terraconnect" aria-label="Telegram" rel="noopener noreferrer"
+                        target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -57,16 +65,16 @@
             </div>
         </div>
 
-        <div style="text-align:center;padding:10px 0 16px;font-size:0.78rem;border-top:1px solid rgba(255,255,255,0.07);">
-            <a href="/anti-spam-policy/" style="color:#888;text-decoration:none;">Anti-Spam Policy</a>
-            <span style="color:#555;margin:0 8px;">&bull;</span>
-            <a href="/intellectual-property-policy/" style="color:#888;text-decoration:none;">IP Policy</a>
-            <span style="color:#555;margin:0 8px;">&bull;</span>
-            <a href="/complaints-policy/" style="color:#888;text-decoration:none;">Complaints &amp; Disputes</a>
-            <span style="color:#555;margin:0 8px;">&bull;</span>
-            <a href="/subprocessor-list/" style="color:#888;text-decoration:none;">Subprocessor List</a>
-            <span style="color:#555;margin:0 8px;">&bull;</span>
-            <a href="/security-policy/" style="color:#888;text-decoration:none;">Security Policy</a>
+        <div class="footer-policy-links">
+            <a href="/anti-spam-policy/">Anti-Spam Policy</a>
+            <span class="footer-policy-separator">&bull;</span>
+            <a href="/intellectual-property-policy/">IP Policy</a>
+            <span class="footer-policy-separator">&bull;</span>
+            <a href="/complaints-policy/">Complaints &amp; Disputes</a>
+            <span class="footer-policy-separator">&bull;</span>
+            <a href="/subprocessor-list/">Subprocessor List</a>
+            <span class="footer-policy-separator">&bull;</span>
+            <a href="/security-policy/">Security Policy</a>
         </div>
         <div class="copyright">
             <p>&#169; 2026 Terra Connect Ltd. All Rights Reserved.</p>

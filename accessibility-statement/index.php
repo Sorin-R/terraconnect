@@ -24,68 +24,40 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Accessibility Statement — Terra Connect Ltd" />
     <meta name="theme-color" content="#06B6D4" />
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
     <link rel="manifest" href="/icon/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
+<link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;" />
+    <link rel="stylesheet" href="/styles/pages/accessibility-statement.css" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://kit.fontawesome.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; }
-        body { overflow-x: hidden !important; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background-color: rgb(2, 10, 34); color: #fff; background-image: url('/images/img-webp/jeremiah.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
-        .skip-link { position: absolute; left: -9999px; top: -9999px; }
-        .skip-link:focus { left: 16px; top: 16px; z-index: 4000; background: #fff; color: #000; padding: 8px 12px; border-radius: 8px; }
-        .focus-ring:focus-visible { outline: 3px solid #4657ed; outline-offset: 3px; }
-        header { position: fixed; top: 10px; left: 10px; right: 10px; margin: 0; padding: 12px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background-color: transparent; transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; border-radius: 20px; }
-        header.scrolled { background-color: rgb(2, 10, 34); box-shadow: #4657ed 0 0 5px 2px; }
-        #navMenu { display: flex; align-items: center; justify-content: center; }
-        #navMenu ul { display: flex; list-style: none; gap: 10px; }
-        #navMenu ul li a { color: #fff; font-weight: 500; font-size: 16px; padding: 3px 20px; position: relative; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease; }
-        #navMenu ul li a::after, #navMenu ul li a::before { content: ''; position: absolute; width: 0; height: 3px; left: 0; background-color: #ffffff; transition: width 0.3s ease-in-out; }
-        #navMenu ul li a::after { bottom: -6px; }
-        #navMenu ul li a::before { top: -6px; }
-        #navMenu ul li a:hover::after, #navMenu ul li a:hover::before { width: 100%; }
-        .menu-icon { display: none; font-size: 32px; line-height: 1; cursor: pointer; z-index: 1111; background: transparent; border: 0; color: #fff; }
-        .logo-header { width: 250px; height: auto; z-index: 100; }
-        main { min-height: 100vh; background: rgba(5, 5, 23, 0.8); padding-top: 120px; padding-bottom: 40px; display: flow-root; }
-        @media (max-width: 1024px) {
-            .logo-header { width: 180px; height: auto; }
-            .menu-icon { display: flex; }
-            #navMenu { display: none; position: fixed; inset: 0; width: 100%; height: 100dvh; background-color: rgb(2, 10, 34); text-align: center; padding: 80px 0 20px; z-index: 1000; }
-            #navMenu.active { display: block; }
-            #navMenu ul { flex-direction: column; gap: 10px; }
-            #navMenu ul li a { font-size: 18px; padding: 15px 24px; display: block; }
-            #navMenu ul li a::before, #navMenu ul li a::after { content: none !important; }
-        }
-        .status-badge { display: inline-block; background: rgba(70,87,237,0.2); border: 1px solid rgba(70,87,237,0.4); color: #6b7cf0; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; }
-    </style>
-</head>
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" /></head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
     <main id="main">
-        <div class="content-section" style="max-width:900px;margin:0 auto 40px;padding:60px 40px;">
-            <h1 style="font-size:2.5rem;text-align:center;margin-bottom:10px;position:static;transform:none;opacity:1;">Accessibility Statement</h1>
-            <p style="text-align:center;color:#888;margin-bottom:40px;"><strong>Last Updated:</strong> April 2026</p>
+        <div class="content-section inline-style-1">
+            <h1 class="inline-style-2">Accessibility Statement</h1>
+            <p class="inline-style-3"><strong>Last Updated:</strong> April 2026</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">1. Our Commitment</h2>
-            <p>Terra Connect Ltd is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards to this website (<a href="https://www.terraconnect.co.uk" style="color:#06b6d4;">terraconnect.co.uk</a>).</p>
-            <p style="margin-top:10px;">This statement applies to the entire <strong>terraconnect.co.uk</strong> website and is issued in compliance with the <strong>Equality Act 2010</strong> and the <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>.</p>
+            <h2 class="inline-style-4">1. Our Commitment</h2>
+            <p>Terra Connect Ltd is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards to this website (<a href="https://www.terraconnect.co.uk" class="inline-style-5">terraconnect.co.uk</a>).</p>
+            <p class="inline-style-6">This statement applies to the entire <strong>terraconnect.co.uk</strong> website and is issued in compliance with the <strong>Equality Act 2010</strong> and the <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">2. Conformance Status</h2>
+            <h2 class="inline-style-4">2. Conformance Status</h2>
             <p><span class="status-badge">Partially Conformant</span></p>
             <p>The Web Content Accessibility Guidelines (WCAG) 2.1 defines requirements to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. This website is <strong>partially conformant with WCAG 2.1 Level AA</strong>. Partial conformance means that some parts of the content may not fully conform to the accessibility standard, as detailed in the &ldquo;Known Issues&rdquo; section below.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">3. Technical Specification</h2>
+            <h2 class="inline-style-4">3. Technical Specification</h2>
             <p>This website relies on the following technologies for conformance with WCAG 2.1:</p>
             <ul>
                 <li>HTML5</li>
@@ -94,7 +66,7 @@
                 <li>WAI-ARIA roles and attributes</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">4. Accessibility Features</h2>
+            <h2 class="inline-style-4">4. Accessibility Features</h2>
             <p>We have implemented the following accessibility features:</p>
             <ul>
                 <li><strong>Skip navigation link</strong> &ndash; A &ldquo;Skip to content&rdquo; link appears at the top of each page for keyboard users</li>
@@ -109,47 +81,47 @@
                 <li><strong>Language declaration</strong> &ndash; Page language is set to <code>lang="en-GB"</code></li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">5. Known Limitations</h2>
+            <h2 class="inline-style-4">5. Known Limitations</h2>
             <p>Despite our efforts, you may encounter the following known accessibility issues. We are actively working to resolve them:</p>
-            <table style="width:100%;border-collapse:collapse;margin:15px 0;">
+            <table class="inline-style-7">
                 <thead>
                     <tr>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">Issue</th>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">WCAG Criterion</th>
-                        <th style="padding:12px 15px;text-align:left;border-bottom:1px solid rgba(70,87,237,0.3);background:rgba(70,87,237,0.15);color:#fff;font-weight:600;">Status</th>
+                        <th class="inline-style-8">Issue</th>
+                        <th class="inline-style-8">WCAG Criterion</th>
+                        <th class="inline-style-8">Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Some animated elements may not respect the user's &ldquo;reduce motion&rdquo; system preference</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">2.3.3 (AAA)</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">In progress</td>
+                        <td class="inline-style-9">Some animated elements may not respect the user's &ldquo;reduce motion&rdquo; system preference</td>
+                        <td class="inline-style-9">2.3.3 (AAA)</td>
+                        <td class="inline-style-9">In progress</td>
                     </tr>
                     <tr>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Some third-party embeds (social media links) may not be fully keyboard accessible</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">2.1.1 (A)</td>
-                        <td style="padding:12px 15px;border-bottom:1px solid rgba(70,87,237,0.15);color:#e0e0e0;">Monitoring</td>
+                        <td class="inline-style-9">Some third-party embeds (social media links) may not be fully keyboard accessible</td>
+                        <td class="inline-style-9">2.1.1 (A)</td>
+                        <td class="inline-style-9">Monitoring</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">6. Feedback &amp; Contact</h2>
+            <h2 class="inline-style-4">6. Feedback &amp; Contact</h2>
             <p>We welcome your feedback on the accessibility of this website. If you experience accessibility barriers, or if you need information in an alternative format, please contact us:</p>
-            <p style="margin-top:10px;">
-                <strong>Email:</strong> <a href="mailto:accessibility@terraconnect.co.uk" style="color:#06b6d4;">accessibility@terraconnect.co.uk</a><br />
-                <strong>General:</strong> <a href="mailto:hello@terraconnect.co.uk" style="color:#06b6d4;">hello@terraconnect.co.uk</a><br />
-                <strong>Website:</strong> <a href="/contacts/" style="color:#06b6d4;">terraconnect.co.uk/contacts</a>
+            <p class="inline-style-6">
+                <strong>Email:</strong> <a href="mailto:accessibility@terraconnect.co.uk" class="inline-style-5">accessibility@terraconnect.co.uk</a><br />
+                <strong>General:</strong> <a href="mailto:hello@terraconnect.co.uk" class="inline-style-5">hello@terraconnect.co.uk</a><br />
+                <strong>Website:</strong> <a href="/contacts/" class="inline-style-5">terraconnect.co.uk/contacts</a>
             </p>
-            <p style="margin-top:10px;">We aim to respond to accessibility feedback within <strong>5 working days</strong>.</p>
+            <p class="inline-style-6">We aim to respond to accessibility feedback within <strong>5 working days</strong>.</p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">7. Enforcement</h2>
+            <h2 class="inline-style-4">7. Enforcement</h2>
             <p>If you are not satisfied with our response, you have the right to contact the <strong>Equality and Human Rights Commission (EHRC)</strong>:</p>
-            <p style="margin-top:10px;">
-                Website: <a href="https://www.equalityhumanrights.com/" style="color:#06b6d4;" rel="noopener noreferrer" target="_blank">equalityhumanrights.com</a><br />
+            <p class="inline-style-6">
+                Website: <a href="https://www.equalityhumanrights.com/" rel="noopener noreferrer" target="_blank" class="inline-style-5">equalityhumanrights.com</a><br />
                 Helpline: 0808 800 0082
             </p>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">8. Assessment Approach</h2>
+            <h2 class="inline-style-4">8. Assessment Approach</h2>
             <p>Terra Connect Ltd assessed the accessibility of this website by the following approach:</p>
             <ul>
                 <li>Self-evaluation using automated tools (including Lighthouse and WAVE)</li>
@@ -158,8 +130,8 @@
                 <li>Colour contrast analysis</li>
             </ul>
 
-            <h2 style="text-align:left;font-size:1.4rem;margin-bottom:15px;opacity:1;transform:none;">9. Formal Complaints</h2>
-            <p>If you are not happy with how we respond to your complaint, contact the <strong>Equality Advisory and Support Service (EASS)</strong> at <a href="https://www.equalityadvisoryservice.com/" style="color:#06b6d4;" rel="noopener noreferrer" target="_blank">equalityadvisoryservice.com</a>.</p>
+            <h2 class="inline-style-4">9. Formal Complaints</h2>
+            <p>If you are not happy with how we respond to your complaint, contact the <strong>Equality Advisory and Support Service (EASS)</strong> at <a href="https://www.equalityadvisoryservice.com/" rel="noopener noreferrer" target="_blank" class="inline-style-5">equalityadvisoryservice.com</a>.</p>
         </div>
     </main>
 
@@ -167,6 +139,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 </body>
 </html>

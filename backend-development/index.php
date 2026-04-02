@@ -32,7 +32,7 @@
     <meta property="og:title" content="Backend Development Services — Terra Connect London" />
     <meta property="og:description"
         content="Professional backend development services in London. We build secure, scalable backend systems, databases, and APIs." />
-    <meta property="og:image" content="https://www.terraconnect.co.uk/img-png/og-image.jpg" />
+    <meta property="og:image" content="https://www.terraconnect.co.uk/images/img-png/logo/logo.png" />
     <meta property="og:site_name" content="Terra Connect Ltd" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -49,7 +49,7 @@
     <meta name="apple-mobile-web-app-title" content="Terra Connect" />
 
     <!-- Favicons / Manifest -->
-    <link rel="shortcut icon" href="/icon/favicon-v2.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
@@ -64,11 +64,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        media="print" onload="this.media='all'" />
+media="print" onload="this.media='all'" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" media="(max-width: 1024px)" />
+
+    <link rel="stylesheet" href="/styles/pages/backend-development.css" />
 
     <!-- Structured Data for Service Page -->
     <script type="application/ld+json">
@@ -82,7 +85,7 @@
                 "url": "https://www.terraconnect.co.uk/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://www.terraconnect.co.uk/img-png/logo.png",
+                    "url": "https://www.terraconnect.co.uk/images/img-png/logo/logo.png",
                     "width": 200,
                     "height": 60
                 }
@@ -96,587 +99,17 @@
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
         frame-src https://www.google.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
-    <!-- Emergency CSS Styles -->
-    <style>
-        /* ============ Base Reset ============ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            overflow-x: hidden !important;
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
-                sans-serif;
-            color: #fff;
-            background-image: url('/images/img-webp/jeremiah.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        /* Visually hidden but accessible */
-        .visually-hidden {
-            position: absolute !important;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 1px, 1px);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }
-
-        .skip-link:focus {
-            left: 16px;
-            top: 16px;
-            z-index: 4000;
-            background: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 8px;
-        }
-
-        .focus-ring:focus-visible {
-            outline: 3px solid #4657ed;
-            outline-offset: 3px;
-        }
-
-        /* ============ Header ============ */
-        header {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            margin: 0;
-            padding: 12px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background-color: transparent;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease,
-                border-radius 0.3s ease;
-            border-radius: 20px;
-        }
-
-        header.scrolled {
-            background-color: rgb(2, 10, 34);
-            box-shadow: #4657ed 0 0 5px 2px;
-        }
-
-        /* ============ Menu Nav ============ */
-        #navMenu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #navMenu ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        #navMenu ul li a {
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 3px 20px;
-            position: relative;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        #navMenu ul li a:hover {
-            color: #ffffff;
-        }
-
-        #navMenu ul li a::after,
-        #navMenu ul li a::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            left: 0;
-            background-color: #ffffff;
-            transition: width 0.3s ease-in-out;
-        }
-
-        #navMenu ul li a::after {
-            bottom: -6px;
-        }
-
-        #navMenu ul li a::before {
-            top: -6px;
-        }
-
-        #navMenu ul li a:hover::after,
-        #navMenu ul li a:hover::before,
-        #navMenu ul li a.active-page::after,
-        #navMenu ul li a.active-page::before {
-            width: 100%;
-        }
-
-        .menu-icon {
-            display: none;
-            font-size: 32px;
-            line-height: 1;
-            cursor: pointer;
-            z-index: 1111;
-            background: transparent;
-            border: 0;
-            color: #fff;
-        }
-
-        /* ============ Logo ============ */
-        .logo-header {
-            width: 250px;
-            height: auto;
-            z-index: 100;
-        }
-
-        /* ============ Hero ============ */
-        .hero {
-            text-align: center;
-            color: #ffffff;
-            padding: 120px 2px 80px;
-            /* background: rgba(5, 5, 23, 0.5); */
-        }
-
-        .hero-h1 {
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 100px;
-        }
-
-        .hero-h1 {
-            position: static;
-            transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-        }
-
-        .hero-p {
-            position: static;color: #ffffff;
-            margin: 0;
-            text-align: center;
-            transform: translateX(100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
-            opacity: 0;
-            font-size: 1.3rem;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        .animate-h1 {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .animate-p {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .hero-cta {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0 50px 0;
-            align-items: center;
-        }
-
-        /* ============ Layout Backgrounds ============ */
-        main {
-            min-height: 100vh;
-            background: rgba(5, 5, 23, 0.8);
-            text-align: left;
-            padding-top: 96px;
-            padding-bottom: 50px
-        }
-
-        /* ============ Content Sections ============ */
-        .content-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .content-section {
-            background: rgba(2, 10, 34, 0.9);
-            border-radius: 20px;
-            margin-bottom: 40px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(70, 87, 237, 0.2);
-            padding: 40px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #4657ed, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .section-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #e5e7eb;
-            margin-bottom: 30px;
-        }
-
-        .section-content p {
-            margin-bottom: 20px;
-        }
-
-        .section-content strong {
-            color: #fff;
-            font-weight: 600;
-        }
-
-        /* ============ Analogy Box ============ */
-        .analogy-box {
-            background: linear-gradient(135deg, rgba(70, 87, 237, 0.2), rgba(6, 182, 212, 0.2));
-            border: 1px solid rgba(70, 87, 237, 0.4);
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .analogy-box h3 {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-bottom: 20px;
-        }
-
-        .analogy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .analogy-item {
-            background: rgba(70, 87, 237, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #4657ed;
-        }
-
-        .analogy-item h4 {
-            color: #4657ed;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        .analogy-item p {
-            color: #e5e7eb;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        /* ============ Service Cards ============ */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .service-card {
-            background: rgba(70, 87, 237, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(70, 87, 237, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(70, 87, 237, 0.2);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: #4657ed;
-            margin-bottom: 20px;
-        }
-
-        .service-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 15px;
-        }
-
-        .service-description {
-            color: #e5e7eb;
-            line-height: 1.6;
-        }
-
-        /* ============ Comparison Table ============ */
-        .comparison-table {
-            background: rgba(70, 87, 237, 0.05);
-            border-radius: 15px;
-            overflow: hidden;
-            margin: 30px 0;
-        }
-
-        .comparison-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 20px;
-            text-align: left;
-            border-bottom: 1px solid rgba(70, 87, 237, 0.2);
-        }
-
-        .comparison-table th {
-            background: rgba(70, 87, 237, 0.2);
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .comparison-table td {
-            color: #e5e7eb;
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* ============ Feature Lists ============ */
-        .backend-features {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        .backend-features li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            padding: 15px;
-            background: rgba(70, 87, 237, 0.1);
-            border-radius: 10px;
-            border-left: 4px solid #4657ed;
-            transition: transform 0.3s ease;
-        }
-
-        .backend-features li:hover {
-            transform: translateX(5px);
-        }
-
-        .backend-features li::before {
-            content: '⚙️';
-            font-size: 1.2rem;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        /* ============ Examples Section ============ */
-        .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .example-item {
-            background: rgba(6, 182, 212, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #06b6d4;
-            text-align: center;
-        }
-
-        .example-item h4 {
-            color: #06b6d4;
-            margin-bottom: 10px;
-        }
-
-        .example-item p {
-            color: #e5e7eb;
-            font-size: 0.95rem;
-        }
-
-        /* ============ Why Choose Us ============ */
-        .why-choose-list {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        .why-choose-list li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            padding: 15px;
-            background: rgba(6, 182, 212, 0.1);
-            border-radius: 10px;
-            border-left: 4px solid #06b6d4;
-        }
-
-        .why-choose-list li::before {
-            content: '✓';
-            color: #06b6d4;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        /* ============ CTA Section ============ */
-        .cta-section {
-            background: linear-gradient(135deg, rgba(70, 87, 237, 0.3), rgba(6, 182, 212, 0.3));
-            border: 1px solid rgba(70, 87, 237, 0.5);
-            text-align: center;
-            padding: 50px 40px;
-        }
-
-        .cta-section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #e5e7eb;
-        }
-
-        /* ======== Mobile / Tablet Styles (<= 1024px) ======== */
-        @media (max-width: 1024px) {
-
-            .logo-header {
-                width: 180px;
-                height: auto;
-                position: static;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            #navMenu {
-                display: none;
-                position: fixed;
-                inset: 0;
-                width: 100%;
-                height: 100dvh;
-                background-color: rgb(2, 10, 34);
-                text-align: center;
-                padding: 80px 0 20px;
-                z-index: 1000;
-            }
-
-            #navMenu.active {
-                display: block;
-            }
-
-            #navMenu ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 0;
-            }
-
-            #navMenu ul li {
-                margin: 0;
-            }
-
-            #navMenu ul li a {
-                font-size: 18px;
-                padding: 15px 24px;
-                display: block;
-                width: auto;
-                margin: 0 auto;
-            }
-
-            #navMenu ul li a::before,
-            #navMenu ul li a::after {
-                content: none !important;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            .hero-text {
-                padding: 20px;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .content-section {
-                padding: 30px 20px;
-                margin: 20px 10px;
-            }
-
-            .service-grid,
-            .analogy-grid,
-            .examples-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 280px;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
-                padding: 10px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -685,7 +118,6 @@
 
     <div class="background">
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
-
 
         <main id="main">
             <!-- Hero -->
@@ -954,7 +386,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-3" defer></script>
+    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
 
 </body>
 

@@ -17,12 +17,12 @@ RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
 <IfModule mod_headers.c>
   Header set Content-Security-Policy "
     default-src 'self';
-    script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com 'unsafe-inline';
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+    script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
     img-src * data:;
     media-src * data:;
-    connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
+    connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
     frame-src https://www.google.com;
   "
 # ----------------------------------------------------------------------
@@ -53,9 +53,9 @@ RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
 # ----------------------------------------------------------------------
 # Cache control for sitemap files (shorter lifetime)
 # ----------------------------------------------------------------------
-<Files "sitemap*.xml">
-    Header set Cache-Control "max-age=3600, public"
-</Files>
+<FilesMatch "^sitemap.*\.xml$">
+  Header set Cache-Control "max-age=3600, public"
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # Long-term caching for static assets
@@ -106,3 +106,6 @@ RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
 AddType image/png .png
 AddType image/jpeg .jpg .jpeg
 AddType image/webp .webp
+AddType image/svg+xml .svg
+AddType application/xml .xml
+AddType application/octet-stream .webmanifest
