@@ -99,9 +99,7 @@ media="print" onload="this.media='all'" />
                     </h1>
                     <div class="hero-p-background">
                         <p class="hero-p">
-                            Build a predictable growth engine with AI-powered marketing automation.<br>We
-                            automate lead capture, nurturing, campaign execution, and reporting<br>so your team can
-                            focus on strategy and revenue.
+                            Build predictable growth with smart marketing automation.<br>We automate lead capture, nurturing, campaign execution, and reporting.<br>Your team focuses on strategy and revenue growth.
                         </p>
                     </div>
 
@@ -116,24 +114,26 @@ media="print" onload="this.media='all'" />
                 <section class="content-section">
                     <h2 class="section-title">Automate the Full Marketing Funnel</h2>
                     <div class="section-content">
-                        <p>Our <strong>marketing automation services</strong> help you move from manual campaigns to
-                            consistent, scalable systems. We design automation flows around your real funnel, from first
-                            touch to customer retention.</p>
-                        <p>By combining segmentation, behavior triggers, and AI-assisted content logic, we make sure
-                            leads receive the right message at the right time. That means faster follow-up, better
-                            conversion rates, and clearer attribution.</p>
+                        <p>Our <strong>marketing automation services</strong> change how you reach prospects. Instead of managing campaigns manually, we build systems that work automatically. Moreover, these systems grow as your business grows. Specifically, we design them around your actual customer journey. First, it starts with awareness. Finally, it ends with loyal customer retention.</p>
+                        <p>Here's how we work: First, we learn your sales cycle. Next, we find where prospects drop off. Then, we build automation sequences. Additionally, these send the right message at the right time. Furthermore, we add triggers that respond to prospect actions. As a result, your team closes deals faster. Consequently, you lose fewer leads. Plus, you see what works.</p>
+                        <p>Marketing automation creates speed and consistency. For instance, we use smart segmentation. Additionally, we add behavior triggers. Moreover, we apply AI messaging. Importantly, every lead gets personalized attention. And notably, nobody needs to do it manually. For example, fast follow-ups get higher response rates. Similarly, good timing gets more conversions. Most importantly, clear tracking shows you what actually works.</p>
                     </div>
                     <ul class="feature-list">
-                        <li>Lead capture and source tracking automation</li>
-                        <li>Email nurturing sequences and lifecycle campaigns</li>
-                        <li>Audience segmentation with dynamic triggers</li>
-                        <li>Sales handoff rules between marketing and CRM</li>
-                        <li>Campaign performance dashboards and KPI alerts</li>
+                        <li>Automatic lead capture and tracking</li>
+                        <li>Email sequences that work across channels</li>
+                        <li>Smart segments based on behavior</li>
+                        <li>Auto handoff from marketing to sales</li>
+                        <li>Live dashboards showing campaign results</li>
+                        <li>Lead scoring that finds your best leads</li>
                     </ul>
                 </section>
 
                 <section class="content-section">
                     <h2 class="section-title">Core Marketing Automation Solutions</h2>
+                    <div class="section-content">
+                        <p>Marketing automation has many uses. Specifically, the right choice depends on your business. Below are the most helpful solutions. Notably, these work for companies in the UK and Europe.</p>
+                        <p>Each solution works alone. However, they work better together. For instance, lead scoring helps you find hot leads. Meanwhile, campaign automation sends emails automatically. Additionally, reactivation campaigns bring back lost leads. When you combine all these, you get a complete system. Importantly, it moves people forward. And certainly, nobody needs to do it manually.</p>
+                    </div>
                     <div class="process-grid">
                         <div class="process-step">
                             <div class="step-number">1</div>
@@ -177,26 +177,92 @@ media="print" onload="this.media='all'" />
                 <section class="content-section">
                     <h2 class="section-title">Platforms, Data, and Measurement</h2>
                     <div class="section-content">
-                        <p>We work with leading stacks including HubSpot, Mailchimp, Klaviyo, ActiveCampaign,
-                            Salesforce, Pipedrive, GA4, and custom data sources. Every implementation includes naming
-                            conventions, tagging discipline, and clear data flow design.</p>
-                        <p>Our team also defines reporting layers so leadership can see campaign performance by channel,
-                            stage, and revenue outcome. This gives you a repeatable framework for optimization, not
-                            guesswork.</p>
+                        <p>First, success starts with choosing the right platform. Then, we implement it correctly. Specifically, we work with HubSpot, Mailchimp, Klaviyo, ActiveCampaign, Salesforce, and Pipedrive. Additionally, we build custom solutions. Rather than forcing your business into any platform, we pick tools that fit your needs.</p>
+                        <p>Next, we focus on data quality. Certainly, this is critical. So we set up clear naming rules. Moreover, we use consistent tags. Furthermore, we document how data flows. When your system gets clean data, it works better. Consequently, it drives more sales. However, bad data causes problems. Ultimately, broken systems waste time.</p>
+                        <p>Then, we build dashboards for your team. Instead of hidden numbers, you see everything. For instance, you see campaign results by channel. You see each conversion stage. You see what drives revenue. Importantly, this clarity helps you make better decisions. Finally, we set up alerts. So you spot problems early. As a result, you can fix them quickly.</p>
                     </div>
                     <ul class="feature-list">
-                        <li>CRM and marketing platform integration architecture</li>
-                        <li>Event and conversion tracking implementation</li>
-                        <li>Audience, funnel, and campaign data modeling</li>
-                        <li>Automation QA testing and deliverability checks</li>
-                        <li>Continuous optimization and growth experiments</li>
+                        <li>Connect your CRM and platform</li>
+                        <li>Track events and conversions automatically</li>
+                        <li>Create audience segments</li>
+                        <li>Test automations and delivery</li>
+                        <li>Monitor and improve results</li>
+                        <li>Build dashboards that show ROI</li>
                     </ul>
                 </section>
 
+                <section class="content-section">
+                    <h2 class="section-title">Why Marketing Automation Consulting Matters</h2>
+                    <div class="section-content">
+                        <p>Certainly, many companies try marketing automation alone. However, this often fails. Typically, they get partial systems. Often, tools sit unused. Naturally, teams get frustrated. Clearly, expert help changes everything.</p>
+                        <p>Notably, a good marketing automation consultant does many things. First, they look at your current process. Next, they find what matters most. Then, they design systems that connect. Additionally, they teach your team how to use everything. Finally, they set up tracking. Importantly, this shows what works and what doesn't.</p>
+                        <p>Additionally, AI agencies like Terra Connect are different. Specifically, we know marketing. Moreover, we know sales cycles. Equally, we understand what buyers want. Furthermore, we know how to convert leads. As a result, our systems actually work. Consequently, they drive real revenue. Certainly, not just busy work.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <figure style="text-align: center; margin: 2rem 0;">
+                        <img src="/images/marketing-automation-funnel-strategy.svg" alt="Marketing automation funnel showing lead capture, nurturing, scoring, and conversion stages with AI optimization" width="800" height="450" style="max-width: 100%; height: auto;" />
+                        <figcaption style="font-size: 0.9rem; color: #666; margin-top: 1rem;">Strategic marketing automation systems guide prospects through each stage of your sales funnel</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">The Business Impact of AI in Marketing Automation</h2>
+                    <div class="section-content">
+                        <p>Importantly, AI changes what automation can do. Instead of simple rules, AI makes smart decisions automatically. For example, AI learns what content each prospect likes. Then it sends the best message. Additionally, AI finds the best time to send each email.</p>
+                        <p>Next, AI improves lead scoring. Specifically, old scoring uses guesses. However, AI scoring learns from your data. Moreover, it finds what predicts a sale. As a result, your sales team focuses on real opportunities. Consequently, they skip the dead ends.</p>
+                        <p>Furthermore, AI enables personalization at scale. Certainly, you reach thousands of prospects. Yet, each one gets custom messaging. Notably, messages match their interests. Additionally, messages match their stage. Moreover, messages match their behavior. Ultimately, this personal touch drives more conversions.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">Our Marketing Automation Consulting Process</h2>
+                    <div class="section-content">
+                        <p>Clearly, we follow a clear process. Instead of jumping in, we learn your business first. Then we build solutions.</p>
+                        <p><strong>Phase 1: Learn Your Business</strong> - First, we talk to your marketing team. Next, we talk to your sales team. Additionally, we talk to leaders. Furthermore, we study your sales process. We track where prospects drop off. Finally, we see which campaigns work best.</p>
+                        <p><strong>Phase 2: Choose the Right Platform</strong> - Specifically, we pick the best platform for you. Then we design how everything connects. For instance, your CRM connects. Your email connects. Analytics connect. Additionally, your other tools connect. As a result, data flows smoothly. Consequently, automations work reliably.</p>
+                        <p><strong>Phase 3: Build Your Automations</strong> - Next, our team builds email sequences. Additionally, we set up lead scoring. Furthermore, we add campaign triggers. Also, we create dashboards. Importantly, every step follows your business rules. Notably, everything matches your sales process.</p>
+                        <p><strong>Phase 4: Test Everything</strong> - Before launch, we test carefully. Specifically, we test all automation paths. Notably, leads score right. Importantly, emails send on time. Furthermore, sales handoffs work smoothly. Additionally, we run tests to find the best messages. Finally, we find the best timing too.</p>
+                        <p><strong>Phase 5: Train Your Team</strong> - Next, we teach your team how to run everything. Additionally, we give you full documentation. Moreover, we offer ongoing help. As your business grows, your systems grow.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">What Makes Great Marketing Automation Services</h2>
+                    <div class="section-content">
+                        <p>Certainly, not all agencies are the same. Here's what makes us different.</p>
+                        <p><strong>Platform Experience:</strong> First, we know our platforms deeply. Next, we know what they can do. Additionally, we know how to optimize them for your business.</p>
+                        <p><strong>Marketing Knowledge:</strong> Importantly, good setup isn't enough. Furthermore, we understand buyer behavior. Also, we know sales cycles. Moreover, we know how to convert leads. As a result, this drives real results.</p>
+                        <p><strong>Clean Data Matters:</strong> Certainly, successful automation needs clean data. Moreover, it also needs clear tracking. So we set up good data systems. Additionally, we build dashboards that prove ROI.</p>
+                        <p><strong>Focus on Results:</strong> Importantly, we don't just count automations. Instead, we focus on business results. For instance, more qualified leads. Faster sales cycles. Higher conversion rates. Better customer value.</p>
+                        <p><strong>Never Stop Improving:</strong> Clearly, automation doesn't stop after launch. Furthermore, it evolves over time. So we monitor it. Additionally, we test it. Consequently, we improve it constantly.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">Common Marketing Automation Questions</h2>
+                    <div class="section-content">
+                        <p><strong>How long does implementation take?</strong> Typically, most projects take 8-16 weeks. For instance, simple setups take 4-6 weeks. However, complex ones take 5-6 months. Specifically, it depends on your platform and integrations.</p>
+                        <p><strong>What does it cost?</strong> Certainly, cost depends on your platform choice. Additionally, it depends on how many tools connect. Furthermore, it depends on how many automations you need. Importantly, we give clear quotes. Notably, most clients see payback in 3-6 months. As a result, they get more sales. Consequently, their teams work faster.</p>
+                        <p><strong>Will it replace my team?</strong> No. Notably, it replaces repetitive work. Certainly, not people. Specifically, your team focuses on strategy. Moreover, they create content. Additionally, they build relationships. Instead of managing spreadsheets and sending emails manually. As a result, most companies handle more work. Importantly, they don't hire more people.</p>
+                        <p><strong>Can we start small?</strong> Yes. Certainly, many clients start with one automation. For instance, maybe lead nurturing. Or, maybe lead scoring. Then they add more. Finally, as they see results, they grow.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">Why Businesses Choose Our Marketing Automation Services</h2>
+                    <div class="section-content">
+                        <p>First, we understand that every business is different. Moreover, your needs are unique to your industry. Specifically, we listen carefully to what you want. Additionally, we ask smart questions. Then, we recommend the right approach. Importantly, we don't use one-size-fits-all solutions.</p>
+                        <p>Next, our team has deep experience. For instance, we've helped dozens of UK businesses grow. Notably, our clients come from many industries. Furthermore, we understand different sales cycles. As a result, we know how to set up systems for your situation. Consequently, they work from day one.</p>
+                        <p>Additionally, we focus on teaching your team. Specifically, your team understands how it works. Moreover, they can make adjustments. Plus, they can optimize over time. Importantly, you're not dependent on us forever. Finally, you own your system.</p>
+                        <p>Finally, we measure what matters. For instance, we track leads generated. Additionally, we track conversion rates. Moreover, we track customer acquisition cost. Most importantly, we show you clear ROI.</p>
+                    </div>
+                </section>
+
                 <section class="content-section cta-section">
-                    <h2>Ready to Scale Marketing With Automation?</h2>
-                    <p>We can map your current funnel and deliver an automation roadmap focused on pipeline,
-                        conversions, and ROI.</p>
+                    <h2>Ready to Grow With Marketing Automation?</h2>
+                    <p>Let's map your current funnel. Then we'll build a practical roadmap. Focus on real results. Get more leads. Get more sales. See clear ROI. Let's discuss how smart automation can grow your business.</p>
                     <a class="btn focus-ring" href="/contacts/">Start Your Marketing Automation Project</a>
                 </section>
             </div>
