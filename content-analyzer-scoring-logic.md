@@ -16,7 +16,7 @@
 
 ### 3) Long sentences
 - Long sentence = `> 20 words`.
-- `pass` if percentage is `10..25`.
+- `pass` if percentage is ` => 10 and <= 25`.
 - `warn` if percentage is `<= 35` but outside pass range (also includes `< 10`).
 - `fail` if percentage is `> 35`.
 
@@ -60,12 +60,12 @@
 ## Prompt Template: Create/Improve Page Content
 
 ```text
-Create or improve the content for the page at {{services/android-app-development/index.php}}.
+Create or improve the content for the page at ***{{/Users/sorinrotaru/Terra-Connect/services/ecommerce-development/index.php}}***.
 
-Main keyword: {{Android App Development}}
+Main keyword: --{{Ecommerce Development}}--
 
 Requirements:
-- Keep the page focused on main keyword{{Android App Development}}.
+- Keep the page focused on main keyword --{{Ecommerce Development}}--.
 - Optimize for SEO title, meta description, H1, first paragraph keyword usage, readability, and internal links.
 - Keep valid page structure.
 - Use natural language and avoid keyword stuffing.
@@ -75,5 +75,5 @@ Requirements:
 ## Raw Placeholder Variant (if your tool requires literal braces)
 
 ```text
-Create or improve the content for the page at {{services/android-app-development/index.php}} and using main keyword {{Android App Development}} and the rest of the keywords {{coding for android, android coding, dev android, android app developers, make application for android, create application for android, make android app, android developer, android app dev, writing android apps, android app development service, android dev console, android developer console, android dev, android app development company, building android apps, making apps for android, creating apps for android, android sdk, android developers, android mobile application development, android mobile app development, android studio for android, android studio, create app for ios and android, build app for ios and android, ios and android app development, android development, build android app, create android app, android application development, android app development, develop android app, android software development}} .
+Create or improve the content for the page at ***{{/Users/sorinrotaru/Terra-Connect/services/ecommerce-development/index.php}}*** and using main keyword ---{{Ecommerce Development}}--- and the rest of the keywords --{{ecommerce website development company, ecommerce website development services, ecommerce site development, ecommerce web development, shopify ecommerce development, shopify ecommerce, best ecommerce website builder, best ecommerce websites, wordpress ecommerce, ecommerce marketing, best ecommerce platform, ecommerce store, ecommerce website builder, ecommerce platform, ecommerce website, ecommerce website design, ecommerce business, ecommerce, ecommerce website developer, ecommerce website development agency, creating an ecommerce website, build ecommerce website}}-- .
 ```
