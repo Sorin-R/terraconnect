@@ -22,7 +22,6 @@ Disallow: /search/
 Disallow: /*?replytocom=
 Disallow: /*?utm_*
 Disallow: /*?gclid=
-Disallow: /*?fbclid=
 
 # Allow static assets for rendering
 Allow: /styles/
