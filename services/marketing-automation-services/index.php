@@ -16,12 +16,12 @@
     <meta name="description" content="Marketing automation services that scale campaigns, improve lead nurture, and connect your CRM with email, ads, and reporting. We build and launch your setup." />
     <meta name="keywords" content="marketing automation, marketing automation services, ai marketing automation, marketing automation consultant, consulting marketing automation" />
 
-    <link rel="canonical" href="https://terraconnect.co.uk/services/marketing-automation-services/" />
-    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/marketing-automation-services/" />
-    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/marketing-automation-services/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/marketing-automation-services/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/marketing-automation-services/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/marketing-automation-services/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://terraconnect.co.uk/services/marketing-automation-services/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/marketing-automation-services/" />
     <meta property="og:title" content="Marketing Automation Services — Terra Connect" />
     <meta property="og:description" content="Marketing automation services that scale campaigns, improve lead nurture, and connect your CRM with email, ads, and reporting. We build and launch your setup." />
     <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />

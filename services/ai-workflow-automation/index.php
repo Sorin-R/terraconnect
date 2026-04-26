@@ -16,12 +16,12 @@
     <meta name="description" content="AI automation services for teams that want to cut manual work, connect business tools, and run faster processes. We design, build, and launch your automation." />
     <meta name="keywords" content="ai automation, ai workflow automation, workflow automation, ai automation services, intelligent automation, ai business automation" />
 
-    <link rel="canonical" href="https://terraconnect.co.uk/services/ai-workflow-automation/" />
-    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/services/ai-workflow-automation/" />
-    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/services/ai-workflow-automation/" />
+    <link rel="canonical" href="https://terraconnect.co.uk/ai-workflow-automation/" />
+    <link rel="alternate" hreflang="en-gb" href="https://terraconnect.co.uk/ai-workflow-automation/" />
+    <link rel="alternate" hreflang="x-default" href="https://terraconnect.co.uk/ai-workflow-automation/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://terraconnect.co.uk/services/ai-workflow-automation/" />
+    <meta property="og:url" content="https://terraconnect.co.uk/ai-workflow-automation/" />
     <meta property="og:title" content="AI Automation Services — Terra Connect" />
     <meta property="og:description" content="AI automation services for teams that want to cut manual work, connect business tools, and run faster processes. We design, build, and launch your automation." />
     <meta property="og:image" content="https://terraconnect.co.uk/images/img-png/logo/logo.png" />

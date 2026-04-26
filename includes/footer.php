@@ -44,10 +44,23 @@
                     <a href="/">Home</a>
                     <a href="/portfolio/">Portfolio</a>
                     <a href="/our-services/">Our Services</a>
-                    <a href="/process/initial-consultation/">Our Process</a>
                     <a href="/about-us/">About Us</a>
                     <a href="/contacts/">Contact</a>
                     <a href="/get-a-quote/">Get a Quote</a>
+                </nav>
+            </div>
+
+            <div class="footer-column">
+                <h4>Our Process</h4>
+                <nav aria-label="Footer process">
+                    <a href="/process/initial-consultation/">1. Initial Consultation</a>
+                    <a href="/process/optimal-solutions/">2. Optimal Solutions</a>
+                    <a href="/process/design-user-interface/">3. UI Design</a>
+                    <a href="/process/working-prototype/">4. Working Prototype</a>
+                    <a href="/process/agile-development/">5. Agile Development</a>
+                    <a href="/process/quality-assurance/">6. Quality Assurance</a>
+                    <a href="/process/launch-product/">7. Launch Product</a>
+                    <a href="/process/support-updates/">8. Support &amp; Updates</a>
                 </nav>
             </div>
 

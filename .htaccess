@@ -87,13 +87,26 @@ RewriteRule ^(.*/)?index\.php$ /$1 [L,R=301]
 </IfModule>
 
 # ----------------------------------------------------------------------
-# Cache HTML documents (short-term, safe for CDN edge caching)
+# Cache HTML documents (short-term, safe for CDN edge caching).
+# Allow Googlebot/CDNs to revalidate via ETag/Last-Modified instead of
+# forcing a full re-fetch on every request. The previous "no-store" policy
+# was triggering "Discovered - currently not indexed" in Search Console
+# because Googlebot interpreted constant origin re-fetches as crawl-load risk.
 # ----------------------------------------------------------------------
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|htm|php)$">
-    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
-    Header set Pragma "no-cache"
-    Header set Expires "0"
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+    Header unset Pragma
+    Header unset Expires
+  </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Explicit robots policy for HTML responses (belt-and-braces).
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm|php)$">
+    Header set X-Robots-Tag "index, follow, max-image-preview:large"
   </FilesMatch>
 </IfModule>
 
