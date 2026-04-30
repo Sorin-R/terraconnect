@@ -484,8 +484,20 @@
             <!-- Contact Form -->
             <section class="contact-section">
                 <div class="form-section">
-                    <h2 class="section-title">Send Us a Message</h2>
-                    <form class="contact-form" action="#" method="POST" aria-labelledby="contact-form-title">
+                    <h2 id="contact-form-title" class="section-title">Send Us a Message</h2>
+                    <form id="mobile-applications-form" class="contact-form" action="#" method="POST"
+                        aria-labelledby="contact-form-title" data-emailjs-service="service_pkq52m8"
+                        data-emailjs-template="template_dlwb3sa" data-emailjs-public-key="2eh_xiMVFCJY4U9yP"
+                        data-success-message="Message sent. We will get back to you soon.">
+                        <input type="hidden" name="formType" value="Mobile app enquiry">
+                        <input type="hidden" name="subject" value="">
+                        <input type="hidden" name="title" value="">
+                        <input type="hidden" name="name" value="">
+                        <input type="hidden" name="from_name" value="">
+                        <input type="hidden" name="reply_to" value="">
+                        <input type="hidden" name="time" value="">
+                        <input type="hidden" name="pageUrl" value="">
+                        <input type="hidden" name="submittedAt" value="">
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -560,6 +572,7 @@
                         <div class="form-submit">
                             <button type="submit" class="btn focus-ring">Send Message</button>
                         </div>
+                        <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </section>
@@ -569,7 +582,8 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="/scripts/scripts.js?v=20260430-1" defer></script>
 
 </body>
 

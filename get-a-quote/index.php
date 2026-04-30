@@ -97,12 +97,12 @@ media="print" onload="this.media='all'" />
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        script-src 'self' https://www.googletagmanager.com https://app.chatwoot.com https://maps.googleapis.com https://kit.fontawesome.com https://cdn.jsdelivr.net 'unsafe-inline';
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
-        frame-src https://www.google.com;
+        connect-src 'self' https://www.google-analytics.com https://app.chatwoot.com wss://app.chatwoot.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com https://api.emailjs.com;
+        frame-src https://www.google.com https://app.chatwoot.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
@@ -121,7 +121,19 @@ media="print" onload="this.media='all'" />
             <section class="contact-section get-a-quote-contact-section">
                 <div class="form-section">
                     <h1 id="contact-form-title" class="section-title">Get a Quote</h1>
-                    <form class="contact-form" action="#" method="POST" aria-labelledby="contact-form-title">
+                    <form id="quote-form" class="contact-form" action="#" method="POST" aria-labelledby="contact-form-title"
+                        data-emailjs-service="service_pkq52m8" data-emailjs-template="template_dlwb3sa"
+                        data-emailjs-public-key="2eh_xiMVFCJY4U9yP"
+                        data-success-message="Quote request sent. We will get back to you soon.">
+                        <input type="hidden" name="formType" value="Quote request">
+                        <input type="hidden" name="subject" value="">
+                        <input type="hidden" name="title" value="">
+                        <input type="hidden" name="name" value="">
+                        <input type="hidden" name="from_name" value="">
+                        <input type="hidden" name="reply_to" value="">
+                        <input type="hidden" name="time" value="">
+                        <input type="hidden" name="pageUrl" value="">
+                        <input type="hidden" name="submittedAt" value="">
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -197,6 +209,7 @@ media="print" onload="this.media='all'" />
                         <div class="form-submit">
                             <button type="submit" class="btn focus-ring">Send Message</button>
                         </div>
+                        <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </section>
@@ -207,7 +220,8 @@ media="print" onload="this.media='all'" />
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
     </div>
 
-    <script src="/scripts/scripts.js?v=20260402-4" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="/scripts/scripts.js?v=20260430-1" defer></script>
 
 </body>
 

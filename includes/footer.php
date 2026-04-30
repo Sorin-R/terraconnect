@@ -51,20 +51,6 @@
             </div>
 
             <div class="footer-column">
-                <h4>Our Process</h4>
-                <nav aria-label="Footer process">
-                    <a href="/process/initial-consultation/">1. Initial Consultation</a>
-                    <a href="/process/optimal-solutions/">2. Optimal Solutions</a>
-                    <a href="/process/design-user-interface/">3. UI Design</a>
-                    <a href="/process/working-prototype/">4. Working Prototype</a>
-                    <a href="/process/agile-development/">5. Agile Development</a>
-                    <a href="/process/quality-assurance/">6. Quality Assurance</a>
-                    <a href="/process/launch-product/">7. Launch Product</a>
-                    <a href="/process/support-updates/">8. Support &amp; Updates</a>
-                </nav>
-            </div>
-
-            <div class="footer-column">
                 <h4>Legal</h4>
                 <nav aria-label="Footer legal">
                     <a href="/privacy-policy/">Privacy Policy</a>
@@ -96,26 +82,57 @@
     </footer>
 </div>
 
-<div class="speak-human-widget" id="speakHumanWidget">
-    <button class="speak-human-fab focus-ring" id="speakHumanToggle" type="button" aria-expanded="false"
-        aria-controls="speakHumanPanel" aria-label="Open Talk to Human chat">
-        <i class="fa-solid fa-comment-dots fa-beat-fade" aria-hidden="true"></i>
-        <span class="sr-only">Talk to Human</span>
-    </button>
+<button class="chatwoot-custom-launcher focus-ring" id="chatwootCustomLauncher" type="button"
+    aria-label="Open live chat" disabled>
+    <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+    <span class="sr-only">Talk to Human</span>
+</button>
 
-    <div class="speak-human-panel" id="speakHumanPanel" hidden>
-        <div class="speak-human-panel-header">
-            <strong>Talk to Human</strong>
-            <button class="speak-human-close focus-ring" id="speakHumanClose" type="button" aria-label="Close chat">
-                &times;
-            </button>
-        </div>
-        <p class="speak-human-hint">Type your message and we will continue on WhatsApp.</p>
-        <label class="sr-only" for="speakHumanMessage">Message</label>
-        <textarea id="speakHumanMessage" maxlength="600"
-            placeholder="Hi Terra Connect, I would like to discuss my project..."></textarea>
-        <button class="btn speak-human-send focus-ring" id="speakHumanSend" type="button">
-            Send to WhatsApp
-        </button>
-    </div>
-</div>
+<script>
+window.chatwootSettings = {
+    position: 'right',
+    launcherTitle: 'Talk to Human',
+    hideMessageBubble: true,
+};
+
+(function(documentRef, tagName) {
+    var baseUrl = 'https://app.chatwoot.com';
+    var websiteToken = 'vwcDkik1GySLH9ue1GZStfXC';
+    var launcher = documentRef.getElementById('chatwootCustomLauncher');
+
+    if (!websiteToken || websiteToken === 'YOUR_CHATWOOT_WEBSITE_TOKEN') {
+        console.warn('Chatwoot website token is not configured.');
+        if (launcher) {
+            launcher.hidden = true;
+        }
+        return;
+    }
+
+    if (launcher) {
+        launcher.addEventListener('click', function() {
+            if (window.$chatwoot && typeof window.$chatwoot.toggle === 'function') {
+                window.$chatwoot.toggle('open');
+            }
+        });
+
+        window.addEventListener('chatwoot:ready', function() {
+            launcher.disabled = false;
+        });
+    }
+
+    var script = documentRef.createElement(tagName);
+    var firstScript = documentRef.getElementsByTagName(tagName)[0];
+
+    script.src = baseUrl + '/packs/js/sdk.js';
+    script.defer = true;
+    script.async = true;
+    firstScript.parentNode.insertBefore(script, firstScript);
+
+    script.onload = function() {
+        window.chatwootSDK.run({
+            websiteToken: websiteToken,
+            baseUrl: baseUrl,
+        });
+    };
+})(document, 'script');
+</script>

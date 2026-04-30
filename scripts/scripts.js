@@ -7,7 +7,6 @@
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const GA_MEASUREMENT_ID = 'G-2REQR762M8';
-    const WHATSAPP_PHONE_NUMBER = '447537988738';
     const CONSENT_COOKIE_KEY = 'tc_cookie_consent';
     const CONSENT_MAX_AGE_DAYS = 365;
     const CONSENT_ACCEPTED = 'accepted';
@@ -397,80 +396,6 @@
         });
     }
 
-    function initSpeakHumanWidget() {
-        const widget = document.getElementById('speakHumanWidget');
-        if (!widget) return;
-
-        const toggleBtn = document.getElementById('speakHumanToggle');
-        const panel = document.getElementById('speakHumanPanel');
-        const closeBtn = document.getElementById('speakHumanClose');
-        const sendBtn = document.getElementById('speakHumanSend');
-        const messageInput = document.getElementById('speakHumanMessage');
-
-        if (!toggleBtn || !panel || !closeBtn || !sendBtn || !messageInput) return;
-
-        const fallbackMessage =
-            'Hi Terra Connect, I would like to speak with a human.';
-
-        function setOpen(isOpen) {
-            panel.hidden = !isOpen;
-            widget.classList.toggle('is-open', isOpen);
-            toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            toggleBtn.setAttribute(
-                'aria-label',
-                isOpen ? 'Close Talk to Human chat' : 'Open Talk to Human chat'
-            );
-            if (isOpen) {
-                messageInput.focus();
-            }
-        }
-
-        toggleBtn.addEventListener('click', () => {
-            const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
-            setOpen(!isOpen);
-        });
-
-        closeBtn.addEventListener('click', () => {
-            setOpen(false);
-            toggleBtn.focus();
-        });
-
-        sendBtn.addEventListener('click', () => {
-            const userMessage = messageInput.value.trim();
-            const message = userMessage || fallbackMessage;
-            const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(
-                message
-            )}`;
-            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-        });
-
-        messageInput.addEventListener('keydown', event => {
-            if (event.key === 'Enter' && !event.shiftKey) {
-                event.preventDefault();
-                sendBtn.click();
-            }
-        });
-
-        document.addEventListener('click', event => {
-            if (
-                toggleBtn.getAttribute('aria-expanded') === 'true' &&
-                !widget.contains(event.target)
-            ) {
-                setOpen(false);
-            }
-        });
-
-        document.addEventListener('keydown', event => {
-            if (
-                event.key === 'Escape' &&
-                toggleBtn.getAttribute('aria-expanded') === 'true'
-            ) {
-                setOpen(false);
-                toggleBtn.focus();
-            }
-        });
-    }
-
     function syncCurrentPageInHeaderMenu() {
         if (!navMenu) return;
         const list = navMenu.querySelector('ul');
@@ -545,7 +470,6 @@
     window.addEventListener('pageshow', syncCurrentPageInHeaderMenu);
     initCookieConsent();
     initTechInfoModal();
-    initSpeakHumanWidget();
 
     /* =======================
      Mobile menu toggle
@@ -1213,55 +1137,151 @@ function animateCounters() {
 document.addEventListener('DOMContentLoaded', animateCounters);
 
 // Form submission handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
+function getEmailJsConfig(form) {
+    return {
+        serviceId: form.dataset.emailjsService || '',
+        templateId: form.dataset.emailjsTemplate || '',
+        publicKey: form.dataset.emailjsPublicKey || '',
+    };
+}
+
+function isPlaceholderEmailJsValue(value) {
+    return !value || /^YOUR_[A-Z_]+$/.test(value);
+}
+
+function isEmailJsConfigured(config) {
+    return !isPlaceholderEmailJsValue(config.serviceId)
+        && !isPlaceholderEmailJsValue(config.templateId)
+        && !isPlaceholderEmailJsValue(config.publicKey);
+}
+
+function setFormStatus(form, message, type) {
+    const status = form.querySelector('.form-status');
+    if (!status) return;
+
+    status.textContent = message;
+    status.dataset.status = type;
+}
+
+function setSubmitState(form, isSubmitting) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (!submitBtn) return;
+
+    if (!submitBtn.dataset.originalText) {
+        submitBtn.dataset.originalText = submitBtn.textContent;
+    }
+
+    submitBtn.disabled = isSubmitting;
+    submitBtn.textContent = isSubmitting ? 'Sending...' : submitBtn.dataset.originalText;
+}
+
+function updateEmailJsMetadata(form) {
+    const firstName = form.elements.firstName?.value.trim() || '';
+    const lastName = form.elements.lastName?.value.trim() || '';
+    const email = form.elements.email?.value.trim() || '';
+    const formType = form.elements.formType?.value.trim() || 'Website enquiry';
+    const fullName = `${firstName} ${lastName}`.trim();
+    const submittedAt = new Date();
+    const subjectPrefix = `New ${formType.toLowerCase()}`;
+    const subject = fullName ? `${subjectPrefix} from ${fullName}` : subjectPrefix;
+
+    if (form.elements.subject) {
+        form.elements.subject.value = subject;
+    }
+
+    if (form.elements.title) {
+        form.elements.title.value = subject;
+    }
+
+    if (form.elements.name) {
+        form.elements.name.value = fullName;
+    }
+
+    if (form.elements.from_name) {
+        form.elements.from_name.value = fullName;
+    }
+
+    if (form.elements.reply_to) {
+        form.elements.reply_to.value = email;
+    }
+
+    if (form.elements.time) {
+        form.elements.time.value = submittedAt.toLocaleString('en-GB', {
+            dateStyle: 'medium',
+            timeStyle: 'short',
+        });
+    }
+
+    if (form.elements.pageUrl) {
+        form.elements.pageUrl.value = window.location.href;
+    }
+
+    if (form.elements.submittedAt) {
+        form.elements.submittedAt.value = submittedAt.toISOString();
+    }
+}
+
+document.querySelectorAll('.contact-form').forEach(contactForm => {
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // Get form data
-        const formData = new FormData(this);
-        const formObject = {};
-        formData.forEach((value, key) => {
-            formObject[key] = value;
-        });
+        if (!this.checkValidity()) {
+            this.reportValidity();
+            setFormStatus(this, 'Please fill in all required fields.', 'error');
+            return;
+        }
 
-        // Simple validation
-        const requiredFields = ['firstName', 'lastName', 'email', 'message'];
-        let isValid = true;
+        const emailJsConfig = getEmailJsConfig(this);
+        const shouldUseEmailJs = Boolean(
+            this.dataset.emailjsService
+            || this.dataset.emailjsTemplate
+            || this.dataset.emailjsPublicKey
+        );
 
-        requiredFields.forEach(field => {
-            const input = document.getElementById(field);
-            if (!input) {
-                isValid = false;
+        if (shouldUseEmailJs) {
+            if (!isEmailJsConfigured(emailJsConfig)) {
+                setFormStatus(this, 'EmailJS is not configured yet. Add your service ID, template ID, and public key.', 'error');
                 return;
             }
-            if (!formObject[field] || formObject[field].trim() === '') {
-                input.style.borderColor = '#ef4444';
-                isValid = false;
-            } else {
-                input.style.borderColor = 'rgba(70, 87, 237, 0.3)';
+
+            if (!window.emailjs || typeof window.emailjs.sendForm !== 'function') {
+                setFormStatus(this, 'EmailJS could not load. Please try again in a moment.', 'error');
+                return;
             }
-        });
 
-        if (isValid) {
-            // Show success message (in a real implementation, you'd send this to your server)
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Message Sent!';
-            submitBtn.style.background = '#10b981';
+            updateEmailJsMetadata(this);
+            setSubmitState(this, true);
+            setFormStatus(this, 'Sending...', 'pending');
 
-            // Reset form after 2 seconds
-            setTimeout(() => {
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.style.background = '';
-            }, 2000);
+            window.emailjs
+                .sendForm(emailJsConfig.serviceId, emailJsConfig.templateId, this, {
+                    publicKey: emailJsConfig.publicKey,
+                })
+                .then(() => {
+                    const successMessage = this.dataset.successMessage || 'Message sent. We will get back to you soon.';
+                    this.reset();
+                    setFormStatus(this, successMessage, 'success');
+                })
+                .catch(error => {
+                    console.error('EmailJS submission failed:', error);
+                    setFormStatus(this, 'Sorry, the message could not be sent. Please email info@terraconnect.co.uk.', 'error');
+                })
+                .finally(() => {
+                    setSubmitState(this, false);
+                });
 
-            // You would typically send this data to your server here
-            console.log('Form submitted with data:', formObject);
-        } else {
-            // Show error message
-            alert('Please fill in all required fields.');
+            return;
         }
+
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Message Sent!';
+        submitBtn.style.background = '#10b981';
+
+        setTimeout(() => {
+            this.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = '';
+        }, 2000);
     });
-}
+});

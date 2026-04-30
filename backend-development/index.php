@@ -99,12 +99,12 @@ media="print" onload="this.media='all'" />
     <!-- Security (UPDATED CSP to allow GTM and other external resources) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
+        script-src 'self' https://www.googletagmanager.com https://app.chatwoot.com https://maps.googleapis.com https://kit.fontawesome.com 'unsafe-inline';
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://ka-f.fontawesome.com;
         img-src 'self' data: https:;
-        connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
-        frame-src https://www.google.com;
+        connect-src 'self' https://www.google-analytics.com https://app.chatwoot.com wss://app.chatwoot.com https://stats.g.doubleclick.net https://ka-f.fontawesome.com;
+        frame-src https://www.google.com https://app.chatwoot.com;
         ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
