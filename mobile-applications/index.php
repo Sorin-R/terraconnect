@@ -43,10 +43,7 @@
     <link rel="stylesheet" href="/styles/mobile-index.css?v=20260402-5" />
     <link rel="stylesheet" href="/styles/pages/mobile-applications.css" />
 
-    <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="/icon/apple-touch-icon.png" />
-    <link rel="manifest" href="/icon/site.webmanifest" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/favicon.php'; ?>
 </head>
 
 <body>

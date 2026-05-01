@@ -24,11 +24,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Accessibility Statement — Terra Connect Ltd" />
     <meta name="theme-color" content="#06B6D4" />
-    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
-    <link rel="manifest" href="/icon/site.webmanifest" />
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/favicon.php'; ?>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'" />
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/fontawesome-kit.php'; ?>
